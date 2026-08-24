@@ -1,0 +1,17 @@
+Package: com.mikiyan1978.macdock
+Name: MacDock
+Depends: mobilesubstrate, firmware (>= 15.0)
+Description: Mac-style floating window manager for jailbroken iOS.
+Maintainer: mikiyan1978
+Author: mikiyan1978
+Section: Tweaks
+Tag: role::developer, compatible_ios16
+Architecture: iphoneos-arm64
+Version: 1.0.0-246
+Installed-Size: 1028
+Filename: debs/com.mikiyan1978.macdock_1.0.0-246+debug_iphoneos-arm64.deb
+Size: 126890
+MD5sum: 9318e06c5d1829807a3440b52f171bd5
+SHA1: 72a7db80fb0f6f83fc625a946abe647c486f38ff
+SHA256: 58f7d692e0defa94e5e87de055f5a0fedb4fe05debd5f339caf2220679af80ad
+
