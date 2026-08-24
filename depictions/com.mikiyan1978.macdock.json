@@ -1,0 +1,51 @@
+{
+  "minVersion": "0.1",
+  "headerImage": "https://mikiyan1978.github.io/sileo-repo/assets/macdock-header.png",
+  "tintColor": "#F5A623",
+  "tabs": [
+    {
+      "tabname": "Details",
+      "views": [
+        {
+          "viewClass": "DepictionMarkdownTextView",
+          "markdown": "## MacDock\n\nMac-style floating window manager for jailbroken iOS.\n\n### Features\n- Float any app in a resizable window\n- Multiple windows simultaneously\n- Snap to screen edges\n- Remember window position & size\n- Traffic Light buttons (close/minimize/maximize/restore)\n- Pinch to resize\n- Drag to move\n- Settings with live preview",
+          "useSpacing": true
+        },
+        {
+          "viewClass": "DepictionSeparatorView"
+        },
+        {
+          "viewClass": "DepictionHeaderView",
+          "title": "Requirements"
+        },
+        {
+          "viewClass": "DepictionMarkdownTextView",
+          "markdown": "- iOS 15.0 or later\n- Rootless jailbreak (Dopamine recommended)\n- MobileSubstrate / Substitute",
+          "useSpacing": true
+        },
+        {
+          "viewClass": "DepictionSeparatorView"
+        },
+        {
+          "viewClass": "DepictionHeaderView",
+          "title": "Developer"
+        },
+        {
+          "viewClass": "DepictionMarkdownTextView",
+          "markdown": "**mikiyan1978**\n\n[Blog](https://mikiyan1978.hatenadiary.jp)",
+          "useSpacing": true
+        }
+      ]
+    },
+    {
+      "tabname": "Changelog",
+      "views": [
+        {
+          "viewClass": "DepictionMarkdownTextView",
+          "markdown": "## v1.0.0\n- Initial release\n- Floating window management\n- App selector panel\n- Settings UI with space theme\n- Sileo repository support",
+          "useSpacing": true
+        }
+      ]
+    }
+  ]
+}
