@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>mikiyan1978's Repo</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    background: #000;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+canvas { position: fixed; top: 0; left: 0; z-index: 0; }
+.container { position: relative; z-index: 1; max-width: 600px; margin: 0 auto; padding: 40px 20px; }
+
+/* ヘッダー */
+.header { text-align: center; padding: 60px 0 40px; }
+.repo-title { font-size: 13px; color: #4af; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 12px; }
+.repo-name { font-size: 36px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+.repo-desc { font-size: 14px; color: #888; }
+
+/* Sileoボタン */
+.add-btn {
+    display: block;
+    margin: 32px auto;
+    width: fit-content;
+    background: linear-gradient(135deg, #1a6fff, #8b3fff);
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 32px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 0 30px rgba(100, 150, 255, 0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.add-btn:hover { transform: scale(1.05); box-shadow: 0 0 40px rgba(100, 150, 255, 0.6); }
+
+.repo-url {
+    text-align: center;
+    font-size: 12px;
+    color: #555;
+    margin-top: -20px;
+    margin-bottom: 40px;
+    font-family: monospace;
+}
+
+/* パッケージカード */
+.section-title { font-size: 11px; color: #4af; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 16px; }
+.package-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(100,150,255,0.2);
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(100,150,255,0.1);
+}
+.package-icon {
+    width: 60px; height: 60px;
+    border-radius: 14px;
+    overflow: hidden;
+    flex-shrink: 0;
+    border: 1px solid rgba(100,150,255,0.3);
+}
+.package-icon img { width: 100%; height: 100%; object-fit: cover; }
+.package-info { flex: 1; }
+.package-name { font-size: 18px; font-weight: 700; margin-bottom: 4px; }
+.package-version { font-size: 11px; color: #4af; margin-bottom: 6px; font-family: monospace; }
+.package-desc { font-size: 13px; color: #888; line-height: 1.5; }
+
+/* フィーチャー */
+.features { margin-top: 32px; }
+.feature-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 16px; }
+.feature-item {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 16px;
+}
+.feature-icon { font-size: 24px; margin-bottom: 8px; }
+.feature-title { font-size: 13px; font-weight: 600; margin-bottom: 4px; }
+.feature-desc { font-size: 11px; color: #666; }
+
+/* フッター */
+.footer { text-align: center; margin-top: 60px; padding-bottom: 40px; color: #444; font-size: 12px; }
+.footer a { color: #4af; text-decoration: none; }
+</style>
+</head>
+<body>
+<canvas id="stars"></canvas>
+<div class="container">
+    <div class="header">
+        <div class="repo-title">Jailbreak Repository</div>
+        <div class="repo-name">mikiyan1978's Repo</div>
+        <div class="repo-desc">iOS脱獄Tweakのリポジトリ</div>
+    </div>
+
+    <a class="add-btn" href="sileo://source/https://mikiyan1978.github.io/sileo-repo/">
+        ✦ Sileoに追加
+    </a>
+    <div class="repo-url">https://mikiyan1978.github.io/sileo-repo/</div>
+
+    <div class="section-title">Packages</div>
+
+    <div class="package-card">
+        <div class="package-icon">
+            <img src="assets/icon.png" alt="MacDock">
+        </div>
+        <div class="package-info">
+            <div class="package-name">MacDock</div>
+            <div class="package-version">v1.0.0 · iphoneos-arm64</div>
+            <div class="package-desc">Mac風フローティングウィンドウマネージャー。あらゆるアプリをウィンドウ化して同時表示。</div>
+        </div>
+    </div>
+
+    <div class="features">
+        <div class="section-title">Features</div>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <div class="feature-icon">⧉</div>
+                <div class="feature-title">ウィンドウ化</div>
+                <div class="feature-desc">任意のアプリをフローティングウィンドウで表示</div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">⤢</div>
+                <div class="feature-title">リサイズ</div>
+                <div class="feature-desc">ピンチやハンドルで自由にサイズ変更</div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">⊞</div>
+                <div class="feature-title">マルチウィンドウ</div>
+                <div class="feature-desc">複数アプリを同時にウィンドウ表示</div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">⚙️</div>
+                <div class="feature-title">カスタマイズ</div>
+                <div class="feature-desc">透明度・スナップ・位置記憶など設定可能</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>by <a href="https://mikiyan1978.hatenadiary.jp">mikiyan1978</a></p>
+        <p style="margin-top:8px">iOS 15.0+ · Rootless Jailbreak</p>
+    </div>
+</div>
+
+<script>
+const canvas = document.getElementById('stars');
+const ctx = canvas.getContext('2d');
+let stars = [];
+
+function resize() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+}
+
+function initStars() {
+    stars = [];
+    for (let i = 0; i < 150; i++) {
+        stars.push({
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height,
+            r: Math.random() * 1.5,
+            a: Math.random(),
+            da: (Math.random() - 0.5) * 0.01
+        });
+    }
+}
+
+function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    // 背景グラデーション
+    const grad = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+    grad.addColorStop(0, '#000510');
+    grad.addColorStop(0.5, '#000820');
+    grad.addColorStop(1, '#050010');
+    ctx.fillStyle = grad;
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    stars.forEach(s => {
+        s.a += s.da;
+        if (s.a <= 0 || s.a >= 1) s.da *= -1;
+        ctx.beginPath();
+        ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(180,210,255,${s.a})`;
+        ctx.fill();
+    });
+    requestAnimationFrame(draw);
+}
+
+resize();
+initStars();
+draw();
+window.addEventListener('resize', () => { resize(); initStars(); });
+</script>
+</body>
+</html>
