@@ -16,6 +16,18 @@
         },
         {
           "viewClass": "DepictionHeaderView",
+          "title": "How to Use"
+        },
+        {
+          "viewClass": "DepictionMarkdownTextView",
+          "markdown": "**Open a window**\nTap the ⧉ button inside an app, or pick an app from the app selector panel.\n\n**Traffic Light buttons**\n- 🔴 Red — close the window (also quits the app)\n- 🟡 Yellow — shrink to 0.6x / restore\n- 🔵 Blue — release the window and go fullscreen\n\n**Header bar gestures**\n- Single tap — show/hide buttons\n- Double tap — shrink 0.6x / restore\n- Long press (0.7s) — close the window\n- Drag — move the window\n\n**Resize**\n- Pinch with two fingers, or drag the bottom-right handle\n- Minimum size: 120pt\n\n**Screen edge snapping**\nRelease within 70pt of an edge to snap automatically (top/bottom/left/right, Dynamic Island aware).\n\n**Window memory**\nEach app's position and size is remembered and restored next time.\n\n**Configure in Settings**\nSettings app → MacDock — toggle MacDock on/off, edge snapping, position memory, and drag opacity, all applied live without a respring.",
+          "useSpacing": true
+        },
+        {
+          "viewClass": "DepictionSeparatorView"
+        },
+        {
+          "viewClass": "DepictionHeaderView",
           "title": "Requirements"
         },
         {
@@ -32,7 +44,7 @@
         },
         {
           "viewClass": "DepictionMarkdownTextView",
-          "markdown": "**mikiyan1978**\n\n[Blog](http://mikiyan1978.hatenablog.com/)",
+          "markdown": "**mikiyan1978**\n\n[Blog](http://mikiyan1978.hatenablog.com/)\n[Repo](https://mikiyan1978.github.io/sileo-repo/)",
           "useSpacing": true
         }
       ]
@@ -42,7 +54,7 @@
       "views": [
         {
           "viewClass": "DepictionMarkdownTextView",
-          "markdown": "## v1.0.0\n- Initial release\n- Floating window management\n- App selector panel\n- Settings UI with space theme\n- Sileo repository support",
+          "markdown": "## v1.0.0\n- Initial release\n- Floating window management\n- App selector panel\n- Settings UI with space theme\n- Sileo repository support\n- Fixed home screen scene detection on launch\n- Removed leftover debug logging/dumps",
           "useSpacing": true
         }
       ]

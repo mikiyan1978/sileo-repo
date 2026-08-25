@@ -1,0 +1,62 @@
+{
+  "minVersion": "0.1",
+  "tintColor": "#4FC3F7",
+  "tabs": [
+    {
+      "tabname": "Details",
+      "views": [
+        {
+          "viewClass": "DepictionMarkdownTextView",
+          "markdown": "## SnowFall\n\nホーム画面に雪を降らせるTweak。\n\n### Features\n- 奥行き感のある2層の雪(遠景・近景)\n- 時々吹く風になびくリアルな降り方\n- 六角結晶とソフトエッジの2種類の雪の描写\n- 設定アプリからサイズ・量・速さ・風の強さをその場で調整(respring不要)",
+          "useSpacing": true
+        },
+        {
+          "viewClass": "DepictionSeparatorView"
+        },
+        {
+          "viewClass": "DepictionHeaderView",
+          "title": "使い方"
+        },
+        {
+          "viewClass": "DepictionMarkdownTextView",
+          "markdown": "インストール後、しばらくするとホーム画面に雪が降り始めます(respring不要)。\n\n**設定を変更する**\n設定アプリ → SnowFall\n- 雪を降らせる — オン/オフ\n- 雪の大きさ — 0.5〜2.0倍\n- 雪の量 — 0.3〜3.0倍\n- 降る速さ — 0.5〜2.5倍\n- 風の強さ — 0.0〜2.5倍(0にすると風の影響なし)\n\nスライダーを動かすとその場で反映されます。",
+          "useSpacing": true
+        },
+        {
+          "viewClass": "DepictionSeparatorView"
+        },
+        {
+          "viewClass": "DepictionHeaderView",
+          "title": "Requirements"
+        },
+        {
+          "viewClass": "DepictionMarkdownTextView",
+          "markdown": "- iOS 15.0 or later\n- Rootless jailbreak (Dopamine recommended)\n- MobileSubstrate / Substitute",
+          "useSpacing": true
+        },
+        {
+          "viewClass": "DepictionSeparatorView"
+        },
+        {
+          "viewClass": "DepictionHeaderView",
+          "title": "Developer"
+        },
+        {
+          "viewClass": "DepictionMarkdownTextView",
+          "markdown": "**mikiyan1978**\n\n[Blog](http://mikiyan1978.hatenablog.com/)\n[Repo](https://mikiyan1978.github.io/sileo-repo/)",
+          "useSpacing": true
+        }
+      ]
+    },
+    {
+      "tabname": "Changelog",
+      "views": [
+        {
+          "viewClass": "DepictionMarkdownTextView",
+          "markdown": "## v1.0\n- 初回リリース\n- 風になびく雪のアニメーション\n- 六角結晶・ソフトエッジの2種類の雪の描写\n- 設定アプリからの即時反映に対応",
+          "useSpacing": true
+        }
+      ]
+    }
+  ]
+}
