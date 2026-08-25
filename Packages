@@ -27,6 +27,7 @@ Depends: mobilesubstrate, firmware (>= 15.0)
 Architecture: iphoneos-arm64
 Version: 1.0
 Installed-Size: 380
+Icon: https://mikiyan1978.github.io/sileo-repo/assets/snowfall-icon.png
 SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.snowfall.json
 Filename: debs/com.mikiyan1978.snowfall_1.0_iphoneos-arm64.deb
 Size: 15974
