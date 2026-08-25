@@ -1,7 +1,7 @@
 {
   "minVersion": "0.4",
   "class": "DepictionTabView",
-  "headerImage": "https://mikiyan1978.github.io/sileo-repo/assets/macdock-header.png",
+  "headerImage": "https://mikiyan1978.github.io/sileo-repo/assets/macdock-header-v2.png",
   "tintColor": "#F5A623",
   "tabs": [
     {
