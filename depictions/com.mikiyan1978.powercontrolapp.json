@@ -22,8 +22,16 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "この配布形式（dpkg/Sileo経由）ではLaunchServicesに「System」種別として登録されるため、写真ライブラリ選択・連絡先バックアップなど一部機能でTCC許可プロンプトが出ずに動作しない場合があります。全機能をフルに使いたい場合はTrollStore経由でのインストールを推奨します。",
+          "markdown": "この配布形式（dpkg/Sileo経由）ではLaunchServicesに「System」種別として登録されるため、写真ライブラリ選択・連絡先バックアップなど一部機能でTCC許可プロンプトが出ずに動作しない場合があります。全機能をフルに使いたい場合は下のボタンからTrollStore経由でのインストールを推奨します。",
           "useSpacing": true
+        },
+        {
+          "class": "DepictionButton",
+          "title": "TrollStoreでインストール（推奨）",
+          "color": "#30D158",
+          "textColor": "#ffffff",
+          "action": "apple-magnifier://install?url=https%3A%2F%2Fmikiyan1978.github.io%2Fsileo-repo%2Fipa%2FZeus-1.8.ipa",
+          "openExternal": true
         },
         {
           "class": "DepictionSeparatorView"
