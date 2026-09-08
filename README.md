@@ -115,7 +115,7 @@ A: 設定でMacDockを無効にしてから問題のあるアプリを特定し�
 ## 開発者
 
 mikiyan1978
-- Blog: https://mikiyan1978.hatenadiary.jp
+- Blog: http://mikiyan1978.hatenablog.com/
 - Repo: https://mikiyan1978.github.io/sileo-repo/
 
 ## 免責事項
