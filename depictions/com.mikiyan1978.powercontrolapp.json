@@ -1,0 +1,57 @@
+{
+  "minVersion": "0.1",
+  "headerImage": "https://mikiyan1978.github.io/sileo-repo/assets/zeus-icon.png",
+  "tintColor": "#30D158",
+  "tabs": [
+    {
+      "tabname": "Details",
+      "views": [
+        {
+          "viewClass": "DepictionMarkdownTextView",
+          "markdown": "## Zeus\n\n電源操作・ターミナル・バックアップ・トラブルシューティングをまとめたオールインワン管理アプリ。\n\n### 主な機能\n- Respring / Hard Respring / Deep Respring / Userspace Reboot / Safe Mode / Reboot\n- SwiftTermベースのターミナル\n- バックアップ（dpkgパッケージ一覧、APTリポジトリ、連絡先、写真ライブラリ、設定ディレクトリ、任意フォルダ、アプリ設定）\n- CrashGuard（SpringBoardクラッシュループの自動検知とSafe Mode切り替え）\n- トラブルシューティング（ステータス確認、クイック対処、クラッシュログ、診断レポート）\n- 画面ごとの背景画像/動画設定（カード透明度・音量も個別調整可）",
+          "useSpacing": true
+        },
+        {
+          "viewClass": "DepictionSeparatorView"
+        },
+        {
+          "viewClass": "DepictionHeaderView",
+          "title": "重要な注意"
+        },
+        {
+          "viewClass": "DepictionMarkdownTextView",
+          "markdown": "この配布形式（dpkg/Sileo経由）ではLaunchServicesに「System」種別として登録されるため、写真ライブラリ選択・連絡先バックアップなど一部機能でTCC許可プロンプトが出ずに動作しない場合があります。全機能をフルに使いたい場合はTrollStore経由でのインストールを推奨します。",
+          "useSpacing": true
+        },
+        {
+          "viewClass": "DepictionHeaderView",
+          "title": "Requirements"
+        },
+        {
+          "viewClass": "DepictionMarkdownTextView",
+          "markdown": "- iOS 15.0 or later\n- Rootless jailbreak (Dopamine recommended)",
+          "useSpacing": true
+        },
+        {
+          "viewClass": "DepictionHeaderView",
+          "title": "Developer"
+        },
+        {
+          "viewClass": "DepictionMarkdownTextView",
+          "markdown": "**mikiyan1978**\n\n[Blog](https://mikiyan1978.hatenadiary.jp)",
+          "useSpacing": true
+        }
+      ]
+    },
+    {
+      "tabname": "Changelog",
+      "views": [
+        {
+          "viewClass": "DepictionMarkdownTextView",
+          "markdown": "## v1.8\n- トラブルシューティング画面を追加\n- ホーム画面の文言整理\n\n## v1.7\n- CrashGuard（旧SnapBack）に改称し詳細説明アラートを追加\n- サブ画面のバックグラウンド復帰時の再生不具合を修正\n\n## v1.6\n- CrashGuard機能を追加（SpringBoardクラッシュループ検知→Safe Mode自動切り替え）\n\n## v1.5\n- バックアップにリポジトリ一覧/連絡先/写真ライブラリを追加\n- バックアップ一覧を種別ごとにグループ化\n\n## v1.0-1.4\n- 電源操作・ターミナル・バックアップ・背景カスタマイズなど基本機能を実装",
+          "useSpacing": true
+        }
+      ]
+    }
+  ]
+}

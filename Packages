@@ -17,3 +17,20 @@ MD5sum: 323b6305946bdb889ee02e4cbb486a17
 SHA1: fa2ef7b130c60b2e9319d0fee12dd4f3d8ceb853
 SHA256: bef5512456588d1aea9837ce8f0bf0eeda3b4c034da8689aebffdf3804cbc3a3
 
+Package: com.mikiyan1978.powercontrolapp
+Name: Zeus
+Depends: firmware (>= 15.0)
+Section: Utilities
+Description: 電源操作(Respring/Reboot/Safe Mode)、ターミナル、バックアップ、CrashGuard、トラブルシューティングなどをまとめたオールインワン管理アプリ
+Author: mikiyan1978 <mikiyan1978@gmail.com>
+Maintainer: mikiyan1978 <mikiyan1978@gmail.com>
+Architecture: iphoneos-arm64
+Version: 1.8
+Installed-Size: 4896
+Icon: https://mikiyan1978.github.io/sileo-repo/assets/zeus-icon.png
+SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.powercontrolapp.json
+Filename: debs/com.mikiyan1978.powercontrolapp_1.8_iphoneos-arm64.deb
+Size: 1263224
+MD5sum: e8e44f43328c30e5e59a6993a1b39144
+SHA1: 51271659572a14d1643d03753031838b99f487b1
+SHA256: 51be78554c3240f457b0a95d69c435f846b59b8bd530b55aa611b08002f24826
