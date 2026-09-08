@@ -18,11 +18,11 @@
         },
         {
           "class": "DepictionHeaderView",
-          "title": "🗲 インストール方法（TrollStore・推奨）"
+          "title": "🗲 インストールについて"
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "**このリポジトリの「Install」ボタン（dpkg）で入れると一部機能が動きません。** 写真ライブラリ選択や連絡先バックアップなどは、TrollStoreでインストールした場合のみ正しく動作します。\n\n以下の手順でインストールしてください：\n\n1. 端末に **TrollStore** が入っていることを確認する（未インストールの場合は先にTrollStoreを導入）\n2. 下の緑のボタン「TrollStoreでインストール」をタップする\n3. 自動的にTrollStoreアプリが開くので、「Install」をタップする\n4. インストール完了後、ホーム画面にZeusのアイコンが追加される\n\n※ボタンを押しても何も起きない場合はTrollStoreが未インストールです。先にTrollStoreを導入してから、もう一度お試しください。",
+          "markdown": "dpkgでの直接インストールはLaunchServicesに「System」種別として登録されてしまい、写真ライブラリ選択や連絡先バックアップなど一部機能が正しく動作しません。\n\nそのため、このパッケージ自体はアプリ本体を含まず、**上の「Install」ボタンをタップすると、インストール完了と同時に自動的にTrollStoreが開き、正規のインストールへ引き継がれます。** TrollStore側で「Install」をタップすれば完了です（全機能が使えます）。\n\n事前に **TrollStore** を導入しておく必要があります。未導入の場合はTrollStoreを先にインストールしてから、もう一度Sileoの「Install」をタップしてください。\n\n下のボタンからも同じ手順を手動で実行できます。",
           "useSpacing": true
         },
         {
@@ -76,7 +76,7 @@
       "views": [
         {
           "class": "DepictionMarkdownView",
-          "markdown": "## v1.8\n- トラブルシューティング画面を追加\n- ホーム画面の文言整理\n\n## v1.7\n- CrashGuard（旧SnapBack）に改称し詳細説明アラートを追加\n- サブ画面のバックグラウンド復帰時の再生不具合を修正\n\n## v1.6\n- CrashGuard機能を追加（SpringBoardクラッシュループ検知→Safe Mode自動切り替え）\n\n## v1.5\n- バックアップにリポジトリ一覧/連絡先/写真ライブラリを追加\n- バックアップ一覧を種別ごとにグループ化\n\n## v1.0-1.4\n- 電源操作・ターミナル・バックアップ・背景カスタマイズなど基本機能を実装",
+          "markdown": "## v1.9\n- dpkgでの直接インストールは一部機能が動作しないため、パッケージをTrollStore自動起動型のトリガーに変更。Sileoの「Install」だけで自動的にTrollStoreへ引き継がれるように\n\n## v1.8\n- トラブルシューティング画面を追加\n- ホーム画面の文言整理\n\n## v1.7\n- CrashGuard（旧SnapBack）に改称し詳細説明アラートを追加\n- サブ画面のバックグラウンド復帰時の再生不具合を修正\n\n## v1.6\n- CrashGuard機能を追加（SpringBoardクラッシュループ検知→Safe Mode自動切り替え）\n\n## v1.5\n- バックアップにリポジトリ一覧/連絡先/写真ライブラリを追加\n- バックアップ一覧を種別ごとにグループ化\n\n## v1.0-1.4\n- 電源操作・ターミナル・バックアップ・背景カスタマイズなど基本機能を実装",
           "useSpacing": true
         }
       ]
