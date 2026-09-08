@@ -74,18 +74,30 @@ canvas { position: fixed; top: 0; left: 0; z-index: 0; }
 .package-name { font-size: 18px; font-weight: 700; margin-bottom: 4px; }
 .package-version { font-size: 11px; color: #4af; margin-bottom: 6px; font-family: monospace; }
 .package-desc { font-size: 13px; color: #888; line-height: 1.5; }
-.package-trollstore {
-    display: inline-block;
-    margin-top: 10px;
-    font-size: 11px;
-    font-weight: 600;
-    color: #30D158;
-    text-decoration: none;
-    border: 1px solid rgba(48,209,88,0.4);
-    border-radius: 20px;
-    padding: 5px 12px;
+.package-card-wrap { margin-bottom: 16px; }
+.package-card.no-margin { margin-bottom: 0; border-radius: 16px 16px 0 0; border-bottom: none; }
+.install-steps {
+    background: rgba(48,209,88,0.06);
+    border: 1px solid rgba(48,209,88,0.3);
+    border-top: 1px solid rgba(100,150,255,0.2);
+    border-radius: 0 0 16px 16px;
+    padding: 18px 20px;
 }
-.package-trollstore:hover { background: rgba(48,209,88,0.1); }
+.install-steps-title { font-size: 14px; font-weight: 700; color: #30D158; margin-bottom: 8px; }
+.install-steps-note { font-size: 12px; color: #999; line-height: 1.5; margin-bottom: 12px; }
+.install-steps-list { margin: 0 0 16px 18px; padding: 0; font-size: 13px; color: #ddd; line-height: 1.9; }
+.package-trollstore {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    background: #30D158;
+    text-decoration: none;
+    border-radius: 12px;
+    padding: 12px 16px;
+}
+.package-trollstore:hover { opacity: 0.85; }
 
 /* フィーチャー */
 .features { margin-top: 32px; }
@@ -143,16 +155,28 @@ canvas { position: fixed; top: 0; left: 0; z-index: 0; }
         </div>
     </div>
 
-    <div class="package-card">
-        <div class="package-icon">
-            <img src="assets/zeus-icon.png" alt="Zeus">
+    <div class="package-card-wrap">
+        <div class="package-card no-margin">
+            <div class="package-icon">
+                <img src="assets/zeus-icon.png" alt="Zeus">
+            </div>
+            <div class="package-info">
+                <div class="package-name">Zeus</div>
+                <div class="package-version">v1.8 · iphoneos-arm64</div>
+                <div class="package-desc">電源操作・ターミナル・バックアップ・CrashGuard・トラブルシューティングをまとめたオールインワン管理アプリ。</div>
+            </div>
         </div>
-        <div class="package-info">
-            <div class="package-name">Zeus</div>
-            <div class="package-version">v1.8 · iphoneos-arm64</div>
-            <div class="package-desc">電源操作・ターミナル・バックアップ・CrashGuard・トラブルシューティングをまとめたオールインワン管理アプリ。</div>
+        <div class="install-steps">
+            <div class="install-steps-title">🗲 TrollStoreでのインストール手順（推奨）</div>
+            <div class="install-steps-note">通常の「Install」(dpkg)だと写真ライブラリ選択や連絡先バックアップなど一部機能が動作しません。全機能を使うにはTrollStoreでのインストールが必要です。</div>
+            <ol class="install-steps-list">
+                <li>端末にTrollStoreが入っていることを確認する</li>
+                <li>下のボタンをタップする</li>
+                <li>TrollStoreが自動で開くので「Install」をタップする</li>
+                <li>ホーム画面にZeusが追加される</li>
+            </ol>
             <a class="package-trollstore" href="apple-magnifier://install?url=https%3A%2F%2Fmikiyan1978.github.io%2Fsileo-repo%2Fipa%2FZeus-1.8.ipa">
-                ⚡ TrollStoreでインストール（推奨）
+                🗲 TrollStoreでインストール
             </a>
         </div>
     </div>

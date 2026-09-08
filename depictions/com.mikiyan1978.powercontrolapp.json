@@ -10,7 +10,7 @@
       "views": [
         {
           "class": "DepictionMarkdownView",
-          "markdown": "## Zeus\n\n電源操作・ターミナル・バックアップ・トラブルシューティングをまとめたオールインワン管理アプリ。\n\n### 主な機能\n- Respring / Hard Respring / Deep Respring / Userspace Reboot / Safe Mode / Reboot\n- SwiftTermベースのターミナル\n- バックアップ（dpkgパッケージ一覧、APTリポジトリ、連絡先、写真ライブラリ、設定ディレクトリ、任意フォルダ、アプリ設定）\n- CrashGuard（SpringBoardクラッシュループの自動検知とSafe Mode切り替え）\n- トラブルシューティング（ステータス確認、クイック対処、クラッシュログ、診断レポート）\n- 画面ごとの背景画像/動画設定（カード透明度・音量も個別調整可）",
+          "markdown": "## Zeus\n\n電源操作・ターミナル・バックアップ・トラブルシューティングをまとめたオールインワン管理アプリ。",
           "useSpacing": true
         },
         {
@@ -18,20 +18,32 @@
         },
         {
           "class": "DepictionHeaderView",
-          "title": "重要な注意"
+          "title": "🗲 インストール方法（TrollStore・推奨）"
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "この配布形式（dpkg/Sileo経由）ではLaunchServicesに「System」種別として登録されるため、写真ライブラリ選択・連絡先バックアップなど一部機能でTCC許可プロンプトが出ずに動作しない場合があります。全機能をフルに使いたい場合は下のボタンからTrollStore経由でのインストールを推奨します。",
+          "markdown": "**このリポジトリの「Install」ボタン（dpkg）で入れると一部機能が動きません。** 写真ライブラリ選択や連絡先バックアップなどは、TrollStoreでインストールした場合のみ正しく動作します。\n\n以下の手順でインストールしてください：\n\n1. 端末に **TrollStore** が入っていることを確認する（未インストールの場合は先にTrollStoreを導入）\n2. 下の緑のボタン「TrollStoreでインストール」をタップする\n3. 自動的にTrollStoreアプリが開くので、「Install」をタップする\n4. インストール完了後、ホーム画面にZeusのアイコンが追加される\n\n※ボタンを押しても何も起きない場合はTrollStoreが未インストールです。先にTrollStoreを導入してから、もう一度お試しください。",
           "useSpacing": true
         },
         {
           "class": "DepictionButton",
-          "title": "TrollStoreでインストール（推奨）",
+          "title": "🗲 TrollStoreでインストール",
           "color": "#30D158",
           "textColor": "#ffffff",
           "action": "apple-magnifier://install?url=https%3A%2F%2Fmikiyan1978.github.io%2Fsileo-repo%2Fipa%2FZeus-1.8.ipa",
           "openExternal": true
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "主な機能"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "- Respring / Hard Respring / Deep Respring / Userspace Reboot / Safe Mode / Reboot\n- SwiftTermベースのターミナル\n- バックアップ（dpkgパッケージ一覧、APTリポジトリ、連絡先、写真ライブラリ、設定ディレクトリ、任意フォルダ、アプリ設定）\n- CrashGuard（SpringBoardクラッシュループの自動検知とSafe Mode切り替え）\n- トラブルシューティング（ステータス確認、クイック対処、クラッシュログ、診断レポート）\n- 画面ごとの背景画像/動画設定（カード透明度・音量も個別調整可）",
+          "useSpacing": true
         },
         {
           "class": "DepictionSeparatorView"
