@@ -26,12 +26,11 @@
           "useSpacing": true
         },
         {
-          "class": "DepictionButton",
-          "title": "🗲 TrollStoreでインストール",
-          "color": "#30D158",
-          "textColor": "#ffffff",
+          "class": "DepictionButtonView",
+          "text": "🗲 TrollStoreでインストール",
+          "tintColor": "#30D158",
           "action": "apple-magnifier://install?url=https%3A%2F%2Fmikiyan1978.github.io%2Fsileo-repo%2Fipa%2FZeus-1.8.ipa",
-          "openExternal": true
+          "openExternal": 1
         },
         {
           "class": "DepictionSeparatorView"
