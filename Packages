@@ -43,12 +43,12 @@ Description: 電源操作(Respring/Reboot/Safe Mode)、ターミナル、バッ�
 Author: mikiyan1978 <mikiyan1978@gmail.com>
 Maintainer: mikiyan1978 <mikiyan1978@gmail.com>
 Architecture: iphoneos-arm64
-Version: 3.8
+Version: 3.9
 Installed-Size: 8
 Icon: https://mikiyan1978.github.io/sileo-repo/assets/zeus-icon.png
 SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.powercontrolapp.json
-Filename: debs/com.mikiyan1978.powercontrolapp_3.8_iphoneos-arm64.deb
-Size: 1152
-MD5sum: 6fe7c3aa8690cafbcc58e61740222dbb
-SHA1: 948c2563b74ac9fb5d48c755b7a9a419df6b9212
-SHA256: 1a83681c97272d7886d4a5ffeec36a780f07b606137cbe50adc764b31642df49
+Filename: debs/com.mikiyan1978.powercontrolapp_3.9_iphoneos-arm64.deb
+Size: 1148
+MD5sum: 30eacbd2e053e5fcc8a0dfb2f92c5537
+SHA1: 95d6580ddb3b74f9a6aa2b5213d15b3afea64f31
+SHA256: e1ee81bb2c76298323a1e27fc59b07d4a3907bb9681cf488daf980bd15f44368
