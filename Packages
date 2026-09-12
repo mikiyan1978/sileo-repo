@@ -39,16 +39,16 @@ Package: com.mikiyan1978.powercontrolapp
 Name: Zeus
 Depends: firmware (>= 15.0)
 Section: Utilities
-Description: 電源操作(Respring/Reboot/Safe Mode)、ターミナル、バックアップ(Google Drive連携・自動バックアップ・パスワード暗号化対応)、Tweak管理、脱獄検知・検知チェック、CrashGuard、バッテリー管理、ストレージ分析、アプリマネージャー、ネットワーク情報、プロセスマネージャー、ファイルマネージャー、通知履歴、トラブルシューティングなどをまとめたオールインワン管理アプリ。インストール後、自動的にTrollStore経由での正規インストールに切り替わります(全機能が正しく動作するようにするため)。
+Description: 電源操作(Respring/Reboot/Safe Mode)、ターミナル、バックアップ(Google Drive連携・自動バックアップ・パスワード暗号化対応)、Tweak管理、脱獄検知・検知チェック、CrashGuard、バッテリー管理、ストレージ分析、アプリマネージャー、ネットワーク情報、プロセスマネージャー、ファイルマネージャー、通知履歴、システムログ、パッケージ管理、トラブルシューティングなどをまとめたオールインワン管理アプリ。インストール後、自動的にTrollStore経由での正規インストールに切り替わります(全機能が正しく動作するようにするため)。
 Author: mikiyan1978 <mikiyan1978@gmail.com>
 Maintainer: mikiyan1978 <mikiyan1978@gmail.com>
 Architecture: iphoneos-arm64
-Version: 3.28
+Version: 3.29
 Installed-Size: 8
 Icon: https://mikiyan1978.github.io/sileo-repo/assets/zeus-icon.png
 SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.powercontrolapp.json
-Filename: debs/com.mikiyan1978.powercontrolapp_3.28_iphoneos-arm64.deb
-Size: 1934
-MD5sum: ed6f7b8566e813c81f71b59eb3fe9870
-SHA1: 34f43b04d348144d7c7d22530b684d8e705a067e
-SHA256: 5c276de8d28f2f4eeb107186276ee49655ab33524314c27f2665a6a7f0ce1ebe
+Filename: debs/com.mikiyan1978.powercontrolapp_3.29_iphoneos-arm64.deb
+Size: 1958
+MD5sum: 21a9ed3dd578b907236d53d9c2c9ef22
+SHA1: f3db7324ad26d7e869f190c5b2a3b70907889af1
+SHA256: c3f0ac08ff278f6870e20d3bb3713a77c8353cbb3c05104aea36ab1d735c52fc
