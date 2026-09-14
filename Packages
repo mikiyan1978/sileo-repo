@@ -10,8 +10,8 @@ Architecture: iphoneos-arm
 Version: 1.0.0
 Installed-Size: 748
 Filename: debs/com.mikiyan1978.macdock_1.0.0_iphoneos-arm.deb
-Size: 77248
-SHA256: f6f14f73ed43aa0bc1634c240c9587836c685103fb9af5bfa3e8dfb31f9565ee
+Size: 77356
+SHA256: 3d23b15abd12079525d83f96e761a3a0542d81ce632b28f4c9378c19a7d66070
 
 Package: com.mikiyan1978.macdock
 Name: MacDock
