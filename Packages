@@ -37,10 +37,10 @@ Author: mikiyan1978 <mikiyan1978@gmail.com>
 Maintainer: mikiyan1978 <mikiyan1978@gmail.com>
 Architecture: iphoneos-arm
 Version: 3.37
-Installed-Size: 5972
+Installed-Size: 6020
 Filename: debs/com.mikiyan1978.powercontrolapp_3.37_iphoneos-arm.deb
-Size: 1527000
-SHA256: 0cb15bc1530b8de45c1ab4d946be1e1fd5c86febde4a5cae7757191636e4b523
+Size: 1530750
+SHA256: c15dbf2aa007d2572bbb81068db5a48faa40f8affbc55f19eaadc1573eea9a7f
 
 Package: com.mikiyan1978.snowfall
 Name: SnowFall
