@@ -39,8 +39,8 @@ Architecture: iphoneos-arm
 Version: 3.37
 Installed-Size: 5972
 Filename: debs/com.mikiyan1978.powercontrolapp_3.37_iphoneos-arm.deb
-Size: 1522910
-SHA256: a01bd68628a7e982c26ff1015c5fbc0a582cdb930d82f2550f7d21d2da42a7f7
+Size: 1527000
+SHA256: 0cb15bc1530b8de45c1ab4d946be1e1fd5c86febde4a5cae7757191636e4b523
 
 Package: com.mikiyan1978.snowfall
 Name: SnowFall
