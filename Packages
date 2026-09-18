@@ -79,8 +79,8 @@ Section: Tweaks
 Depends: mobilesubstrate (>= 0.9.5000), preferenceloader, ws.hbang.alderis
 Icon: /Library/PreferenceBundles/StatusChameleonPrefs.bundle/icon@3x.png
 Architecture: iphoneos-arm
-Version: 0.2.2
+Version: 0.2.3
 Installed-Size: 368
-Filename: debs/com.mikiyan1978.statuschameleon_0.2.2_iphoneos-arm.deb
-Size: 22348
-SHA256: 9e5ac878f0642115d91e144dfa359bb22bd81ef71ac2c97e5c1ce7c0f751e21d
+Filename: debs/com.mikiyan1978.statuschameleon_0.2.3_iphoneos-arm.deb
+Size: 22426
+SHA256: 038ab011888ddea3ad928400dbc7f858ef9d2faf4e75a4f9152eb0951b98308d
