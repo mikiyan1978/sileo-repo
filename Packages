@@ -85,3 +85,18 @@ Filename: debs/com.mikiyan1978.statuschameleon_0.2.3_iphoneos-arm.deb
 Size: 22426
 SHA256: 038ab011888ddea3ad928400dbc7f858ef9d2faf4e75a4f9152eb0951b98308d
 SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.statuschameleon.json
+
+Package: com.mikiyan1978.spotifytweak
+Name: Spotify Tweak
+Depends: mobilesubstrate
+Description: Customizes the Spotify app — artwork, lyrics, backgrounds, gestures, and more.
+Maintainer: mikiyan1978
+Author: mikiyan1978
+Section: Tweaks
+Architecture: iphoneos-arm
+Version: 1.1
+Installed-Size: 500
+Filename: debs/com.mikiyan1978.spotifytweak_1.1_iphoneos-arm.deb
+Size: 191296
+SHA256: 08b2f4ac5b20a5c74775ef7d1a84cd7252829ec3b06c9a7d5c9eee78cca96c36
+SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.spotifytweak.json

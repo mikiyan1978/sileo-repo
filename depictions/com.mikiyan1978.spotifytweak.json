@@ -1,0 +1,65 @@
+{
+    "minVersion": "0.4",
+    "class": "DepictionTabView",
+    "tintColor": "#1DB954",
+    "tabs": [
+        {
+            "class": "DepictionStackView",
+            "tabname": "Details",
+            "views": [
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "## Spotify Tweak\n\nA large collection of visual and gesture customizations for the Spotify app.",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Features"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "- Spinning album artwork (pauses in sync with real playback state)\n- Custom Now Playing banner and progress bar\n- Lyrics visibility, neon background, and phantom lyric options\n- Home/Search/Song view custom backgrounds\n- Lyric copy, artist erase, custom gestures, shake-to-shuffle\n- In-app Settings screen (accessible from Spotify's own Settings page)",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Requirements"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "- Jailbroken iOS with MobileSubstrate/ElleKit\n- The Spotify app installed",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Developer"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "**mikiyan1978**\n\n[Repo](https://mikiyan1978.github.io/sileo-repo/)",
+                    "useSpacing": true
+                }
+            ]
+        },
+        {
+            "class": "DepictionStackView",
+            "tabname": "Changelog",
+            "views": [
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "## 1.1\n- Album artwork now pauses spinning when playback is paused, and resumes smoothly (matching the real MediaRemote playback state) instead of spinning constantly\n- Rebuilt for this device's architecture/injection scheme\n\n## 1.0\n- Initial release: artwork rotation & visibility, lyrics tools, custom backgrounds, gestures, in-app settings",
+                    "useSpacing": true
+                }
+            ]
+        }
+    ]
+}
