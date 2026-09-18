@@ -1,0 +1,65 @@
+{
+    "minVersion": "0.4",
+    "class": "DepictionTabView",
+    "tintColor": "#FF3B30",
+    "tabs": [
+        {
+            "class": "DepictionStackView",
+            "tabname": "Details",
+            "views": [
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "## StatusChameleon\n\nCustomize the Home Screen status bar's clock, color, and more.",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Features"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "- Clock format presets (24h, 12h, with/without seconds, Japanese full date) plus a custom NSDateFormatter pattern\n- Status bar text/icon color, chosen with a native color picker\n- All changes apply live on the Home Screen — no respring needed\n- A Respring button in Settings for the rare case something needs it",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Note"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "This tweak only injects into SpringBoard. Since iOS 13, each app draws its own status bar in its own process, so a color/format change is live on the Home Screen but won't be visible while another app (Settings included) is in the foreground.",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Developer"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "**mikiyan1978**\n\n[Repo](https://mikiyan1978.github.io/sileo-repo/)",
+                    "useSpacing": true
+                }
+            ]
+        },
+        {
+            "class": "DepictionStackView",
+            "tabname": "Changelog",
+            "views": [
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "## 0.2.3\n- Published through mikiyan1978's Sileo repo\n\n## 0.2.2\n- Add a \"Custom…\" option to Time Format for any NSDateFormatter pattern\n\n## 0.2.1\n- Fix: Time Format row could show a stale value\n\n## 0.2.0\n- Add a Respring button to Settings\n- Note the status-bar-per-app scope limit (SpringBoard-only injection)\n\n## 0.1.5\n- Add a Japanese full date/time clock format (weekday in kanji)\n- Foreground Color reapplies immediately on change\n\n## 0.1.0\n- Add a Settings.app panel: Enabled toggle, Time Format, Foreground Color\n- Settings changes apply live via a Darwin notification, no respring\n\n## 0.0.1\n- Initial release: live status bar clock format & color customization",
+                    "useSpacing": true
+                }
+            ]
+        }
+    ]
+}
