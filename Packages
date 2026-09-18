@@ -70,3 +70,17 @@ Filename: debs/com.mikiyan1978.snowfall_1.0_iphoneos-arm64.deb
 Size: 15974
 SHA256: b5420d439cb67e344979f2cd7745ddbd3f013acb408ac2810aca72456abaefb8
 
+Package: com.mikiyan1978.statuschameleon
+Name: StatusChameleon
+Description: Customizes the status bar clock format, color, hidden items, and item text on iOS.
+Maintainer: mikiyan1978
+Author: mikiyan1978
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader, ws.hbang.alderis
+Icon: /Library/PreferenceBundles/StatusChameleonPrefs.bundle/icon@3x.png
+Architecture: iphoneos-arm
+Version: 0.2.2
+Installed-Size: 368
+Filename: debs/com.mikiyan1978.statuschameleon_0.2.2_iphoneos-arm.deb
+Size: 22348
+SHA256: 9e5ac878f0642115d91e144dfa359bb22bd81ef71ac2c97e5c1ce7c0f751e21d
