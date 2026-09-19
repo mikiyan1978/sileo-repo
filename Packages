@@ -94,9 +94,9 @@ Maintainer: mikiyan1978
 Author: mikiyan1978
 Section: Tweaks
 Architecture: iphoneos-arm
-Version: 1.1
+Version: 1.2
 Installed-Size: 500
-Filename: debs/com.mikiyan1978.spotifytweak_1.1_iphoneos-arm.deb
-Size: 191296
-SHA256: 08b2f4ac5b20a5c74775ef7d1a84cd7252829ec3b06c9a7d5c9eee78cca96c36
+Filename: debs/com.mikiyan1978.spotifytweak_1.2_iphoneos-arm.deb
+Size: 191480
+SHA256: 0d9eb793be3f8d0998a04ad5d1b0f195f1aa563dc390fc57ad6ec1aedea5d8ef
 SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.spotifytweak.json

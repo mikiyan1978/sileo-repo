@@ -56,7 +56,7 @@
             "views": [
                 {
                     "class": "DepictionMarkdownView",
-                    "markdown": "## 1.1\n- Album artwork now pauses spinning when playback is paused, and resumes smoothly (matching the real MediaRemote playback state) instead of spinning constantly\n- Rebuilt for this device's architecture/injection scheme\n\n## 1.0\n- Initial release: artwork rotation & visibility, lyrics tools, custom backgrounds, gestures, in-app settings",
+                    "markdown": "## 1.2\n- Fix: Home Background and Artwork Rotation (and other toggles) could show ON in Settings while not actually active — the switch defaulted to appearing ON for an unset key, but the feature code read the same unset key as OFF. Defaults are now registered explicitly so both sides agree\n\n## 1.1\n- Album artwork now pauses spinning when playback is paused, and resumes smoothly (matching the real MediaRemote playback state) instead of spinning constantly\n- Rebuilt for this device's architecture/injection scheme\n\n## 1.0\n- Initial release: artwork rotation & visibility, lyrics tools, custom backgrounds, gestures, in-app settings",
                     "useSpacing": true
                 }
             ]
