@@ -1,0 +1,65 @@
+{
+    "minVersion": "0.4",
+    "class": "DepictionTabView",
+    "tintColor": "#FF3B30",
+    "tabs": [
+        {
+            "class": "DepictionStackView",
+            "tabname": "Details",
+            "views": [
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "## SwitcherGrid\n\nDisplays the App Switcher (multitasking) screen as Apple's own iPad-style grid instead of the default horizontal carousel — no custom layout code, just Apple's own built-in switcher style.",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Features"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "- Forces the App Switcher into Apple's native iPad-style grid layout\n- Swipe down on any card to kill every open app at once, with a staggered cascading animation and haptic feedback\n- Opening an empty switcher (no running apps) instantly returns to the Home Screen\n- Settings.app panel with independent toggles for the grid style and the swipe-down-to-kill-all gesture\n- A Respring button in Settings to apply a grid style change",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Note"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "The App Switcher builds its layout once per Respring, so toggling the grid style requires tapping Respring in Settings for it to take effect.",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Developer"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "**mikiyan1978**\n\n[Repo](https://mikiyan1978.github.io/sileo-repo/) · [Source](https://github.com/mikiyan1978/SwitcherGrid)",
+                    "useSpacing": true
+                }
+            ]
+        },
+        {
+            "class": "DepictionStackView",
+            "tabname": "Changelog",
+            "views": [
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "## 1.0.0\n- Initial release\n- Grid App Switcher via Apple's own SBAppSwitcherSettings style switch\n- Swipe down on any card to kill all open apps, staggered with haptic feedback\n- Instant return to Home Screen when the switcher opens with no running apps\n- Settings.app panel with live toggles and a manual Respring button",
+                    "useSpacing": true
+                }
+            ]
+        }
+    ]
+}

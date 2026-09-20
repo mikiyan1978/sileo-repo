@@ -100,3 +100,19 @@ Filename: debs/com.mikiyan1978.spotifytweak_1.4_iphoneos-arm.deb
 Size: 197642
 SHA256: ebc544dc6dad71a94ea48cf19e4860ec5fddc140cab17bd674abb1334f3c345f
 SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.spotifytweak.json
+
+Package: com.mikiyan1978.switchergrid
+Name: SwitcherGrid
+Description: Displays the App Switcher (multitasking) screen as Apple's built-in iPad-style grid instead of the default horizontal carousel. Swipe down on any card to kill all open apps at once.
+Maintainer: mikiyan1978
+Author: mikiyan1978
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
+Icon: /Library/PreferenceBundles/SwitcherGridPrefs.bundle/icon@3x.png
+Architecture: iphoneos-arm
+Version: 1.0.0
+Installed-Size: 356
+Filename: debs/com.mikiyan1978.switchergrid_1.0.0_iphoneos-arm.deb
+Size: 9730
+SHA256: 209ea62bdc618b7e10889d82e037aaa02630678068ccbea30da62a776a1fa976
+SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.switchergrid.json
