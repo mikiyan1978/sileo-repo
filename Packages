@@ -111,8 +111,8 @@ Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
 Icon: /Library/PreferenceBundles/SwitcherGridPrefs.bundle/icon@3x.png
 Architecture: iphoneos-arm
 Version: 1.0.0
-Installed-Size: 356
+Installed-Size: 368
 Filename: debs/com.mikiyan1978.switchergrid_1.0.0_iphoneos-arm.deb
-Size: 9730
-SHA256: 209ea62bdc618b7e10889d82e037aaa02630678068ccbea30da62a776a1fa976
+Size: 13224
+SHA256: 4d657594f7f54e9f3f6b0cc8153c408c1a0c3eb1233fb308d1e19578a4183db3
 SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.switchergrid.json
