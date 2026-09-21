@@ -116,3 +116,20 @@ Filename: debs/com.mikiyan1978.switchergrid_1.0.0_iphoneos-arm.deb
 Size: 13224
 SHA256: 4d657594f7f54e9f3f6b0cc8153c408c1a0c3eb1233fb308d1e19578a4183db3
 SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.switchergrid.json
+
+Package: com.mikiyan1978.aprilremake
+Name: AprilRemake
+Description: Personalize Settings with images, gradients, blur, cell alpha, and looping video wallpapers — an original remake of April with video support added
+Maintainer: mikiyan1978
+Author: mikiyan1978
+Section: Tweaks
+Depends: mobilesubstrate, preferenceloader, com.mrgcgamer.libgcuniversal
+Conflicts: me.luki.april, com.midnightchips.bettersettings
+Icon: /Library/PreferenceBundles/AprilRemakePrefs.bundle/Assets/April.png
+Architecture: iphoneos-arm
+Version: 1.0
+Installed-Size: 828
+Filename: debs/com.mikiyan1978.aprilremake_1.0_iphoneos-arm.deb
+Size: 395542
+SHA256: 730adb6f06d11c6726096a414ceacdc3c3f84b6cfd4908d6915a468da636d840
+SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.aprilremake.json

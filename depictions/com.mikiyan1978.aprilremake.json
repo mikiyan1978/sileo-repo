@@ -1,0 +1,65 @@
+{
+    "minVersion": "0.4",
+    "class": "DepictionTabView",
+    "tintColor": "#FF3B30",
+    "tabs": [
+        {
+            "class": "DepictionStackView",
+            "tabname": "Details",
+            "views": [
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "## AprilRemake\n\nAn original remake of Luki120's April, with a looping video wallpaper mode added on top of April's existing image, gradient, blur and cell-alpha customization for the Settings app.",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Features"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "- **Video Wallpaper** (new): loop a video from your Photo Library as the Settings background, with an independent Mute toggle\n- Custom dark mode / light mode image\n- Custom scheduled images: morning, afternoon, sunset & midnight\n- Custom blurs: epic, dark, light, adaptive & thin material\n- Custom table cell alpha\n- Gradients with custom directions & optional animation",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Credit"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "Built on top of [April](https://github.com/Luki120/April) by Luki120 (MPL-2.0). The video wallpaper mode is an original addition not present in upstream April.",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Developer"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "**mikiyan1978**\n\n[Repo](https://mikiyan1978.github.io/sileo-repo/) · [Source](https://github.com/mikiyan1978/AprilRemake)",
+                    "useSpacing": true
+                }
+            ]
+        },
+        {
+            "class": "DepictionStackView",
+            "tabname": "Changelog",
+            "views": [
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "## 1.0\n- Initial release: original remake of April\n- New: looping video wallpaper mode for Settings, with Mute toggle\n- All of April's original features preserved (images, scheduled images, blur, cell alpha, gradients)",
+                    "useSpacing": true
+                }
+            ]
+        }
+    ]
+}
