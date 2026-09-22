@@ -9,7 +9,7 @@
             "views": [
                 {
                     "class": "DepictionMarkdownView",
-                    "markdown": "## SwitcherGrid\n\nDisplays the App Switcher (multitasking) screen as Apple's own iPad-style grid instead of the default horizontal carousel — no custom layout code, just Apple's own built-in switcher style.",
+                    "markdown": "## SwitcherGrid\n\nDisplays the App Switcher (multitasking) screen as Apple's own iPad-style grid instead of the default horizontal carousel — no custom layout code, just Apple's own built-in switcher style. Also includes Kill Guard (protect apps from kill-all) and Stay Foreground (keep protected apps genuinely running in the background).",
                     "useSpacing": true
                 },
                 {
@@ -17,11 +17,11 @@
                 },
                 {
                     "class": "DepictionHeaderView",
-                    "title": "Features"
+                    "title": "Grid Switcher"
                 },
                 {
                     "class": "DepictionMarkdownView",
-                    "markdown": "- Forces the App Switcher into Apple's native iPad-style grid layout\n- Swipe down on any card to kill every open app at once, with a staggered cascading animation and haptic feedback\n- Opening an empty switcher (no running apps) instantly returns to the Home Screen\n- Settings.app panel with independent toggles for the grid style and the swipe-down-to-kill-all gesture\n- A Respring button in Settings to apply a grid style change",
+                    "markdown": "- Forces the App Switcher into Apple's native iPad-style grid layout\n- Swipe down on any card (or use the always-visible Clear button) to kill every open app at once, including apps scrolled off-screen, all in a single simultaneous pass\n- Opening an empty switcher (no running apps) instantly returns to the Home Screen",
                     "useSpacing": true
                 },
                 {
@@ -29,11 +29,23 @@
                 },
                 {
                     "class": "DepictionHeaderView",
-                    "title": "Note"
+                    "title": "Kill Guard"
                 },
                 {
                     "class": "DepictionMarkdownView",
-                    "markdown": "The App Switcher builds its layout once per Respring, so toggling the grid style requires tapping Respring in Settings for it to take effect.",
+                    "markdown": "- Choose protected apps from Settings (native app picker)\n- Protected apps survive kill-all and the swipe-down gesture\n- A normal single-app swipe-kill always still works, even for protected apps — an intentional escape valve for when you genuinely want to kill something\n- Long-press any card in the switcher to toggle its protection on/off\n- Killing a protected audio app immediately silences it instead of leaving a few seconds of lingering audio",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Stay Foreground"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "- Keeps protected apps genuinely executing through ordinary backgrounding — not just a UI flag, the app never even receives the \"entered background\" notification\n- Survives a Respring/sbreload, not just a Home button press\n- Shares the same protected-apps list as Kill Guard — pick apps once, protect them from both killing and backgrounding\n- Does not survive severe memory pressure (Jetsam) or backboardd being killed — pair with [JetsamBoostDaemon](https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.jetsamboostd.json) for extra Jetsam resilience",
                     "useSpacing": true
                 },
                 {
@@ -52,11 +64,70 @@
         },
         {
             "class": "DepictionStackView",
+            "tabname": "日本語",
+            "views": [
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "## SwitcherGrid\n\nアプリスイッチャー（マルチタスク画面）を、Apple純正のiPad風グリッド表示に変更します。独自のレイアウトコードは使わず、Apple自身が持つスイッチャースタイルの切り替え機能をそのまま利用しています。Kill Guard（Kill保護）とStay Foreground（本物のバックグラウンド回避）も含まれます。",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "グリッドスイッチャー"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "- アプリスイッチャーをApple純正のiPad風グリッドレイアウトに強制変更\n- カードを下にスワイプ（または常時表示の「Clear」ボタン）で、画面外にスクロールしているアプリも含めて、開いている全アプリを一括かつ同時にKill\n- 何もない状態でスイッチャーを開くと、自動的にホーム画面に戻る",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Kill Guard"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "- 設定アプリのネイティブなアプリ選択画面から保護対象アプリを選べる\n- 保護対象アプリは、全Kill・下スワイプKillから保護される\n- 通常の単体上スワイプKillは、保護対象アプリであっても常に効く（本当にKillしたい時のための意図的な逃げ道）\n- スイッチャー内のカードを長押しすると、保護のON/OFFを切り替え可能\n- 保護対象の音楽アプリをKillした瞬間に即座に音を止める（数秒の余韻を防止）",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Stay Foreground"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "- 保護対象アプリを、通常のバックグラウンド化からも実質的に守る——単なる見た目のフラグではなく、アプリ自身が「バックグラウンドに回った」という通知すら受け取らない\n- Respring/sbreloadも生き延びる（ホームボタンで裏に回すだけでなく）\n- Kill Guardと同じ保護対象アプリ一覧を共有——一度選ぶだけで、Killとバックグラウンド化の両方から保護される\n- 深刻なメモリ不足（Jetsam）やbackboardd自体のKillまでは防げない——[JetsamBoostDaemon](https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.jetsamboostd.json)と併用するとJetsam耐性がさらに向上",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "開発者"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "**mikiyan1978**\n\n[リポジトリ](https://mikiyan1978.github.io/sileo-repo/) · [ソースコード](https://github.com/mikiyan1978/SwitcherGrid)",
+                    "useSpacing": true
+                }
+            ]
+        },
+        {
+            "class": "DepictionStackView",
             "tabname": "Changelog",
             "views": [
                 {
                     "class": "DepictionMarkdownView",
-                    "markdown": "## 1.0.0\n- Initial release\n- Grid App Switcher via Apple's own SBAppSwitcherSettings style switch\n- Swipe down on any card to kill all open apps, staggered with haptic feedback\n- Instant return to Home Screen when the switcher opens with no running apps\n- Settings.app panel with live toggles and a manual Respring button",
+                    "markdown": "## 1.0.0 (latest)\n- Fixed the AltList-based app picker (black screen/crash): AltList.framework wasn't being loaded by Preferences.app\n- Added Kill Guard: protect apps from kill-all, single-app swipe-kill always still works\n- Added Stay Foreground: keeps protected apps genuinely running through backgrounding and resprings\n- Fixed kill-all only killing apps currently scrolled into view when many apps are open — now a single simultaneous pass covers everything\n- Fixed the protected-apps list not staying in sync between the Settings picker and the in-switcher long-press toggle\n\n## 1.0.0 (initial)\n- Grid App Switcher via Apple's own SBAppSwitcherSettings style switch\n- Swipe down on any card to kill all open apps, staggered with haptic feedback\n- Instant return to Home Screen when the switcher opens with no running apps\n- Settings.app panel with live toggles and a manual Respring button",
                     "useSpacing": true
                 }
             ]

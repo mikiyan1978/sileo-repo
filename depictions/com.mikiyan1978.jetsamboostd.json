@@ -1,0 +1,136 @@
+{
+    "minVersion": "0.4",
+    "class": "DepictionTabView",
+    "tintColor": "#FF9500",
+    "tabs": [
+        {
+            "class": "DepictionStackView",
+            "tabname": "Details",
+            "views": [
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "## JetsamBoostDaemon\n\nA small root background daemon that raises the Jetsam (memory-pressure kill) priority of [SwitcherGrid](https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.switchergrid.json)'s protected apps, so they're less likely to be reaped when the system needs to free memory.",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Why this is a separate package"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "iOS's `memorystatus_control` priority-set call requires root privilege. SpringBoard itself runs as the `mobile` user, so a tweak injected into SpringBoard can never make this call successfully no matter how it's written. This daemon runs the same call from a properly privileged, trust-registered root process instead, confirmed working against both real App Store apps and custom test apps.",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "What it actually protects against"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "Raises protected apps to the same priority band as the current foreground app, so ordinary multitasking memory pressure picks off other background apps first. It does not make an app unkillable — a process that deliberately consumes an extreme amount of memory itself can still be reaped regardless of priority, which is correct, expected system behavior.",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Requires"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "[SwitcherGrid](https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.switchergrid.json) — reads the same protected-apps list Kill Guard/Stay Foreground use, no separate configuration needed.",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Developer"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "**mikiyan1978**\n\n[Repo](https://mikiyan1978.github.io/sileo-repo/)",
+                    "useSpacing": true
+                }
+            ]
+        },
+        {
+            "class": "DepictionStackView",
+            "tabname": "日本語",
+            "views": [
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "## JetsamBoostDaemon\n\n[SwitcherGrid](https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.switchergrid.json)の保護対象アプリのJetsam（メモリ不足時のKill）優先度を引き上げる、root権限で動く小さな常駐デーモンです。メモリ逼迫時に真っ先にKillされにくくなります。",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "なぜ別パッケージなのか"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "iOSの`memorystatus_control`（優先度設定）はroot権限を必要とします。SpringBoard自体は`mobile`ユーザーで動いているため、SpringBoardに注入されたTweakからはこの呼び出しをどう書いても成功しません。このデーモンは、正しくroot権限を持ち信頼チェーンに登録されたプロセスとして、同じ呼び出しを実行します。実機で実際のApp Storeアプリ・自作テストアプリの両方で成功を確認済みです。",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "実際に何を防げるか"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "保護対象アプリを、現在フォアグラウンドにあるアプリと同じ優先度帯まで引き上げます。これにより、通常のマルチタスクによるメモリ圧では、他のバックグラウンドアプリが先にKillされるようになります。ただし「絶対にKillされない」わけではありません——アプリ自身が極端に大量のメモリを消費すれば、優先度に関係なくKillされ得ます。これはシステムとして正しい、想定通りの挙動です。",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "必要な依存"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "[SwitcherGrid](https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.switchergrid.json) — Kill Guard/Stay Foregroundと同じ保護対象アプリ一覧を読み込むため、別途の設定は不要です。",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "開発者"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "**mikiyan1978**\n\n[リポジトリ](https://mikiyan1978.github.io/sileo-repo/)",
+                    "useSpacing": true
+                }
+            ]
+        },
+        {
+            "class": "DepictionStackView",
+            "tabname": "Changelog",
+            "views": [
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "## 1.0\n- Initial release\n- Root LaunchDaemon polling SwitcherGrid's protected-apps list every 5 seconds\n- Boosts each running protected app to foreground-equivalent Jetsam priority",
+                    "useSpacing": true
+                }
+            ]
+        }
+    ]
+}
