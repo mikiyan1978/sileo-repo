@@ -10,8 +10,8 @@ Architecture: iphoneos-arm
 Version: 1.0.0
 Installed-Size: 748
 Filename: debs/com.mikiyan1978.macdock_1.0.0_iphoneos-arm.deb
-Size: 77364
-SHA256: 7b2cc04f139b6d3443b01d1c974fa30fff23fb244a0fc3c9f748d8bec86ac458
+Size: 77324
+SHA256: 82a01aed5e12e43981ceeb7b488bda6ca876c40a715dd0fb3cef06f6f19e034b
 
 Package: com.mikiyan1978.macdock
 Name: MacDock
@@ -53,8 +53,8 @@ Architecture: iphoneos-arm
 Version: 1.0
 Installed-Size: 380
 Filename: debs/com.mikiyan1978.snowfall_1.0_iphoneos-arm.deb
-Size: 16666
-SHA256: 63527302b8d3e335706500e5cf2c69846cdb162f48708eeb3bcff7c198aa784c
+Size: 16434
+SHA256: 9172cafbe8db3aa1444d5b42ba9b19d566b554c21b9cbb115f80b8b8754e7dc9
 
 Package: com.mikiyan1978.snowfall
 Name: SnowFall
@@ -82,8 +82,8 @@ Architecture: iphoneos-arm
 Version: 0.2.3
 Installed-Size: 368
 Filename: debs/com.mikiyan1978.statuschameleon_0.2.3_iphoneos-arm.deb
-Size: 22426
-SHA256: 038ab011888ddea3ad928400dbc7f858ef9d2faf4e75a4f9152eb0951b98308d
+Size: 22488
+SHA256: 2c0a99f1301eda96f9c5ae9b0850dca9904640cd4d77a8b834adb24f38cdb819
 SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.statuschameleon.json
 
 Package: com.mikiyan1978.spotifytweak
@@ -95,10 +95,10 @@ Author: mikiyan1978
 Section: Tweaks
 Architecture: iphoneos-arm
 Version: 1.4
-Installed-Size: 500
+Installed-Size: 520
 Filename: debs/com.mikiyan1978.spotifytweak_1.4_iphoneos-arm.deb
-Size: 197642
-SHA256: ebc544dc6dad71a94ea48cf19e4860ec5fddc140cab17bd674abb1334f3c345f
+Size: 199348
+SHA256: eb9763dadf801f12fafb4c195ca3ea21a87070349020b756007211a343befb0c
 SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.spotifytweak.json
 
 Package: com.mikiyan1978.switchergrid
@@ -111,10 +111,10 @@ Depends: mobilesubstrate (>= 0.9.5000), preferenceloader, com.opa334.altlist
 Icon: /Library/PreferenceBundles/SwitcherGridPrefs.bundle/icon@3x.png
 Architecture: iphoneos-arm
 Version: 1.0.0
-Installed-Size: 368
+Installed-Size: 400
 Filename: debs/com.mikiyan1978.switchergrid_1.0.0_iphoneos-arm.deb
-Size: 20616
-SHA256: ea4dc29519afb2e6ad9e04177ee19d8a35b85c9bb710db2ade52e505af37b5ee
+Size: 22932
+SHA256: d3d6f0dd45cf587d65ba304c237d3f76cfc36b2f26a06f261e3c50af46c9217b
 SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.switchergrid.json
 
 Package: com.mikiyan1978.jetsamboostd
@@ -126,9 +126,10 @@ Section: Tweaks
 Depends: firmware (>= 16.2)
 Architecture: iphoneos-arm
 Version: 1.0
+Installed-Size: 136
 Filename: debs/com.mikiyan1978.jetsamboostd_1.0_iphoneos-arm.deb
-Size: 5350
-SHA256: 793f3adf6a55edde3ced8dbb28fef1d1cc326895b006cf2c362457b251196777
+Size: 5364
+SHA256: 371d25e3168d12a592ca5341f209304275149f72096aee07c9e941c30d644f2a
 SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.jetsamboostd.json
 
 Package: com.mikiyan1978.aprilremake
@@ -142,10 +143,10 @@ Conflicts: me.luki.april, com.midnightchips.bettersettings
 Icon: /Library/PreferenceBundles/AprilRemakePrefs.bundle/Assets/April.png
 Architecture: iphoneos-arm
 Version: 1.0
-Installed-Size: 828
+Installed-Size: 856
 Filename: debs/com.mikiyan1978.aprilremake_1.0_iphoneos-arm.deb
-Size: 395542
-SHA256: 730adb6f06d11c6726096a414ceacdc3c3f84b6cfd4908d6915a468da636d840
+Size: 395538
+SHA256: 84a863a508e869867e8a655ef2c7d8bb0dfa0ad0b2082b10291553808465b8ac
 SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.aprilremake.json
 
 Package: com.mikiyan1978.batterypulse
@@ -158,7 +159,8 @@ Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
 Icon: /Library/PreferenceBundles/BatteryPulsePrefs.bundle/icon@3x.png
 Architecture: iphoneos-arm
 Version: 1.0.0
+Installed-Size: 368
 Filename: debs/com.mikiyan1978.batterypulse_1.0.0_iphoneos-arm.deb
-Size: 17068
-SHA256: 94f2b6b992814beb3d77df3717866fa48d4b2c06d4c5e06b2a19c04af252f893
+Size: 17162
+SHA256: f128e8ff134a1489b27fddb8f8b3252c906eb6be04a7fcabe3feaa6d4b0bc6d1
 SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.batterypulse.json
