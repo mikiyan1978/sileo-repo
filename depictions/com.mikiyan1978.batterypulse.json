@@ -1,0 +1,88 @@
+{
+    "minVersion": "0.4",
+    "class": "DepictionTabView",
+    "tintColor": "#34C759",
+    "tabs": [
+        {
+            "class": "DepictionStackView",
+            "tabname": "Details",
+            "views": [
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "## BatteryPulse\n\nShows an on-screen banner for battery events - percentage step milestones, low-battery thresholds, full charge, and plug in/out. Everything is configurable from Settings, and changes apply live without a respring.",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Features"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "- Percentage step notifications (any percent width you choose) while charging or discharging\n- Low-battery notifications at 20%, 10%, and 5%, each toggled independently\n- Full charge (100%) notification\n- Plug in / unplug notification\n- No polling - driven entirely by IOKit power-source change events, so it costs nothing when the battery state isn't changing\n- Self-contained on-screen banner, drawn directly by the tweak - no Notification Center / BulletinBoard dependency\n- A \"Send Test Notification\" button in Settings to confirm banners are working",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Developer"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "**mikiyan1978**\n\n[Repo](https://mikiyan1978.github.io/sileo-repo/)",
+                    "useSpacing": true
+                }
+            ]
+        },
+        {
+            "class": "DepictionStackView",
+            "tabname": "日本語",
+            "views": [
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "## BatteryPulse\n\nバッテリーの状態変化を画面上のバナーでお知らせします。残量の刻み通知、低残量しきい値、満充電、充電の接続/切断に対応。すべて設定アプリから調整でき、変更はrespring不要でその場に反映されます。",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "機能"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "- 指定した幅（数値入力で自由に設定可）で残量が変化するたびに通知（充電中・放電中どちらでも）\n- 低残量通知：20%・10%・5%をそれぞれ個別にオン/オフ\n- 満充電（100%）通知\n- 充電の接続/切断通知\n- ポーリングなし：IOKitの電源状態変化イベント駆動のため、状態が変わらない間は一切コストがかかりません\n- バナーはTweak自身が描画する自己完結型：通知センター/BulletinBoardに依存しません\n- 設定アプリの「テスト通知を送信」ボタンでバナーが機能しているか確認できます",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "開発者"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "**mikiyan1978**\n\n[Repo](https://mikiyan1978.github.io/sileo-repo/)",
+                    "useSpacing": true
+                }
+            ]
+        },
+        {
+            "class": "DepictionStackView",
+            "tabname": "Changelog",
+            "views": [
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "## 1.0.0\n- Initial release: step/low-battery/full-charge/plug notifications\n- Settings panel with live-apply toggles and a test notification button\n- IOKit power-source event driven, no polling\n- Self-contained on-screen banner (switched away from libbulletin, which crashed SpringBoard's Notification Center list)\n- Step width is a free-form numeric field instead of a coarse slider",
+                    "useSpacing": true
+                }
+            ]
+        }
+    ]
+}

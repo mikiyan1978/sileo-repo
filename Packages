@@ -147,3 +147,18 @@ Filename: debs/com.mikiyan1978.aprilremake_1.0_iphoneos-arm.deb
 Size: 395542
 SHA256: 730adb6f06d11c6726096a414ceacdc3c3f84b6cfd4908d6915a468da636d840
 SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.aprilremake.json
+
+Package: com.mikiyan1978.batterypulse
+Name: BatteryPulse
+Description: Shows an on-screen banner for battery events - percentage step milestones, low-battery thresholds (20/10/5%), full charge, and plug in/out - all configurable from Settings. Self-contained, no Notification Center dependency.
+Maintainer: mikiyan1978
+Author: mikiyan1978
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
+Icon: /Library/PreferenceBundles/BatteryPulsePrefs.bundle/icon@3x.png
+Architecture: iphoneos-arm
+Version: 1.0.0
+Filename: debs/com.mikiyan1978.batterypulse_1.0.0_iphoneos-arm.deb
+Size: 16712
+SHA256: e018492c4a89c0ff111723ac367427faa07af621ebf7296fca33c6079c582b31
+SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.batterypulse.json
