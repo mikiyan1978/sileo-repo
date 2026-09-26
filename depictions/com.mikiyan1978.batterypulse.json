@@ -79,7 +79,7 @@
             "views": [
                 {
                     "class": "DepictionMarkdownView",
-                    "markdown": "## 1.0.0\n- Initial release: step/low-battery/full-charge/plug notifications\n- Settings panel with live-apply toggles and a test notification button\n- IOKit power-source event driven, no polling\n- Self-contained on-screen banner (switched away from libbulletin, which crashed SpringBoard's Notification Center list)\n- Step width is a free-form numeric field instead of a coarse slider",
+                    "markdown": "## 1.0.0\n- Initial release: step/low-battery/full-charge/plug notifications\n- Settings panel with live-apply toggles and a test notification button\n- IOKit power-source event driven, no polling\n- Self-contained on-screen banner (switched away from libbulletin, which crashed SpringBoard's Notification Center list)\n- Step width is a free-form numeric field instead of a coarse slider\n- Selectable notification sound, with instant preview in Settings\n- Banner now clears the lock screen (was hidden behind it) and queues multiple simultaneous events instead of one overwriting another before being seen",
                     "useSpacing": true
                 }
             ]
