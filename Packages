@@ -164,3 +164,33 @@ Filename: debs/com.mikiyan1978.batterypulse_1.0.0_iphoneos-arm.deb
 Size: 17162
 SHA256: f128e8ff134a1489b27fddb8f8b3252c906eb6be04a7fcabe3feaa6d4b0bc6d1
 SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.batterypulse.json
+
+Package: com.mikiyan1978.peekaboo
+Name: Peekaboo
+Description: Swipe up on a home screen icon to expand shortcut slots around it. Configurable slot count, expand animation, and per-slot notification badges.
+Maintainer: mikiyan1978
+Author: mikiyan1978
+Section: Tweaks
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm
+Version: 1.0
+Installed-Size: 448
+Filename: debs/com.mikiyan1978.peekaboo_1.0_iphoneos-arm.deb
+Size: 42264
+SHA256: c123b19e532098eae8140ccbaa659dafcdf5a55a5f0d632275a1c5e784e366d4
+SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.peekaboo.json
+
+Package: com.mikiyan1978.peekaboo
+Name: Peekaboo
+Description: Swipe up on a home screen icon to expand shortcut slots around it. Configurable slot count, expand animation, and per-slot notification badges.
+Maintainer: mikiyan1978
+Author: mikiyan1978
+Section: Tweaks
+Depends: mobilesubstrate, preferenceloader
+Architecture: iphoneos-arm64
+Version: 1.0
+Installed-Size: 448
+Filename: debs/com.mikiyan1978.peekaboo_1.0_iphoneos-arm64.deb
+Size: 42182
+SHA256: 64a4f7ac9aca2b8d1ce328fdcea70d4c276e545bb61d7926daf16de9538e9f9d
+SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.peekaboo.json
