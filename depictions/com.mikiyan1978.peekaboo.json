@@ -1,0 +1,65 @@
+{
+  "minVersion": "0.4",
+  "class": "DepictionTabView",
+  "tintColor": "#FFD54F",
+  "tabs": [
+    {
+      "class": "DepictionStackView",
+      "tabname": "Details",
+      "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "## Peekaboo\n\nホーム画面のアイコンを上スワイプすると、周囲にショートカットスロットを展開する即席ランチャー。\n\n### Features\n- スワイプ元のアイコンの位置を感知し、画面にはみ出さない範囲で最大展開(四隅=90°、上下左右端=180°、中央=360°)\n- スロット数は1〜6個から選択可能\n- 展開アニメーションを6種類から選択(スプリング/フェード/スライド/回転/順番に大きく弾む/弧を描く)\n- ホーム画面アイコンの並べ替えと同じ操作感でスロットをドラッグして入れ替え\n- 割り当てたアプリ自身の通知バッジ数をスロット上に表示",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "使い方"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "**スロットを展開する**\nホーム画面のアイコンを上にスワイプ。\n\n**アプリを割り当てる**\n空(+)のスロットをタップして、一覧からアプリを選択。\n\n**アプリを起動する**\n割り当て済みのスロットをタップ。\n\n**並べ替え/削除する**\nスロットを長押しするとジグルモードに入り、割り当て済みのスロット全部が揺れて✗マークが出る。ドラッグして別のスロットと入れ替え、✗をタップして削除。✗以外の場所をタップするとジグルモードを終了。\n\n**設定を変更する**\n設定アプリ → Peekaboo — スロット数(1〜6)、展開アニメーション(6種類)を変更可能。respring不要でその場から反映。",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Requirements"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "- iOS 15.0 or later\n- Rootful / Rootless 両対応(ビルド時の設定による)\n- MobileSubstrate / ElleKit\n- PreferenceLoader",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Developer"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "**mikiyan1978**\n\n[Blog](http://mikiyan1978.hatenablog.com/)\n[Repo](https://mikiyan1978.github.io/sileo-repo/)",
+          "useSpacing": true
+        }
+      ]
+    },
+    {
+      "class": "DepictionStackView",
+      "tabname": "Changelog",
+      "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "## v1.0\n- 初回リリース: アイコン上スワイプでのショートカットスロット展開\n- 展開角度をアイコンの位置に応じて90°/180°/360°で自動判定するロジックに変更\n- スロット数(1〜6)・展開アニメーション(6種類)を設定アプリから変更可能に\n- スロットの通知バッジ表示を追加(割り当てたアプリ自身の未読数を反映)\n- スロットの並べ替えを、ホーム画面アイコンの並べ替えと同じ操作感で実装\n  - 長押し1つで「押す→ジグル開始→ドラッグ→離して確定」まで一貫処理する方式に変更し、誤ってアプリが起動してしまう事故を解消\n  - 編集モード(揺れる/✗表示)を全スロット共有の状態として一元管理する設計に変更し、入れ替え先スロットの表示が同期しない不具合を修正\n- 「非表示にしたアプリのアイコンをホーム画面から消して隙間を詰める」機能は、SpringBoardの非公開APIの呼び出しで実機クラッシュを2度引き起こしたため見送り、非表示機能自体を撤去(バッジ表示機能は維持)",
+          "useSpacing": true
+        }
+      ]
+    }
+  ]
+}
