@@ -127,7 +127,7 @@
             "views": [
                 {
                     "class": "DepictionMarkdownView",
-                    "markdown": "## 1.0\n- Initial release\n- Root LaunchDaemon polling AppGuardian's protected-apps list every 5 seconds\n- Boosts each running protected app to foreground-equivalent Jetsam priority",
+                    "markdown": "## 1.1\n- Now respects AppGuardian's Master Switch -- turning AppGuardian off from Settings also stops this daemon from boosting priority, instead of ignoring it\n\n## 1.0\n- Initial release\n- Root LaunchDaemon polling AppGuardian's protected-apps list every 5 seconds\n- Boosts each running protected app to foreground-equivalent Jetsam priority",
                     "useSpacing": true
                 }
             ]
