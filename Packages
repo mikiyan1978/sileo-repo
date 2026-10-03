@@ -101,25 +101,25 @@ Size: 199348
 SHA256: eb9763dadf801f12fafb4c195ca3ea21a87070349020b756007211a343befb0c
 SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.spotifytweak.json
 
-Package: com.mikiyan1978.switchergrid
-Name: SwitcherGrid
-Description: iPad-style grid App Switcher with swipe-down kill-all (Apple's own switcher style, no custom layout code). Includes Kill Guard (protect chosen apps from kill-all, single-app swipe-kill always still works) and Stay Foreground (keeps protected apps genuinely running through backgrounding and resprings, not just a UI flag). Pair with JetsamBoostDaemon for jetsam priority protection under memory pressure.
+Package: com.mikiyan1978.appguardian
+Name: AppGuardian
+Description: Full app-lifecycle manager: an iPad-style grid App Switcher with swipe-down kill-all, Kill Guard (protect chosen apps from kill-all, single-app swipe-kill always still works), Stay Foreground (keeps protected apps genuinely running through backgrounding and resprings), and Fast Freeze (force-kill background-capable apps after a grace period, with a hardcoded safety exclusion list for system apps). Includes a Diagnostics screen, profile export/import, a master switch, and a Restart Services option that refreshes internal state without a respring. Pair with JetsamBoostDaemon for jetsam priority protection under memory pressure.
 Maintainer: mikiyan1978
 Author: mikiyan1978
 Section: Tweaks
 Depends: mobilesubstrate (>= 0.9.5000), preferenceloader, com.opa334.altlist
-Icon: /Library/PreferenceBundles/SwitcherGridPrefs.bundle/icon@3x.png
+Icon: /Library/PreferenceBundles/AppGuardianPrefs.bundle/icon@3x.png
 Architecture: iphoneos-arm
-Version: 1.0.0
-Installed-Size: 400
-Filename: debs/com.mikiyan1978.switchergrid_1.0.0_iphoneos-arm.deb
-Size: 22932
-SHA256: d3d6f0dd45cf587d65ba304c237d3f76cfc36b2f26a06f261e3c50af46c9217b
-SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.switchergrid.json
+Version: 2.0.0
+Installed-Size: 524
+Filename: debs/com.mikiyan1978.appguardian_2.0.0_iphoneos-arm.deb
+Size: 54150
+SHA256: f098a7fd4d7e02a80742506b0aeb2d2331a319b6cab8b143798cb5b09407be04
+SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.appguardian.json
 
 Package: com.mikiyan1978.jetsamboostd
 Name: JetsamBoostDaemon
-Description: Root LaunchDaemon that boosts jetsam priority for SwitcherGrid's protected apps. memorystatus_control's priority-set command requires root UID, which SpringBoard's own injected code (running as mobile) does not have -- this daemon runs the same call from a properly privileged, trust-registered root process instead.
+Description: Root LaunchDaemon that boosts jetsam priority for AppGuardian's protected apps. memorystatus_control's priority-set command requires root UID, which SpringBoard's own injected code (running as mobile) does not have -- this daemon runs the same call from a properly privileged, trust-registered root process instead.
 Maintainer: mikiyan1978
 Author: mikiyan1978
 Section: Tweaks

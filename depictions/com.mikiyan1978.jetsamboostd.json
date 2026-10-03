@@ -9,7 +9,7 @@
             "views": [
                 {
                     "class": "DepictionMarkdownView",
-                    "markdown": "## JetsamBoostDaemon\n\nA small root background daemon that raises the Jetsam (memory-pressure kill) priority of [SwitcherGrid](https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.switchergrid.json)'s protected apps, so they're less likely to be reaped when the system needs to free memory.",
+                    "markdown": "## JetsamBoostDaemon\n\nA small root background daemon that raises the Jetsam (memory-pressure kill) priority of [AppGuardian](https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.appguardian.json)'s protected apps, so they're less likely to be reaped when the system needs to free memory.",
                     "useSpacing": true
                 },
                 {
@@ -45,7 +45,7 @@
                 },
                 {
                     "class": "DepictionMarkdownView",
-                    "markdown": "[SwitcherGrid](https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.switchergrid.json) — reads the same protected-apps list Kill Guard/Stay Foreground use, no separate configuration needed.",
+                    "markdown": "[AppGuardian](https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.appguardian.json) — reads the same protected-apps list Kill Guard/Stay Foreground use, no separate configuration needed.",
                     "useSpacing": true
                 },
                 {
@@ -68,7 +68,7 @@
             "views": [
                 {
                     "class": "DepictionMarkdownView",
-                    "markdown": "## JetsamBoostDaemon\n\n[SwitcherGrid](https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.switchergrid.json)の保護対象アプリのJetsam（メモリ不足時のKill）優先度を引き上げる、root権限で動く小さな常駐デーモンです。メモリ逼迫時に真っ先にKillされにくくなります。",
+                    "markdown": "## JetsamBoostDaemon\n\n[AppGuardian](https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.appguardian.json)の保護対象アプリのJetsam（メモリ不足時のKill）優先度を引き上げる、root権限で動く小さな常駐デーモンです。メモリ逼迫時に真っ先にKillされにくくなります。",
                     "useSpacing": true
                 },
                 {
@@ -104,7 +104,7 @@
                 },
                 {
                     "class": "DepictionMarkdownView",
-                    "markdown": "[SwitcherGrid](https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.switchergrid.json) — Kill Guard/Stay Foregroundと同じ保護対象アプリ一覧を読み込むため、別途の設定は不要です。",
+                    "markdown": "[AppGuardian](https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.appguardian.json) — Kill Guard/Stay Foregroundと同じ保護対象アプリ一覧を読み込むため、別途の設定は不要です。",
                     "useSpacing": true
                 },
                 {
@@ -127,7 +127,7 @@
             "views": [
                 {
                     "class": "DepictionMarkdownView",
-                    "markdown": "## 1.0\n- Initial release\n- Root LaunchDaemon polling SwitcherGrid's protected-apps list every 5 seconds\n- Boosts each running protected app to foreground-equivalent Jetsam priority",
+                    "markdown": "## 1.0\n- Initial release\n- Root LaunchDaemon polling AppGuardian's protected-apps list every 5 seconds\n- Boosts each running protected app to foreground-equivalent Jetsam priority",
                     "useSpacing": true
                 }
             ]

@@ -1,0 +1,184 @@
+{
+    "minVersion": "0.4",
+    "class": "DepictionTabView",
+    "tintColor": "#FF3B30",
+    "tabs": [
+        {
+            "class": "DepictionStackView",
+            "tabname": "Details",
+            "views": [
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "## AppGuardian\n\nA full app-lifecycle manager: an iPad-style grid App Switcher with swipe-down kill-all, plus protection and auto-kill tools for the apps you actually care about. Formerly known as SwitcherGrid — renamed once Fast Freeze, Advanced Exceptions, Diagnostics, and Restart Services made it more than just a grid switcher.",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Grid Switcher"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "- Forces the App Switcher into Apple's native iPad-style grid layout\n- Swipe down on any card (or use the always-visible Clear button) to kill every open app at once, including apps scrolled off-screen, all in a single simultaneous pass\n- Opening an empty switcher (no running apps) instantly returns to the Home Screen",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Kill Guard"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "- Choose protected apps from Settings (native app picker)\n- Protected apps survive kill-all and the swipe-down gesture\n- A normal single-app swipe-kill always still works, even for protected apps — an intentional escape valve for when you genuinely want to kill something\n- Long-press any card in the switcher, or use a Home Screen icon's 3D Touch menu, to toggle protection on/off\n- Killing a protected audio app immediately silences it instead of leaving a few seconds of lingering audio",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Stay Foreground"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "- Keeps protected apps genuinely executing through ordinary backgrounding — not just a UI flag, the app never even receives the \"entered background\" notification\n- Survives a Respring/sbreload, not just a Home button press\n- Shares the same protected-apps list as Kill Guard — pick apps once, protect them from both killing and backgrounding\n- Does not survive severe memory pressure (Jetsam) or backboardd being killed — pair with [JetsamBoostDaemon](https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.jetsamboostd.json) for extra Jetsam resilience",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Fast Freeze"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "- Enable per-app from a Home Screen icon's 3D Touch menu — force-kills that app a configurable grace period (0–30s) after it leaves the foreground\n- Apps with a legitimate background-execution entitlement (audio, location, etc.) require an extra confirmation alert before you can enable it, so you don't accidentally silence your music\n- Can be combined with Kill Guard protection on the same app (Term + Fast Freeze combo) — protection only covers manual switcher kills, Fast Freeze still force-kills on backgrounding\n- Advanced Exceptions: a hardcoded safety list (Phone, Messages, FaceTime, Settings, Clock, SpringBoard) can never be Fast-Freeze-targeted, even via Profile Import — not configurable, by design",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Settings"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "- **Master Switch**: turns every feature on or off at once\n- **Diagnostics**: read-only view of current feature status, recent protection/kill events, and the Fast Freeze exclusion list\n- **Restart Services**: soft-resets internal timers and app caches without a full Respring\n- **Profile Export/Import**: back up or transfer your whole configuration as a clipboard string\n- Fully localized: English, 日本語, Deutsch, Français, Español, 简体中文, 한국어",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Developer"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "**mikiyan1978**\n\n[Repo](https://mikiyan1978.github.io/sileo-repo/) · [Source](https://github.com/mikiyan1978/iOSTweaks/tree/main/AppGuardian)",
+                    "useSpacing": true
+                }
+            ]
+        },
+        {
+            "class": "DepictionStackView",
+            "tabname": "日本語",
+            "views": [
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "## AppGuardian\n\niPad風グリッド表示のアプリスイッチャーに加え、大切なアプリを守る・強制終了するための総合アプリ管理Tweakです。以前の名前は「SwitcherGrid」でしたが、Fast Freeze・Advanced Exceptions・Diagnostics・Restart Servicesなどグリッド表示だけに留まらない機能が増えたため改名しました。",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "グリッドスイッチャー"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "- アプリスイッチャーをApple純正のiPad風グリッドレイアウトに強制変更\n- カードを下にスワイプ（または常時表示の「Clear」ボタン）で、画面外にスクロールしているアプリも含めて、開いている全アプリを一括かつ同時にKill\n- 何もない状態でスイッチャーを開くと、自動的にホーム画面に戻る",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Kill Guard"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "- 設定アプリのネイティブなアプリ選択画面から保護対象アプリを選べる\n- 保護対象アプリは、全Kill・下スワイプKillから保護される\n- 通常の単体上スワイプKillは、保護対象アプリであっても常に効く（本当にKillしたい時のための意図的な逃げ道）\n- スイッチャー内のカードを長押し、またはホーム画面アイコンの3D Touchメニューから、保護のON/OFFを切り替え可能\n- 保護対象の音楽アプリをKillした瞬間に即座に音を止める（数秒の余韻を防止）",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Stay Foreground"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "- 保護対象アプリを、通常のバックグラウンド化からも実質的に守る——単なる見た目のフラグではなく、アプリ自身が「バックグラウンドに回った」という通知すら受け取らない\n- Respring/sbreloadも生き延びる（ホームボタンで裏に回すだけでなく）\n- Kill Guardと同じ保護対象アプリ一覧を共有——一度選ぶだけで、Killとバックグラウンド化の両方から保護される\n- 深刻なメモリ不足（Jetsam）やbackboardd自体のKillまでは防げない——[JetsamBoostDaemon](https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.jetsamboostd.json)と併用するとJetsam耐性がさらに向上",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Fast Freeze"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "- ホーム画面アイコンの3D Touchメニューからアプリごとに有効化——バックグラウンドに回ってから設定した猶予時間（0〜30秒）後に強制終了\n- バックグラウンド実行の正当な権限（音楽再生・位置情報など）を持つアプリは、誤って音楽が止まったりしないよう有効化前に確認アラートが表示される\n- 同じアプリでKill Guardの保護と併用可能（Term + Fast Freeze併用）——保護はスイッチャーでの手動Killのみを防ぎ、Fast Freezeはバックグラウンド化時に強制終了する\n- Advanced Exceptions：電話・メッセージ・FaceTime・設定・時計・SpringBoardはプロフィールImport経由でも絶対にFast Freeze対象にならないハードコードの安全リスト（設定変更不可、意図的な仕様）",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "設定画面"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "- **マスタースイッチ**：全機能を一括ON/OFF\n- **診断（Diagnostics）**：各機能の現在の状態、直近の保護・kill イベント、Fast Freeze除外リストを確認できる読み取り専用画面\n- **サービスを再起動（Restart Services）**：完全なRespringなしで内部タイマーとアプリキャッシュをリセット\n- **プロフィールのExport/Import**：設定全体をクリップボード経由でバックアップ・転送\n- 日本語を含む7言語に対応：English, 日本語, Deutsch, Français, Español, 简体中文, 한국어",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "開発者"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "**mikiyan1978**\n\n[リポジトリ](https://mikiyan1978.github.io/sileo-repo/) · [ソースコード](https://github.com/mikiyan1978/iOSTweaks/tree/main/AppGuardian)",
+                    "useSpacing": true
+                }
+            ]
+        },
+        {
+            "class": "DepictionStackView",
+            "tabname": "Changelog",
+            "views": [
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "## 2.0.0\n- Renamed from SwitcherGrid to AppGuardian (bundle ID: com.mikiyan1978.appguardian) to match its expanded scope\n- Added Fast Freeze: force-kill background-capable apps after a configurable grace period, with a background-execution confirmation alert\n- Added Advanced Exceptions: a hardcoded safety list of system apps that can never be Fast-Freeze-targeted\n- Added the Term + Fast Freeze combo (both protections can now apply to the same app)\n- Added a Diagnostics screen (feature status, recent events, exclusion list)\n- Added Restart Services (soft-reset without a full Respring)\n- Added a Master Switch, Fast Freeze grace period slider, and profile Export/Import\n- Full localization: German, French, Spanish, Simplified Chinese, Korean (in addition to English/Japanese)\n\n## 1.0.0 (latest, as SwitcherGrid)\n- Fixed the AltList-based app picker (black screen/crash): AltList.framework wasn't being loaded by Preferences.app\n- Added Kill Guard: protect apps from kill-all, single-app swipe-kill always still works\n- Added Stay Foreground: keeps protected apps genuinely running through backgrounding and resprings\n- Fixed kill-all only killing apps currently scrolled into view when many apps are open — now a single simultaneous pass covers everything\n- Fixed the protected-apps list not staying in sync between the Settings picker and the in-switcher long-press toggle\n\n## 1.0.0 (initial, as SwitcherGrid)\n- Grid App Switcher via Apple's own SBAppSwitcherSettings style switch\n- Swipe down on any card to kill all open apps, staggered with haptic feedback\n- Instant return to Home Screen when the switcher opens with no running apps\n- Settings.app panel with live toggles and a manual Respring button",
+                    "useSpacing": true
+                }
+            ]
+        }
+    ]
+}
