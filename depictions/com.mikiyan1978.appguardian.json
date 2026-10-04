@@ -33,7 +33,7 @@
                 },
                 {
                     "class": "DepictionMarkdownView",
-                    "markdown": "- Choose protected apps from Settings (native app picker)\n- Protected apps survive kill-all and the swipe-down gesture\n- A normal single-app swipe-kill always still works, even for protected apps — an intentional escape valve for when you genuinely want to kill something\n- Long-press any card in the switcher, or use a Home Screen icon's 3D Touch menu, to toggle protection on/off\n- Killing a protected audio app immediately silences it instead of leaving a few seconds of lingering audio",
+                    "markdown": "- Choose protected apps from each app's own Home Screen icon 3D Touch menu, or long-press any card in the App Switcher\n- Protected apps survive kill-all and the swipe-down gesture\n- A normal single-app swipe-kill always still works, even for protected apps — an intentional escape valve for when you genuinely want to kill something\n- Killing a protected audio app immediately silences it instead of leaving a few seconds of lingering audio\n- A small badge on the app's Home Screen icon shows protection status at a glance",
                     "useSpacing": true
                 },
                 {
@@ -45,7 +45,7 @@
                 },
                 {
                     "class": "DepictionMarkdownView",
-                    "markdown": "- Keeps protected apps genuinely executing through ordinary backgrounding — not just a UI flag, the app never even receives the \"entered background\" notification\n- Survives a Respring/sbreload, not just a Home button press\n- Shares the same protected-apps list as Kill Guard — pick apps once, protect them from both killing and backgrounding\n- Does not survive severe memory pressure (Jetsam) or backboardd being killed — pair with [JetsamBoostDaemon](https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.jetsamboostd.json) for extra Jetsam resilience",
+                    "markdown": "- Keeps selected apps genuinely executing through ordinary backgrounding — not just a UI flag, the app never even receives the \"entered background\" notification\n- Survives a Respring/sbreload, not just a Home button press\n- Its own independent app list, chosen from each app's 3D Touch menu — pick the same apps as Kill Guard or different ones entirely\n- Does not survive severe memory pressure (Jetsam) or backboardd being killed — pair with [JetsamBoostDaemon](https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.jetsamboostd.json) for extra Jetsam resilience",
                     "useSpacing": true
                 },
                 {
@@ -69,7 +69,19 @@
                 },
                 {
                     "class": "DepictionMarkdownView",
-                    "markdown": "- **Master Switch**: turns every feature on or off at once\n- **Diagnostics**: read-only view of current feature status, recent protection/kill events, and the Fast Freeze exclusion list\n- **Restart Services**: soft-resets internal timers and app caches without a full Respring\n- **Profile Export/Import**: back up or transfer your whole configuration as a clipboard string\n- Fully localized: English, 日本語, Deutsch, Français, Español, 简体中文, 한국어",
+                    "markdown": "- **Master Switch**: turns every feature on or off at once\n- **Notification Sound**: browse and preview every real system sound file to pick AppGuardian's own notification sound\n- **3D Touch Menu Customization**: show or hide Protect/Stay Foreground/Fast Freeze from the Home Screen icon menu independently — hiding one only hides the shortcut, the feature itself keeps working\n- **Action Logging**: toggle whether protection/kill events get written to a log file at all\n- **Sweep Unprotected Apps / Clear All Selections**: one-tap bulk actions for freeing memory or resetting every app list\n- **Diagnostics**: read-only view of current feature status, recent protection/kill events, and the Fast Freeze exclusion list\n- **Restart Services**: soft-resets internal timers and app caches without a full Respring\n- **Profile Export/Import**: back up or transfer your whole configuration as a clipboard string\n- Fully localized: English, 日本語, Deutsch, Français, Español, 简体中文, 한국어",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Companion App"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "- [AppGuardian Companion](https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.appguardiancompanion.json) is a standalone app that mirrors every one of these settings without opening Settings.app — installed alongside automatically, or grab it separately from this same repo\n- Per-app protection is always chosen the same way in both: from each app's own Home Screen icon 3D Touch menu",
                     "useSpacing": true
                 },
                 {
@@ -116,7 +128,7 @@
                 },
                 {
                     "class": "DepictionMarkdownView",
-                    "markdown": "- 設定アプリのネイティブなアプリ選択画面から保護対象アプリを選べる\n- 保護対象アプリは、全Kill・下スワイプKillから保護される\n- 通常の単体上スワイプKillは、保護対象アプリであっても常に効く（本当にKillしたい時のための意図的な逃げ道）\n- スイッチャー内のカードを長押し、またはホーム画面アイコンの3D Touchメニューから、保護のON/OFFを切り替え可能\n- 保護対象の音楽アプリをKillした瞬間に即座に音を止める（数秒の余韻を防止）",
+                    "markdown": "- 各アプリのホーム画面アイコンの3D Touchメニュー、またはスイッチャー内カードの長押しから保護対象を選択\n- 保護対象アプリは、全Kill・下スワイプKillから保護される\n- 通常の単体上スワイプKillは、保護対象アプリであっても常に効く（本当にKillしたい時のための意図的な逃げ道）\n- 保護対象の音楽アプリをKillした瞬間に即座に音を止める（数秒の余韻を防止）\n- ホーム画面アイコンの小さなバッジで保護状態がひと目でわかる",
                     "useSpacing": true
                 },
                 {
@@ -128,7 +140,7 @@
                 },
                 {
                     "class": "DepictionMarkdownView",
-                    "markdown": "- 保護対象アプリを、通常のバックグラウンド化からも実質的に守る——単なる見た目のフラグではなく、アプリ自身が「バックグラウンドに回った」という通知すら受け取らない\n- Respring/sbreloadも生き延びる（ホームボタンで裏に回すだけでなく）\n- Kill Guardと同じ保護対象アプリ一覧を共有——一度選ぶだけで、Killとバックグラウンド化の両方から保護される\n- 深刻なメモリ不足（Jetsam）やbackboardd自体のKillまでは防げない——[JetsamBoostDaemon](https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.jetsamboostd.json)と併用するとJetsam耐性がさらに向上",
+                    "markdown": "- 選択したアプリを、通常のバックグラウンド化からも実質的に守る——単なる見た目のフラグではなく、アプリ自身が「バックグラウンドに回った」という通知すら受け取らない\n- Respring/sbreloadも生き延びる（ホームボタンで裏に回すだけでなく）\n- Kill Guardとは独立したアプリ一覧——各アプリの3D Touchメニューから選択し、同じアプリを両方に選んでも別々に選んでもよい\n- 深刻なメモリ不足（Jetsam）やbackboardd自体のKillまでは防げない——[JetsamBoostDaemon](https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.jetsamboostd.json)と併用するとJetsam耐性がさらに向上",
                     "useSpacing": true
                 },
                 {
@@ -152,7 +164,19 @@
                 },
                 {
                     "class": "DepictionMarkdownView",
-                    "markdown": "- **マスタースイッチ**：全機能を一括ON/OFF\n- **診断（Diagnostics）**：各機能の現在の状態、直近の保護・kill イベント、Fast Freeze除外リストを確認できる読み取り専用画面\n- **サービスを再起動（Restart Services）**：完全なRespringなしで内部タイマーとアプリキャッシュをリセット\n- **プロフィールのExport/Import**：設定全体をクリップボード経由でバックアップ・転送\n- 日本語を含む7言語に対応：English, 日本語, Deutsch, Français, Español, 简体中文, 한국어",
+                    "markdown": "- **マスタースイッチ**：全機能を一括ON/OFF\n- **通知音**：実在するシステムサウンドファイルを一覧・試聴しながらAppGuardianの通知音を選べる\n- **3D Touchメニューのカスタマイズ**：保護・バックグラウンド回避・Fast Freezeをそれぞれホーム画面アイコンメニューに表示するか個別に選択——非表示にしても機能自体は動作し続ける\n- **Action Logging**：保護・killイベントをログファイルに記録するかどうかを切り替え\n- **未保護アプリを一括終了／全選択をクリア**：メモリ解放や設定リセットをワンタップで実行\n- **診断（Diagnostics）**：各機能の現在の状態、直近の保護・kill イベント、Fast Freeze除外リストを確認できる読み取り専用画面\n- **サービスを再起動（Restart Services）**：完全なRespringなしで内部タイマーとアプリキャッシュをリセット\n- **プロフィールのExport/Import**：設定全体をクリップボード経由でバックアップ・転送\n- 日本語を含む7言語に対応：English, 日本語, Deutsch, Français, Español, 简体中文, 한국어",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "コンパニオンアプリ"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "- [AppGuardian Companion](https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.appguardiancompanion.json)は、設定アプリを開かずに同じ設定項目を全て操作できるスタンドアローンアプリ——初回インストール時に自動で同時インストールされる(このリポジトリから単体での入手も可能)\n- 保護対象アプリの選択方法は設定画面・コンパニオンアプリどちらでも同じ——各アプリのホーム画面アイコンの3D Touchメニューから選択",
                     "useSpacing": true
                 },
                 {
@@ -175,7 +199,7 @@
             "views": [
                 {
                     "class": "DepictionMarkdownView",
-                    "markdown": "## 2.0.1\n- Now recommends JetsamBoostDaemon on install, instead of requiring you to find and install it separately -- it's the one mechanism that actually helps protected apps survive severe memory pressure (Jetsam), which Kill Guard/Stay Foreground alone cannot\n\n## 2.0.0\n- Renamed from SwitcherGrid to AppGuardian (bundle ID: com.mikiyan1978.appguardian) to match its expanded scope\n- Added Fast Freeze: force-kill background-capable apps after a configurable grace period, with a background-execution confirmation alert\n- Added Advanced Exceptions: a hardcoded safety list of system apps that can never be Fast-Freeze-targeted\n- Added the Term + Fast Freeze combo (both protections can now apply to the same app)\n- Added a Diagnostics screen (feature status, recent events, exclusion list)\n- Added Restart Services (soft-reset without a full Respring)\n- Added a Master Switch, Fast Freeze grace period slider, and profile Export/Import\n- Full localization: German, French, Spanish, Simplified Chinese, Korean (in addition to English/Japanese)\n\n## 1.0.0 (latest, as SwitcherGrid)\n- Fixed the AltList-based app picker (black screen/crash): AltList.framework wasn't being loaded by Preferences.app\n- Added Kill Guard: protect apps from kill-all, single-app swipe-kill always still works\n- Added Stay Foreground: keeps protected apps genuinely running through backgrounding and resprings\n- Fixed kill-all only killing apps currently scrolled into view when many apps are open — now a single simultaneous pass covers everything\n- Fixed the protected-apps list not staying in sync between the Settings picker and the in-switcher long-press toggle\n\n## 1.0.0 (initial, as SwitcherGrid)\n- Grid App Switcher via Apple's own SBAppSwitcherSettings style switch\n- Swipe down on any card to kill all open apps, staggered with haptic feedback\n- Instant return to Home Screen when the switcher opens with no running apps\n- Settings.app panel with live toggles and a manual Respring button",
+                    "markdown": "## 2.6.0\n- Added AppGuardian Companion: a standalone app (install from this repo) mirroring every Settings pane row without opening Settings.app\n- Removed the Settings-pane app-picker screens for Kill Guard/Stay Foreground — fully redundant with the Home Screen icon's own 3D Touch menu, which already edits the same app lists; AppGuardian no longer depends on AltList\n- Reorganized Settings from 15 flat sections into 10 clearly-labeled categories\n- Fixed: Home Screen badges stayed visible, falsely showing a protected/active state, while the Master Switch was off\n\n## 2.5.0\n- Added a Notification Sound picker: browse and preview every real system sound file to pick AppGuardian's own notification sound\n\n## 2.4.0\n- Added 3D Touch Menu Customization: hide Protect/Stay Foreground/Fast Freeze from the Home Screen icon menu independently, without disabling the feature itself\n- Added Action Logging: a switch controlling whether protection/kill events get written to a log file at all\n\n## 2.3.0\n- Decoupled Stay Foreground from Kill Guard into its own independent app list and 3D Touch menu item, with its own badge and Diagnostics count\n- Existing selections migrate automatically on first launch after updating\n\n## 2.2.0\n- Added Sweep Unprotected Apps: force-quit every running app not in your protected list, in one tap\n- Added Clear All Selections: reset every app list at once\n- Fixed: Grid View and Kill All switches had silently stopped working after an internal rename\n\n## 2.1.1\n- Switched to real notification banners (sound + the target app's own icon) instead of a custom toast window\n- Fixed dock icons (Sileo/Filza/Twitter) showing Fast Freeze above Protect in the 3D Touch menu\n\n## 2.0.1\n- Now recommends JetsamBoostDaemon on install, instead of requiring you to find and install it separately -- it's the one mechanism that actually helps protected apps survive severe memory pressure (Jetsam), which Kill Guard/Stay Foreground alone cannot\n\n## 2.0.0\n- Renamed from SwitcherGrid to AppGuardian (bundle ID: com.mikiyan1978.appguardian) to match its expanded scope\n- Added Fast Freeze: force-kill background-capable apps after a configurable grace period, with a background-execution confirmation alert\n- Added Advanced Exceptions: a hardcoded safety list of system apps that can never be Fast-Freeze-targeted\n- Added the Term + Fast Freeze combo (both protections can now apply to the same app)\n- Added a Diagnostics screen (feature status, recent events, exclusion list)\n- Added Restart Services (soft-reset without a full Respring)\n- Added a Master Switch, Fast Freeze grace period slider, and profile Export/Import\n- Full localization: German, French, Spanish, Simplified Chinese, Korean (in addition to English/Japanese)\n\n## 1.0.0 (latest, as SwitcherGrid)\n- Fixed the AltList-based app picker (black screen/crash): AltList.framework wasn't being loaded by Preferences.app\n- Added Kill Guard: protect apps from kill-all, single-app swipe-kill always still works\n- Added Stay Foreground: keeps protected apps genuinely running through backgrounding and resprings\n- Fixed kill-all only killing apps currently scrolled into view when many apps are open — now a single simultaneous pass covers everything\n- Fixed the protected-apps list not staying in sync between the Settings picker and the in-switcher long-press toggle\n\n## 1.0.0 (initial, as SwitcherGrid)\n- Grid App Switcher via Apple's own SBAppSwitcherSettings style switch\n- Swipe down on any card to kill all open apps, staggered with haptic feedback\n- Instant return to Home Screen when the switcher opens with no running apps\n- Settings.app panel with live toggles and a manual Respring button",
                     "useSpacing": true
                 }
             ]

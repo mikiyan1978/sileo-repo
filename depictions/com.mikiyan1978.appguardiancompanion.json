@@ -1,0 +1,136 @@
+{
+    "minVersion": "0.4",
+    "class": "DepictionTabView",
+    "tintColor": "#FF3B30",
+    "tabs": [
+        {
+            "class": "DepictionStackView",
+            "tabname": "Details",
+            "views": [
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "## AppGuardian Companion\n\nA standalone app for [AppGuardian](https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.appguardian.json) — every row its Settings pane has, without opening Settings.app. Installed alongside AppGuardian automatically on first install, same Tweak+companion-app relationship SnowBoard/Activator use. Changes made here and in Settings are the exact same shared configuration, always in sync.",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "What it does"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "- Every switch, slider, and button AppGuardian's Settings pane has: Master Switch, Grid View, Kill All, Stay Foreground, Fast Freeze grace period, Notification Sound, 3D Touch Menu Customization, Action Logging, Sweep Unprotected Apps, Clear All Selections, Diagnostics, Profile Export/Import, Restart Services, Respring\n- A colored leading icon on every row for fast visual scanning, matching the color each feature's Home Screen badge already uses\n- Every change takes effect immediately — the same shared CFPreferences domain AppGuardian itself reads, with the same live-reload broadcast Settings uses\n- Fully localized: English, 日本語, Deutsch, Français, Español, 简体中文, 한국어",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "What it doesn't do"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "Per-app protection (Kill Guard/Stay Foreground/Fast Freeze) isn't chosen here or in Settings — both deliberately leave that to each app's own Home Screen icon 3D Touch menu, the single place that already edits those lists, instead of offering a second, redundant app-picker screen.",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Requirements"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "Requires [AppGuardian](https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.appguardian.json) — this app only ever edits AppGuardian's own configuration and does nothing on its own. Removing this companion app leaves AppGuardian itself fully working; it's a one-way dependency.",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Developer"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "**mikiyan1978**\n\n[Repo](https://mikiyan1978.github.io/sileo-repo/) · [Source](https://github.com/mikiyan1978/iOSTweaks/tree/main/AppGuardianCompanion)",
+                    "useSpacing": true
+                }
+            ]
+        },
+        {
+            "class": "DepictionStackView",
+            "tabname": "日本語",
+            "views": [
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "## AppGuardian Companion\n\n[AppGuardian](https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.appguardian.json)用のスタンドアローンアプリです。設定アプリを開かなくても、設定パネルの全項目をこのアプリから操作できます。SnowBoard/Activatorと同じTweak+コンパニオンアプリ構成で、初回インストール時にAppGuardian本体と同時にインストールされます。このアプリと設定アプリは全く同じ共有設定を読み書きするため、常に同期しています。",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "できること"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "- AppGuardianの設定アプリにある全項目に対応：マスタースイッチ、グリッド表示、全kill、バックグラウンド回避、Fast Freeze猶予時間、通知音、3D Touchメニューのカスタマイズ、Action Logging、未保護アプリを一括終了、全選択をクリア、診断、プロフィールのExport/Import、サービスを再起動、Respring\n- 各行に色付きアイコンを表示し、見やすく整理（ホーム画面バッジと同じ配色）\n- 変更は即座に反映——AppGuardian本体が読み取るのと同じ共有CFPreferencesドメイン、同じ即時反映の仕組みを使用\n- 日本語を含む7言語に対応：English, 日本語, Deutsch, Français, Español, 简体中文, 한국어",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "できないこと"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "アプリごとの保護設定（Kill Guard/Stay Foreground/Fast Freeze）は、このアプリからも設定アプリからも選択できません。これらは意図的に、各アプリのホーム画面アイコンの3D Touchメニュー——既にその一覧を編集している唯一の場所——に任せており、重複するアプリ選択画面はあえて用意していません。",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "必要環境"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "[AppGuardian](https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.appguardian.json)本体が必要です——このアプリはAppGuardianの設定を編集するだけで、単体では何もしません。このコンパニオンアプリだけを削除しても、AppGuardian本体は問題なく動作し続けます（依存は一方向のみ）。",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "開発者"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "**mikiyan1978**\n\n[リポジトリ](https://mikiyan1978.github.io/sileo-repo/) · [ソースコード](https://github.com/mikiyan1978/iOSTweaks/tree/main/AppGuardianCompanion)",
+                    "useSpacing": true
+                }
+            ]
+        },
+        {
+            "class": "DepictionStackView",
+            "tabname": "Changelog",
+            "views": [
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "## 1.1\n- Full localization: English, 日本語, Deutsch, Français, Español, 简体中文, 한국어\n- Added Settings.app-style colored leading icons to every row\n- Fixed the app-picker screen's icons rendering at native pixel size instead of a consistent 40x40pt (a @3x icon came out roughly 3x too large)\n- Fixed CFPreferences writes to AppGuardian's configuration domain being silently blocked by the app sandbox — switches/sliders now take effect\n- Fixed the Fast Freeze grace period slider being frozen at a too-narrow width, and overlapping its own label\n- Removed the Kill Guard/Stay Foreground app-picker screens (redundant with the Home Screen icon's own 3D Touch menu), matching the same change in AppGuardian's own Settings pane\n\n## 1.0 (initial)\n- First release: mirrors every row AppGuardian's Settings pane has (feature switches, Fast Freeze grace period, notification sound, app pickers, 3D Touch menu customization, Sweep/Clear All, Diagnostics, Restart Services, Respring, profile Export/Import)\n- Installed alongside AppGuardian automatically on first install",
+                    "useSpacing": true
+                }
+            ]
+        }
+    ]
+}

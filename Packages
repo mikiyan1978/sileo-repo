@@ -107,16 +107,31 @@ Description: Full app-lifecycle manager: an iPad-style grid App Switcher with sw
 Maintainer: mikiyan1978
 Author: mikiyan1978
 Section: Tweaks
-Depends: mobilesubstrate (>= 0.9.5000), preferenceloader, com.opa334.altlist
-Recommends: com.mikiyan1978.jetsamboostd
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
+Recommends: com.mikiyan1978.jetsamboostd, com.mikiyan1978.appguardiancompanion
 Icon: /Library/PreferenceBundles/AppGuardianPrefs.bundle/icon@3x.png
 Architecture: iphoneos-arm
-Version: 2.0.1
-Installed-Size: 524
-Filename: debs/com.mikiyan1978.appguardian_2.0.1_iphoneos-arm.deb
-Size: 54262
-SHA256: 81c6243afb20269ec2a6196aaa79fd545bd26ac7870df5683598e1d7a7843054
+Version: 2.6.0
+Installed-Size: 572
+Filename: debs/com.mikiyan1978.appguardian_2.6.0_iphoneos-arm.deb
+Size: 64018
+SHA256: 091cb1952acf40ad1cc06fd3d3fdc27ef3581499352ebd4f013c3a136f5ec911
 SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.appguardian.json
+
+Package: com.mikiyan1978.appguardiancompanion
+Name: AppGuardian Companion
+Description: Standalone companion app for AppGuardian -- everything the Settings pane can do (feature switches, Fast Freeze grace period, notification sound, 3D Touch menu customization, Sweep/Clear All, Diagnostics, Restart Services, Respring), without opening Settings. Per-app protection (Kill Guard/Stay Foreground/Fast Freeze) is chosen from each app's own Home Screen icon 3D Touch menu. Depends on AppGuardian; removing just this companion leaves AppGuardian fully working.
+Maintainer: mikiyan1978
+Author: mikiyan1978
+Section: Utilities
+Depends: com.mikiyan1978.appguardian
+Architecture: iphoneos-arm
+Version: 1.1
+Installed-Size: 312
+Filename: debs/com.mikiyan1978.appguardiancompanion_1.1_iphoneos-arm.deb
+Size: 42014
+SHA256: 13a83097aa36930ba944548b885a59ccc0384a88ef28d165aa1483681a1b083c
+SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.appguardiancompanion.json
 
 Package: com.mikiyan1978.jetsamboostd
 Name: JetsamBoostDaemon
