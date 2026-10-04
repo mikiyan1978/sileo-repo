@@ -210,3 +210,18 @@ Filename: debs/com.mikiyan1978.peekaboo_1.0_iphoneos-arm64.deb
 Size: 42182
 SHA256: 64a4f7ac9aca2b8d1ce328fdcea70d4c276e545bb61d7926daf16de9538e9f9d
 SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.peekaboo.json
+
+Package: com.mikiyan1978.argus
+Name: Argus
+Description: Class-dump manager for all installed apps. Lets you pick a save location, trigger an on-device runtime class dump for any app on demand (with a progress HUD), and jump straight to Filza to browse the result.
+Maintainer: mikiyan1978
+Author: mikiyan1978
+Section: Tweaks
+Depends: mobilesubstrate | ellekit
+Architecture: iphoneos-arm
+Version: 5.40
+Installed-Size: 1392
+Filename: debs/com.mikiyan1978.argus_5.40_iphoneos-arm.deb
+Size: 952966
+SHA256: 96d81b48ea19b4def0c83afa9b2155a5c2c134a81585353cf673021691df6e28
+SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.argus.json

@@ -1,0 +1,184 @@
+{
+    "minVersion": "0.4",
+    "class": "DepictionTabView",
+    "tintColor": "#30D158",
+    "tabs": [
+        {
+            "class": "DepictionStackView",
+            "tabname": "Details",
+            "views": [
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "## Argus\n\nA runtime class-dump manager for every app installed on this device. Pick a save location, trigger an on-device class dump for any app with one tap (live progress HUD), then browse the result without ever opening Filza.",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Class Browser"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "- Searchable class list for the dumped output, with category grouping\n- Cross-class search across the whole dump\n- Syntax-highlighted header viewer, copy any header to the clipboard\n- Compare two versions of the same app's dump to see what changed",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Export"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "- Export the whole class dump as a ZIP via the share sheet — no Filza required\n- Extract the target app's IPA directly",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "While a Dump Is Running"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "- A live progress HUD tracks the kill → relaunch → dump cycle, and reports if the target app disappears mid-dump (likely a memory-pressure kill)\n- Keeps the target app alive during the dump via its own SpringBoard-side hook — no other tweak required\n- Detects (read-only) whether a Jetsam-priority boost for the target app actually took effect on this device; an earlier attempt to actively force the boost was tested and found non-functional on this iOS build, so only detection remains active",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Settings"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "- 9 alternate app icon colors\n- Full VoiceOver/Dynamic Type support\n- A Diagnostics screen that self-tests icon lookup, launch, process listing, save-location write access, root escalation, and SpringBoard injection",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Requirements"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "Requires TrollStore, installed automatically via this package's own postinst (same approach [Zeus](https://mikiyan1978.github.io/sileo-repo/) uses) — dpkg's own ad-hoc signature can't pass AMFI/CoreTrust for a tap-to-launch icon, so the package hands the app off to TrollStore for a real install right after dpkg finishes. Install TrollStore first if you don't already have it.",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Developer"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "**mikiyan1978**\n\n[Repo](https://mikiyan1978.github.io/sileo-repo/) · [Source](https://github.com/mikiyan1978/iOSTweaks/tree/main/Argus)",
+                    "useSpacing": true
+                }
+            ]
+        },
+        {
+            "class": "DepictionStackView",
+            "tabname": "日本語",
+            "views": [
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "## Argus\n\n端末にインストール済みの全アプリに対応した、実機ランタイムClass Dumpマネージャーです。保存先を選び、ワンタップで対象アプリのClass Dumpを実行(進捗HUD付き)、Filzaを開かずに結果を閲覧できます。",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "クラスブラウザ"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "- ダンプ結果を検索可能なクラス一覧で表示、カテゴリ分類にも対応\n- ダンプ全体を横断検索\n- シンタックスハイライト付きヘッダービューア、クリップボードへのコピーに対応\n- 同じアプリの2つのバージョンのダンプを比較し、差分を確認",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "エクスポート"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "- クラスダンプ全体を共有シート経由でZIPとしてエクスポート(Filza不要)\n- 対象アプリのIPAを直接抽出",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "ダンプ実行中"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "- kill→起動確認→ダンプの一連の流れを進捗HUDでライブ追跡し、ダンプ中に対象アプリが消えた場合(メモリ不足によるkillの可能性)も検知して通知\n- ArgusEngine自身のSpringBoard側フックにより、ダンプ中は対象アプリのサスペンドを防止(他Tweak不要)\n- 対象アプリへのJetsam優先度引き上げが実機で実際に効いているかを検知(読み取り専用)。優先度引き上げを能動的に行う機能は実装・実機検証済みですが、この端末のiOSビルドでは動作しないことが確認されたため現在は無効化されており、検知機能のみ動作します",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "設定"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "- 代替アイコン9色\n- VoiceOver・Dynamic Type完全対応\n- アイコン取得・起動・プロセス一覧取得・保存先書き込み・root昇格・SpringBoard注入状況を実際にテストする診断画面",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "必要環境"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "TrollStoreが必要です(このパッケージ自身のpostinstが初回インストール時に自動的にTrollStore経由でインストールし直します、[Zeus](https://mikiyan1978.github.io/sileo-repo/)と同じ方式)——dpkgのアドホック署名のままではアイコンタップでの起動がAMFI/CoreTrustに弾かれるため、dpkgインストール完了直後にTrollStoreへ引き継いで正式インストールします。未導入の場合は先にTrollStoreを導入してください。",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "開発者"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "**mikiyan1978**\n\n[リポジトリ](https://mikiyan1978.github.io/sileo-repo/) · [ソースコード](https://github.com/mikiyan1978/iOSTweaks/tree/main/Argus)",
+                    "useSpacing": true
+                }
+            ]
+        },
+        {
+            "class": "DepictionStackView",
+            "tabname": "Changelog",
+            "views": [
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "## 1.0〜4.9\n- 初期開発(詳細な変更履歴はCHANGELOG.md作成前のため割愛。基本的なClass Dump機能、アプリ一覧、設定画面を実装)\n\n## 5.40\n- JetsamBooster無効化(v5.39)の後始末漏れを修正: 完全に未使用になっていた`pollDumpProgressForBundleID:pid:...`の`pid`引数を削除\n- ダンプ開始直後のkill待ち(最大5s)/起動確認待ち(最大8s)を、画面を離れた場合でもこのVCインスタンスを不必要に生存させ続けないようweakSelf経由に変更\n- 画面を離れて戻ると新しいVCインスタンスが同じダンプを追従監視する設計上、古い(画面外の)インスタンスがダンプ完了/対象アプリ終了のアラートを出そうとして黙って消えてしまう可能性があった。ポーリング完了時にビューがウィンドウ階層内にあるインスタンスだけがアラートを出すように修正\n\n## 5.35〜5.39\n- JetsamBoosterのメモリ不足キル予防機能を実機で検証したところ、`memorystatus_control`のコマンド番号(6→2の2通り試行)がいずれもこの端末(iOS 16.7.16)でerrno=3(ESRCH)となり動作しないことが判明\n- あわせて「Argus自身が対象アプリ起動直後にjetsamで強制終了され、保護コードに到達できていない」ことも実機調査で発見(空きメモリ約50MBの環境)。Argus自身の優先度引き上げを対象アプリより先に試す形へ順序変更したが、コマンド番号自体が誤っていたため効果なし\n- 信頼できる一次情報のないまま追加の値を推測するのは危険と判断し、実際の呼び出しをダンプフローから無効化。シンボル解決チェック・プロセス生存検知は引き続き機能する(検知のみの安定版に後退)\n\n## 5.34\n- JetsamBoosterに実際の成功検証を追加(root側で`memorystatus_control`の戻り値・errnoを記録し、診断画面で確認可能に)\n- 優先度引き上げ中PIDをTTL(30分)付きで追跡し、Argusが強制終了してもresetが呼ばれないまま残り続ける状態リークを自己修復するように\n- 診断項目を9個に拡張(「jetsam優先度引き上げ」の直近成否、「残存する優先度引き上げ」件数)\n\n## 5.33\n- JetsamBoosterの`memorystatus_control`シンボル可用性を診断項目に追加(新機能追加時に診断リストも更新するルールの実践)\n\n## 5.32\n- JetsamBooster新設: `memorystatus_control()`をroot権限で呼び出し、ダンプ対象アプリのjetsam優先度をフォアグラウンド相当まで引き上げる。メモリ不足キルを検知するだけでなく予防できるようにした(外部Tweakに依存しない自己完結型)\n\n## 5.31\n- サスペンド回避リスト(stayforeground_temp.plist)をTTL(30分)付き辞書形式に変更。Argus自体がクラッシュ/強制終了して解除処理が呼ばれなくても、一定時間で自動的に保護が失効するようにした(状態リークの根本対策)\n- 進捗ファイル(dump_progress.plist)に旧形式の残骸が混ざっていても辞書を汚染しないよう、書き込み前に形式を検証するように修正\n\n## 5.30\n- ダンプ中に対象アプリのプロセスが消えた(メモリ不足でOSに強制終了された可能性)ことを検知し、「対象アプリが終了しました」と明確なメッセージを表示するように変更\n\n## 5.29\n- `dump_progress.plist`を単一スロットからbundleIDキーの辞書形式に変更。複数アプリの進捗を同時に個別保持できるようにし、「後攻のアプリが優先されて先行アプリの進捗表示が壊れる」不具合を修正\n\n## 5.28\n- ダンプ詳細画面から離れて戻ると進捗表示が消える不具合を修正。`dump_progress.plist`を見て進行中のダンプを検知し、新しい画面インスタンスでもポーリングを自動再開するようにした\n\n## 5.27\n- `ArgusEngine.xm`(653行)を`ArgusEngine.xm`/`ArgusHUD.xm`/`ArgusStayForeground.xm`の3ファイルに責務分割(ロジック変更なし)\n- `CHANGELOG.md`を新設\n\n## 5.26\n- Dynamic Type対応をクラス一覧・横断検索・バージョン差分・診断画面・ヘッダービューアに拡大\n\n## 5.25\n- 一覧画面・アプリ詳細画面のDynamic Type対応(UIFontMetricsでスケール、上限付き)\n- 一覧画面の行高を固定78pt→可変に変更\n\n## 5.24\n- クラス一覧のZIPエクスポートボタンをUIMenu化(タップでラベルが見えてから実行)\n- VoiceOverアクセシビリティラベルを主要ボタン・カスタムセルに追加\n\n## 5.23\n- ZIPエクスポート中の進捗オーバーレイが`tableHeaderView`方式ではなくself.viewへの直接addSubviewだったため、テーブル内容と重なって表示される不具合を修正\n\n## 5.22\n- ZIP進捗オーバーレイのフレーム計算をAuto Layoutに変更(viewDidLoad時点でのbounds不定によるテキストはみ出しを修正)\n- コピー時のトーストが`labelColor`(ダークモードで白に近い)+白文字で実質見えなかった問題を修正、チェックマーク付きの見やすいデザインに刷新\n\n## 5.21\n- ZIPエクスポート・IPA抽出双方が依存する`/usr/bin/zip`の動作確認を診断項目に追加\n- ZIPエクスポートに実ファイル数ベースの進捗表示を追加(スピナーのみから変更)\n- ヘッダーコピー時にトースト+VoiceOverアナウンスのフィードバックを追加\n\n## 5.20\n- クラスヘッダーに簡易シンタックスハイライトを追加\n- ヘッダーをクリップボードにコピーするボタンを追加\n- クラス一覧全体をZIP化して共有シートから送れる機能を追加(Filza不要)\n\n## 5.19\n- 一覧画面を開くたびにバックグラウンドで軽量自己診断を実行し、異常があればバナーで通知\n\n## 5.18\n- 「設定→診断」画面を新規追加。アイコン取得API・起動API・プロセス一覧アクセス・保存先書き込み・root昇格・SpringBoard注入状況を実際にテストする\n\n## 5.17\n- 一覧画面をフローティングカード風のカスタムセル(AppListCell)にリニューアル\n- ボタンに触覚フィードバック+プレス演出を追加\n\n## 5.16\n- 一覧画面に実アプリアイコンを表示(プライベートAPI経由)\n- クラス一覧・横断検索のインデックス構築をバックグラウンドスレッド化\n- ダンプ/IPA抽出前にアプリの存在確認を追加\n\n## 5.15\n- ダンプ中に対象アプリが背後に回ってもサスペンドされないよう、ArgusEngine自身にSpringBoard側フックを実装(他Tweakに依存しない自己完結型)\n\n## 5.14\n- Argus側にもダンプ進捗バーを追加(`dump_progress.plist`をポーリング)\n\n## 5.13\n- BSDプロセス名が16文字(`MAXCOMLEN`)で切り詰められる制約により、17文字の\"AmazonCloudPlayer\"等で起動確認が常に失敗していた問題を修正\n\n## 5.12\n- ダンプ実行フローを「確実にキル→確実に起動確認」に変更(root権限でのkill、sysctlベースの起動確認)\n\n## 5.9〜5.11\n- Class Dump中のHUDが表示されない問題を調査・修正(古いサスペンド済みプロセスの使い回しが原因と判明)\n\n## 5.7〜5.8\n- クラス横断検索・カテゴリ分類(ClassCategorizer)・バージョン差分表示・Argus内クラス一覧ビューアを追加\n\n## 5.0〜5.6\n- IPA抽出プログレスバーの表示不具合を修正\n- 詳細画面をカード風UIにリニューアル\n- 設定画面にバージョン表示・代替アイコン機能(9色)を追加",
+                    "useSpacing": true
+                }
+            ]
+        }
+    ]
+}
