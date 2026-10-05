@@ -1,0 +1,65 @@
+{
+  "minVersion": "0.4",
+  "class": "DepictionTabView",
+  "tintColor": "#48617A",
+  "tabs": [
+    {
+      "class": "DepictionStackView",
+      "tabname": "Details",
+      "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "## ReachMedia\n\nReachability(片手モード)発動時に画面上部へ生まれる空きスペースへ、Now Playingの音楽コントロールを表示するTweak。",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "機能"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "- 片手モードの空きスペースにアートワーク・曲名・アーティスト・アルバム名を表示\n- 再生/一時停止・次へ・前へのコントロール\n- 発動方法を選択(ステータスバーのダブルタップ / デバイスを振る)\n- レイアウト(高さ・アートワークサイズ・位置)のカスタマイズ\n- 背景ブラーのON/OFF・スタイル選択\n- 無制限表示(自動タイムアウトしない)モード\n- 登場アニメーションを8種類から選択(なし/集合/フェード/下から/ズーム/ドロップ/波/ポップ)\n- アートワークの呼吸エフェクト・光沢スイープ・ボタンのバウンス/回転演出をそれぞれON/OFF\n- 片手モードを開いたまま設定変更するとその場でプレビュー",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Requirements"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "- iOS 14.0以上(Reachability非対応機種を除く)\n- MobileSubstrate / Substitute",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Developer"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "**mikiyan1978**\n\n[Blog](http://mikiyan1978.hatenablog.com/)\n[Repo](https://mikiyan1978.github.io/sileo-repo/)",
+          "useSpacing": true
+        }
+      ]
+    },
+    {
+      "class": "DepictionStackView",
+      "tabname": "Changelog",
+      "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "## v1.0\n- 初回リリース\n- Now Playing音楽コントロール表示\n- 発動方法・レイアウト・背景の設定\n- 無制限表示モード\n- 登場アニメーション8種類(なし/集合/フェード/下から/ズーム/ドロップ/波/ポップ)\n- 呼吸エフェクト・光沢スイープ・ボタン演出\n- 片手モード中のライブプレビュー",
+          "useSpacing": true
+        }
+      ]
+    }
+  ]
+}

@@ -225,3 +225,19 @@ Filename: debs/com.mikiyan1978.argus_5.40_iphoneos-arm.deb
 Size: 952966
 SHA256: 96d81b48ea19b4def0c83afa9b2155a5c2c134a81585353cf673021691df6e28
 SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.argus.json
+
+Package: com.mikiyan1978.reachmedia
+Name: ReachMedia
+Description: Reachability(片手モード)の空きスペースにNow Playingの音楽コントロールを表示するTweak。設定でマスターON/OFF・発動方法・レイアウト・背景・8種類の登場アニメーションを切り替え可能。
+Maintainer: mikiyan1978
+Author: mikiyan1978
+Section: Tweaks
+Depends: mobilesubstrate
+Icon: /Library/PreferenceBundles/reachmediaprefs.bundle/icon@3x.png
+Architecture: iphoneos-arm
+Version: 1.0
+Installed-Size: 700
+Filename: debs/com.mikiyan1978.reachmedia_1.0_iphoneos-arm.deb
+Size: 125768
+SHA256: ab6eb5976dcc679d1bf8ebd65f34ea71a258653c13b472d0b27be924f432eb7e
+SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.reachmedia.json
