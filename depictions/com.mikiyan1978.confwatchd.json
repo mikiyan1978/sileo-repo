@@ -1,0 +1,101 @@
+{
+    "minVersion": "0.4",
+    "class": "DepictionTabView",
+    "tintColor": "#34C759",
+    "tabs": [
+        {
+            "class": "DepictionStackView",
+            "tabname": "Details",
+            "views": [
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "## ConfWatch Daemon\n\nA shared config-file watch daemon for tweak developers. Instead of every tweak running its own always-on file watcher, register a `{WatchPath, NotifyName}` plist and this daemon posts a Darwin notification when that file changes - for cases where the file's writer can't be made to notify itself (external edits, sync, etc).",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Features"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "- kqueue-based file watching, no polling of file contents\n- One open file descriptor per unique watched path, shared across any number of registrations pointing at it\n- Registrations directory itself is watched, so installing/removing a tweak's registration takes effect without restarting the daemon\n- Recovers automatically from delete+recreate style atomic saves, and from registration files observed mid-write during package install\n- Adaptive polling for its internal retry safety net (60s idle / 2s while something needs retry) - real file changes are always caught instantly regardless\n- 150ms debounce so one atomic save doesn't double-fire\n- WatchPath restricted to `/var/mobile/` since the daemon runs as root\n- Timestamped, size-capped log at `/var/log/confwatchd.log`",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "For developers"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "Drop a registration plist in `/var/mobile/Library/ConfWatch/registrations/`:\n\n```xml\n<dict>\n  <key>WatchPath</key>\n  <string>/var/mobile/Library/Preferences/com.example.plist</string>\n  <key>NotifyName</key>\n  <string>com.example.changed</string>\n</dict>\n```\n\nThen listen for `com.example.changed` with `notify_register_dispatch` as usual. For live, high-frequency updates driven by your own UI (sliders, switches), post the Darwin notification directly instead of routing through a file write - it's faster and this daemon isn't needed for that case.",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Developer"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "**mikiyan1978**\n\n[Repo](https://mikiyan1978.github.io/sileo-repo/)",
+                    "useSpacing": true
+                }
+            ]
+        },
+        {
+            "class": "DepictionStackView",
+            "tabname": "日本語",
+            "views": [
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "## ConfWatch Daemon\n\nTweak開発者向けの共有ファイル監視デーモンです。各tweakが個別に常駐の監視プロセスを持つ代わりに、`{WatchPath, NotifyName}`の小さなplistを登録するだけで、対象ファイルの変更時にDarwin通知を発行します。ファイルの書き手側に通知を仕込めないケース（外部編集、同期等）向けです。",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "機能"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "- kqueueベースのファイル監視、ファイル内容のポーリングなし\n- 監視対象パスごとに1つのfdのみ使用、複数の登録が同じファイルを指しても共有\n- 登録ディレクトリ自体も監視しており、tweakのインストール/削除時にデーモン再起動不要で反映\n- ファイルの削除→再作成（アトミック保存）や、インストール中の書き込み途中状態からも自動復旧\n- 内部の再試行用ポーリングは適応的（平常時60秒／問題発生時2秒）。実際のファイル変更検知自体は常に即時\n- 150msのデバウンスでアトミック保存の二重発火を防止\n- WatchPathは`/var/mobile/`配下に制限（root権限で動作するため）\n- タイムスタンプ付き・サイズ上限付きログ（`/var/log/confwatchd.log`）",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "開発者向け"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "`/var/mobile/Library/ConfWatch/registrations/`に登録用plistを設置：\n\n```xml\n<dict>\n  <key>WatchPath</key>\n  <string>/var/mobile/Library/Preferences/com.example.plist</string>\n  <key>NotifyName</key>\n  <string>com.example.changed</string>\n</dict>\n```\n\n通常通り`notify_register_dispatch`で`com.example.changed`を購読してください。スライダー等、自前のUIからの高頻度なリアルタイム更新は、ファイル経由ではなく直接Darwin通知を発行する方が高速です（このデーモンは不要）。",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "開発者"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "**mikiyan1978**\n\n[Repo](https://mikiyan1978.github.io/sileo-repo/)",
+                    "useSpacing": true
+                }
+            ]
+        }
+    ]
+}
