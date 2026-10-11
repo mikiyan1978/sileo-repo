@@ -10,7 +10,7 @@
       "views": [
         {
           "class": "DepictionMarkdownView",
-          "markdown": "## MacDock\n\nMac-style floating window manager for jailbroken iOS.\n\n### Features\n- Float any app in a resizable window\n- Multiple windows simultaneously\n- Snap to screen edges\n- Remember window position & size\n- Traffic Light buttons (close/minimize/maximize/restore)\n- Pinch to resize\n- Drag to move\n- Settings with live preview",
+          "markdown": "## MacDock\n\nMac-style floating window manager for jailbroken iOS.\n\n### Features\n- Float any app in a resizable window\n- Multiple windows simultaneously\n- Snap to screen edges\n- Remember window position & size\n- Traffic Light buttons (close/minimize/maximize/restore)\n- The app's own icon shown in the header bar\n- Pinch to resize, or drag the bottom-right handle\n- Drag to move\n- Settings with live preview",
           "useSpacing": true
         },
         {
@@ -57,7 +57,7 @@
       "views": [
         {
           "class": "DepictionMarkdownView",
-          "markdown": "## v1.5.3\n- Windowed apps now shrink to an icon along the top edge while the App Switcher is open, instead of showing twice (once windowed, once in the Switcher's own card)\n- Replaced the always-on-screen windowize button with a \"Windowize\" action in the Home Screen icon's own 3D Touch / long-press menu — respects the MacDock on/off switch, which the old button didn't\n- Fixed a crash that could trigger Safe Mode under specific App Switcher timing\n- Fixed a mis-tap bug where the window's close button could fire unexpectedly while shrunk\n- Various timing and reliability fixes around windowizing and the App Switcher\n\n## v1.0.0\n- Initial release\n- Floating window management\n- App selector panel\n- Settings UI with space theme\n- Sileo repository support\n- Fixed home screen scene detection on launch\n- Removed leftover debug logging/dumps",
+          "markdown": "## v1.6.4\n- Added the app's own icon to the floating window's header bar (right side)\n- The header now switches to an evenly-spaced layout for all its buttons and the icon instead of letting them overlap when the window is shrunk near its minimum size\n- Enlarged the bottom-right resize handle's grab area (22pt → 44pt) without changing how it looks, so it's easier to grab precisely\n- Replaced the resize handle's corner glyph with a standard resize icon\n- Corrected the package description (it previously described an old dock feature that no longer exists)\n\n## v1.5.3\n- Windowed apps now shrink to an icon along the top edge while the App Switcher is open, instead of showing twice (once windowed, once in the Switcher's own card)\n- Replaced the always-on-screen windowize button with a \"Windowize\" action in the Home Screen icon's own 3D Touch / long-press menu — respects the MacDock on/off switch, which the old button didn't\n- Fixed a crash that could trigger Safe Mode under specific App Switcher timing\n- Fixed a mis-tap bug where the window's close button could fire unexpectedly while shrunk\n- Various timing and reliability fixes around windowizing and the App Switcher\n\n## v1.0.0\n- Initial release\n- Floating window management\n- App selector panel\n- Settings UI with space theme\n- Sileo repository support\n- Fixed home screen scene detection on launch\n- Removed leftover debug logging/dumps",
           "useSpacing": true
         }
       ]
