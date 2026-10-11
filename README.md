@@ -1,6 +1,6 @@
 # MacDock
 
-Mac風フローティングウィンドウマネージャー for iOS (Rootless Jailbreak)
+Mac風フローティングウィンドウマネージャー for iOS (Rootless / Rootful Jailbreak)
 
 ## インストール
 
@@ -13,14 +13,17 @@ SileoのソースタブにURLを追加:
 ## 動作環境
 
 - iOS 15.0以上
-- Rootless脱獄(Dopamine推奨)
+- Rootless脱獄(Dopamine)またはRootful脱獄(palera1n, checkra1n)
 - MobileSubstrate / Substitute
-- iphoneos-arm64
+- iphoneos-arm64 (rootless) / iphoneos-arm (rootful)
 
 ## 機能一覧
 
 ### ウィンドウ化
-アプリ内の⧉ボタン、またはアプリ選択パネルからウィンドウ化できます。
+ホーム画面アイコンを3D Touch(長押し)してメニューから「ウィンドウ化」、またはアプリ選択パネルからウィンドウ化できます。
+
+### App Switcher連携
+スイッチャーを開いている間、ウィンドウ化中のアプリは上部にアイコンとして縮小表示されます(同じアプリが二重に表示されるのを防止)。アイコンをタップするとそのアプリが実際にフォアグラウンドになります。
 
 ### Traffic Lightボタン
 - 赤: ウィンドウを閉じる(アプリも終了)
@@ -71,16 +74,15 @@ SileoのソースタブにURLを追加:
 - 脱獄: Dopamine (rootless)
 
 ### アーキテクチャ
-- MacDock.dylib: メインTweak (SpringBoardに注入)
-- MacDockAppButton.dylib: アプリ内ボタン (各アプリに注入)
+- MacDock.dylib: メインTweak (SpringBoardに注入、3D Touchメニュー項目もここ)
+- MacDockAppButton.dylib: windowize要求を受けてアプリ自身をsuspendする最小限の常駐 (各アプリに注入)
 - MacDockPref.bundle: 設定UI
 
 ### ウィンドウ化の仕組み
-1. ⧉ボタンタップ → windowize通知送信
-2. requestsuspend通知送信
-3. 0.3秒後にlayerHostView生成
-4. フローティングウィンドウに組み込み
-5. スケール変換で表示
+1. ホーム画面アイコンの3D Touchメニューから「ウィンドウ化」をタップ → requestsuspend通知送信
+2. 対象アプリがsuspend → 0.3秒後にwindowize通知送信
+3. layerHostView生成 → フローティングウィンドウに組み込み
+4. スケール変換で表示
 
 ### 設定保存先 (rootless)
 /var/jb/var/mobile/Library/Preferences/com.mikiyan1978.macdock.plist
@@ -93,9 +95,6 @@ NSDistributedNotificationCenterで設定変更をリアルタイムでSpringBoar
 Q: 対応していないアプリがある
 A: SPUISecureWindowのみを使用するアプリ(NewTermなど)はウィンドウ化できません。
 
-Q: ホーム画面に⧉ボタンが出る
-A: userrebootを実行してください。killall SpringBoardでは解消されない場合があります。
-
 Q: 設定を変えても反映されない
 A: 設定アプリを閉じてから数秒待ってみてください。
 
@@ -103,6 +102,12 @@ Q: セーフモードになる
 A: 設定でMacDockを無効にしてから問題のあるアプリを特定してください。
 
 ## 更新履歴
+
+### v1.5.3
+- スイッチャー表示中、ウィンドウ化中のアプリを上部アイコンに縮小表示(二重表示バグを修正)
+- 常時表示の⧉ボタンを撤去し、ホーム画面アイコンの3D Touchメニューに「ウィンドウ化」を追加(マスタースイッチOFF時は表示されない)
+- Safe Modeクラッシュ、閉じるボタン誤爆バグを修正
+- ウィンドウ化とスイッチャー周りのタイミング関連の信頼性向上
 
 ### v1.0.0
 - 初回リリース

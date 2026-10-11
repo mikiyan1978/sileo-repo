@@ -1,17 +1,17 @@
 Package: com.mikiyan1978.macdock
 Name: MacDock
-Depends: firmware (>= 15.0)
+Depends: mobilesubstrate, firmware (>= 15.0)
 Description: Mac-style dock showing all installed apps, toggled by gesture.
 Maintainer: mikiyan1978
 Author: mikiyan1978
 Section: Tweaks
 Tag: role::developer, compatible_ios16
 Architecture: iphoneos-arm
-Version: 1.0.0
-Installed-Size: 748
-Filename: debs/com.mikiyan1978.macdock_1.0.0_iphoneos-arm.deb
-Size: 77324
-SHA256: 82a01aed5e12e43981ceeb7b488bda6ca876c40a715dd0fb3cef06f6f19e034b
+Version: 1.5.3
+Installed-Size: 792
+Filename: debs/com.mikiyan1978.macdock_1.5.3_iphoneos-arm.deb
+Size: 87556
+SHA256: 60d210c86018285090c220222446ad9653d5303b519e08a9425b34e75ae93f5a
 
 Package: com.mikiyan1978.macdock
 Name: MacDock
@@ -22,11 +22,11 @@ Author: mikiyan1978
 Section: Tweaks
 Tag: role::developer, compatible_ios16
 Architecture: iphoneos-arm64
-Version: 1.0.0
-Installed-Size: 748
-Filename: debs/com.mikiyan1978.macdock_1.0.0_iphoneos-arm64.deb
-Size: 76414
-SHA256: 46c87f17d161536201544894c2829bee9d4df0efb6433bd829e19c2acb6b2dd7
+Version: 1.5.3
+Installed-Size: 792
+Filename: debs/com.mikiyan1978.macdock_1.5.3_iphoneos-arm64.deb
+Size: 88216
+SHA256: 64a9200f17ba7590d3bc6b012426c5f22a40133ebf743514b86140a53fa1db41
 
 Package: com.mikiyan1978.powercontrolapp
 Name: Zeus
