@@ -256,3 +256,19 @@ Filename: debs/com.mikiyan1978.confwatchd_1.0_iphoneos-arm.deb
 Size: 6270
 SHA256: b1e13ac2cd853c345ddc5dee25bf6126c0c5907e5f0eabdd3d0144b3d3775a1f
 SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.confwatchd.json
+
+Package: com.mikiyan1978.autoclean
+Name: AutoClean
+Description: Runs iCleaner Pro's cleanup (/Applications/iCleaner.app/iCleaner -clean) automatically every day at a time you choose in Settings, using whatever cleanup categories are already enabled in iCleaner Pro itself. Optional auto-respring after cleanup (runs /usr/bin/sbreload directly rather than iCleaner's own -autorespring, which could trigger two respring cycles back-to-back). A lightweight root LaunchDaemon (autocleand) checks the schedule every 30 seconds and only fires once per day.
+Maintainer: mikiyan1978
+Author: mikiyan1978
+Section: Tweaks
+Depends: preferenceloader, com.exile90.icleanerpro
+Icon: /Library/PreferenceBundles/AutoCleanPrefs.bundle/icon@3x.png
+Architecture: iphoneos-arm
+Version: 1.0
+Installed-Size: 176
+Filename: debs/com.mikiyan1978.autoclean_1.0_iphoneos-arm.deb
+Size: 11174
+SHA256: a770eba1132f3dd4c117b9cb8481567d7cc59c279483231a31468debe87b90d3
+SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.autoclean.json

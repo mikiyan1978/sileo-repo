@@ -1,0 +1,88 @@
+{
+    "minVersion": "0.4",
+    "class": "DepictionTabView",
+    "tintColor": "#34C759",
+    "tabs": [
+        {
+            "class": "DepictionStackView",
+            "tabname": "Details",
+            "views": [
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "## AutoClean\n\nRuns iCleaner Pro's own cleanup automatically every day at a time you choose in Settings, instead of having to open iCleaner Pro and tap 削除 yourself. Reuses whatever cleanup categories are already enabled in iCleaner Pro - AutoClean has no cleanup logic of its own.",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Features"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "- A lightweight root LaunchDaemon checks the schedule every 30 seconds and fires at most once per day\n- Native time-of-day picker (wheel style) right in Settings\n- Optional single, predictable respring after cleanup, driven directly rather than through iCleaner's own `-autorespring` (which could trigger two respring cycles back to back)\n- Last run date shown right in Settings\n- Requires iCleaner Pro to already be installed",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Developer"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "**mikiyan1978**\n\n[Repo](https://mikiyan1978.github.io/sileo-repo/)",
+                    "useSpacing": true
+                }
+            ]
+        },
+        {
+            "class": "DepictionStackView",
+            "tabname": "日本語",
+            "views": [
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "## AutoClean\n\niCleaner Pro の「削除」を、Settingsで設定した毎日決まった時刻に自動実行します。わざわざiCleaner Proを開いて削除をタップしなくて済みます。iCleaner Proで既に有効になっているクリーンアップ項目をそのまま使用し、AutoClean自体は独自のクリーンアップロジックを持ちません。",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "機能"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "- 軽量なroot権限LaunchDaemonが30秒ごとにスケジュールを確認し、1日最大1回だけ実行\n- Settings内にネイティブの時刻ピッカー(ホイール形式)を搭載\n- クリーンアップ後の自動リスプリングはオプション。iCleaner自身の`-autorespring`(2回連続でリスプリングが発生することがある)ではなく、確実に1回だけ実行する独自方式\n- 前回実行日をSettings画面に表示\n- iCleaner Proのインストールが必要",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "開発者"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "**mikiyan1978**\n\n[Repo](https://mikiyan1978.github.io/sileo-repo/)",
+                    "useSpacing": true
+                }
+            ]
+        },
+        {
+            "class": "DepictionStackView",
+            "tabname": "Changelog",
+            "views": [
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "## 1.0\n- Initial release: scheduled daily iCleaner Pro cleanup via a root LaunchDaemon\n- Native UIDatePicker time-of-day picker in Settings\n- Single predictable respring option (sbreload directly, not iCleaner's -autorespring)\n- Last run date shown in Settings",
+                    "useSpacing": true
+                }
+            ]
+        }
+    ]
+}
