@@ -275,15 +275,15 @@ SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1
 
 Package: com.mikiyan1978.iconmorph
 Name: IconMorph
-Description: Turns home screen icons into spinning 3D cubes or rounded blobs (randomly tumbling, or spinning on one axis), toggled per-icon from the icon's own long-press menu.
+Description: Turns home screen icons into spinning 3D cubes or rounded blobs, toggled per-icon from the icon's own long-press menu. Choose from several rotation styles: random tumble, horizontal spin, vertical spin, a fast chaotic "Berserk" mode, a Planet mode with realistic sunlight and axial tilt, and a Heartbeat pulse.
 Maintainer: mikiyan1978
 Author: mikiyan1978
 Section: Tweaks
 Depends: mobilesubstrate, firmware (>= 15.0)
 Architecture: iphoneos-arm
-Version: 1.0
+Version: 1.1
 Installed-Size: 204
-Filename: debs/com.mikiyan1978.iconmorph_1.0_iphoneos-arm.deb
-Size: 16908
-SHA256: eeb35743229b923b0ed6be976321942b803b52e04445fe3a65c86c39bc8aa956
+Filename: debs/com.mikiyan1978.iconmorph_1.1_iphoneos-arm.deb
+Size: 20932
+SHA256: 65d09a5b55d4c7d6a7a28e1625924925919c8c3763add2542aadb281c54aa02c
 SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.iconmorph.json
