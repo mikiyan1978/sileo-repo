@@ -1,0 +1,77 @@
+{
+  "minVersion": "0.4",
+  "class": "DepictionTabView",
+  "tintColor": "#5AC8FA",
+  "tabs": [
+    {
+      "class": "DepictionStackView",
+      "tabname": "Details",
+      "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "## IconMorph\n\nホーム画面のアイコンを回転する3Dの立方体や丸みのあるブロックに変身させるTweak。アイコンの長押しメニューから、アイコンごとに個別にON/OFF・形・回転方法を切り替えられます。",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "機能"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "- アイコンを長押し(3D Touch)して「回転エフェクトをON」で有効化\n- 「形を変える」で立方体⇔丸みのあるブロックを切り替え\n- 「回転方法を変える」でランダムタンブル(XYZ軸がバラバラに回転)、横回転、縦回転を切り替え\n- 実際のアイコン画像を全面に使った本物の3D描画(SceneKit、実際のライティング付き)\n- アイコンごとに独立して設定を記憶",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "使い方"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "1. ホーム画面の好きなアイコンを長押し\n2. メニューから「回転エフェクトをON」をタップ\n3. 必要なら同じメニューから「形を変える」「回転方法を変える」で見た目を調整",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Requirements"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "- iOS 15.0以上\n- Rootful脱獄(palera1n, checkra1n)\n- MobileSubstrate / Substitute",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Developer"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "**mikiyan1978**\n\n[Blog](http://mikiyan1978.hatenablog.com/)\n[Repo](https://mikiyan1978.github.io/sileo-repo/)",
+          "useSpacing": true
+        }
+      ]
+    },
+    {
+      "class": "DepictionStackView",
+      "tabname": "Changelog",
+      "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "## v1.0\n- 初回リリース\n- アイコンごとの回転エフェクトON/OFF\n- 立方体/丸みのあるブロックの形切り替え\n- ランダムタンブル/横回転/縦回転の切り替え",
+          "useSpacing": true
+        }
+      ]
+    }
+  ]
+}
