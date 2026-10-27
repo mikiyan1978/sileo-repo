@@ -1,0 +1,77 @@
+{
+    "minVersion": "0.4",
+    "class": "DepictionTabView",
+    "tintColor": "#6FD6EC",
+    "tabs": [
+        {
+            "class": "DepictionStackView",
+            "tabname": "Details",
+            "views": [
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "## Eneko Remake\n\nAn original, from-scratch Logos recode of Traurige's Eneko, with multi-video rotation, performance/battery awareness and a Japanese-localized settings screen added on top of the original idea: looping video wallpapers behind the Lock Screen, Home Screen and Control Center.",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Features"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "- Independent looping video wallpaper for Lock Screen, Home Screen and Control Center, each with its own volume and zoom toggle\n- **Multi-video rotation** (new): drop 2 or more videos into a slot's folder under `/var/mobile/Media/EnekoWallpapers/` and it crossfades between them on a configurable interval, optionally shuffled\n- **Performance & battery awareness** (new): auto-pause under thermal pressure and/or below a configurable battery threshold\n- Mute automatically while music is playing\n- Disable automatically in Low Power Mode\n- \"Open Wallpaper Folder\" shortcut straight into Filza\n- Fully localized settings screen (English / Japanese)",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Requirements"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "- iOS 14.0 or later\n- MobileSubstrate / Substitute\n- PreferenceLoader",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Credit"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "Inspired by the original [Eneko](https://github.com/Traurige/Eneko) by Alexandra (@Traurige). This remake is an independent, from-scratch implementation, not a fork of the original source.",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Developer"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "**mikiyan1978**\n\n[Repo](https://mikiyan1978.github.io/sileo-repo/)",
+                    "useSpacing": true
+                }
+            ]
+        },
+        {
+            "class": "DepictionStackView",
+            "tabname": "Changelog",
+            "views": [
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "## 1.0.0\n- Initial release: independent remake of Eneko\n- Lock Screen / Home Screen / Control Center looping video wallpaper, each with its own volume and zoom toggle\n- Multi-video rotation with crossfade, per slot\n- Auto-pause under thermal pressure and/or low battery\n- Mute while music is playing, disable in Low Power Mode\n- \"Open Wallpaper Folder\" shortcut into Filza\n- Japanese localization",
+                    "useSpacing": true
+                }
+            ]
+        }
+    ]
+}

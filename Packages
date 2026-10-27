@@ -287,3 +287,20 @@ Filename: debs/com.mikiyan1978.iconmorph_1.1_iphoneos-arm.deb
 Size: 20932
 SHA256: 65d09a5b55d4c7d6a7a28e1625924925919c8c3763add2542aadb281c54aa02c
 SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.iconmorph.json
+
+Package: com.mikiyan1978.eneko
+Name: Eneko Remake
+Description: Live wallpapers for iOS (community remake)
+Maintainer: mikiyan1978
+Author: mikiyan1978, based on Eneko by Traurige
+Section: Tweaks
+Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader, com.mrgcgamer.libgcuniversal
+Conflicts: dev.traurige.eneko, love.litten.eneko
+Icon: /Library/PreferenceBundles/EnekoPreferences.bundle/Icon@2x.png
+Architecture: iphoneos-arm
+Version: 1.0.0
+Installed-Size: 488
+Filename: debs/com.mikiyan1978.eneko_1.0.0_iphoneos-arm.deb
+Size: 45498
+SHA256: 82ab633d63ec57ceaeee79e60843d15116a5ea4f86a8fd8bca57cff1d98bb6af
+SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.eneko.json
