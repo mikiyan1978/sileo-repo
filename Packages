@@ -304,3 +304,18 @@ Filename: debs/com.mikiyan1978.eneko_1.0.0_iphoneos-arm.deb
 Size: 45498
 SHA256: 82ab633d63ec57ceaeee79e60843d15116a5ea4f86a8fd8bca57cff1d98bb6af
 SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.eneko.json
+
+Package: com.mikiyan1978.ytdownloader
+Name: YTDownloader
+Description: Standalone app that downloads YouTube videos for offline viewing, by wrapping the on-device yt-dlp binary (installed separately via APT) from a native UI -- paste a URL or share from YouTube, pick a real per-resolution format, and the file lands in both the app's own Documents (visible in Files.app) and /var/mobile/Media/YTDownloader for easy Filza access.
+Maintainer: mikiyan1978
+Author: mikiyan1978
+Section: Utilities
+Depends: firmware (>= 14.0), com.mikiyan1978.bulletinrelay
+Architecture: iphoneos-arm
+Version: 1.0
+Installed-Size: 724
+Filename: debs/com.mikiyan1978.ytdownloader_1.0_iphoneos-arm.deb
+Size: 97894
+SHA256: b398b275bab666271709c9dd673bbff58c5741dc34a9757ce0bd0a7a05eeb287
+SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.ytdownloader.json
