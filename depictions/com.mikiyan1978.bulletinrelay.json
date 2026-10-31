@@ -1,0 +1,77 @@
+{
+    "minVersion": "0.4",
+    "class": "DepictionTabView",
+    "tintColor": "#34C759",
+    "tabs": [
+        {
+            "class": "DepictionStackView",
+            "tabname": "Details",
+            "views": [
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "## BulletinRelay\n\nA shared relay tweak, not an app you open directly. `JBBulletinManager` (the API behind real Notification Center bulletins) only loads inside SpringBoard's own process, so a standalone app or a root daemon has no way to call it. BulletinRelay runs inside SpringBoard and exposes a single Darwin notification other processes can post to -- backed by a flock-protected on-disk queue so bursts from multiple callers never clobber each other -- to show a real bulletin on their behalf.",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Why you have this installed"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "Another package you installed (e.g. YTDownloader) depends on this one for its own notifications. You don't need to configure or open anything -- it just needs to be present and running.",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "Developer"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "**mikiyan1978**\n\n[Repo](https://mikiyan1978.github.io/sileo-repo/)",
+                    "useSpacing": true
+                }
+            ]
+        },
+        {
+            "class": "DepictionStackView",
+            "tabname": "日本語",
+            "views": [
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "## BulletinRelay\n\n単体で開くアプリではなく、他のパッケージが利用する共有中継tweakです。通知センターの本物のバナー表示APIである`JBBulletinManager`はSpringBoardプロセス内でしか読み込まれないため、単体アプリやrootデーモンからは直接呼び出せません。BulletinRelayはSpringBoard内で動作し、他プロセスが1つのDarwin通知を送るだけで代わりにバナーを表示する仕組みを提供します(複数プロセスから同時に来ても取りこぼさないよう、ファイルロック付きのキューで処理します)。",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "なぜインストールされているか"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "インストールした別のパッケージ(例: YTDownloader)が通知表示のためにこれに依存しています。特に設定や操作は不要で、入っていて動いていれば十分です。",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionHeaderView",
+                    "title": "開発者"
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "**mikiyan1978**\n\n[Repo](https://mikiyan1978.github.io/sileo-repo/)",
+                    "useSpacing": true
+                }
+            ]
+        }
+    ]
+}

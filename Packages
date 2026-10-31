@@ -319,3 +319,18 @@ Filename: debs/com.mikiyan1978.ytdownloader_1.0_iphoneos-arm.deb
 Size: 97894
 SHA256: b398b275bab666271709c9dd673bbff58c5741dc34a9757ce0bd0a7a05eeb287
 SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.ytdownloader.json
+
+Package: com.mikiyan1978.bulletinrelay
+Name: BulletinRelay
+Description: Shared relay tweak that any process (apps, root daemons, other tweaks) can ask -- via a single Darwin notification plus a flock-protected on-disk queue -- to show a real Notification Center bulletin via libbulletin, without that process needing its own SpringBoard-injected code. Runs inside SpringBoard (the only process JBBulletinManager actually loads in), drains its queue in order, and supports both app-bundle-icon and raw-image-path bulletins.
+Maintainer: mikiyan1978
+Author: mikiyan1978
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000), net.limneos.libbulletin
+Architecture: iphoneos-arm
+Version: 1.0.0
+Installed-Size: 168
+Filename: debs/com.mikiyan1978.bulletinrelay_1.0.0_iphoneos-arm.deb
+Size: 5926
+SHA256: 64fc2efdac325d8291a46cb0447235eaefb0958368be1baa06bad481f477f0b3
+SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.bulletinrelay.json
