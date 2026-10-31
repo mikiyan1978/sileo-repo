@@ -307,7 +307,7 @@ SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1
 
 Package: com.mikiyan1978.ytdownloader
 Name: YTDownloader
-Description: Standalone app that downloads YouTube videos for offline viewing, by wrapping the on-device yt-dlp binary (installed separately via APT) from a native UI -- paste a URL or share from YouTube, pick a real per-resolution format, and the file lands in both the app's own Documents (visible in Files.app) and /var/mobile/Media/YTDownloader for easy Filza access.
+Description: Standalone app that downloads YouTube videos for offline viewing, by wrapping the on-device yt-dlp binary (installed separately via APT) from a native UI -- paste a URL or share from YouTube, pick a real per-resolution format, and the file lands in /var/mobile/Media/YTDownloader for easy Filza access.
 Maintainer: mikiyan1978
 Author: mikiyan1978
 Section: Utilities

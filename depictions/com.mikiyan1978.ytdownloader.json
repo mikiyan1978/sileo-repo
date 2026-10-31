@@ -9,7 +9,7 @@
             "views": [
                 {
                     "class": "DepictionMarkdownView",
-                    "markdown": "## YTDownloader\n\nA standalone app that downloads YouTube videos for offline viewing, wrapping the on-device yt-dlp binary (installed separately via APT) behind a native UI. Paste a URL or share straight from the YouTube app, pick an exact resolution/format, and the file lands in both the app's own Documents (visible in Files.app) and `/var/mobile/Media/YTDownloader` for easy Filza access.",
+                    "markdown": "## YTDownloader\n\nA standalone app that downloads YouTube videos for offline viewing, wrapping the on-device yt-dlp binary (installed separately via APT) behind a native UI. Paste a URL or share straight from the YouTube app, pick an exact resolution/format, and the file lands in `/var/mobile/Media/YTDownloader` for easy Filza access.",
                     "useSpacing": true
                 },
                 {
@@ -56,7 +56,7 @@
             "views": [
                 {
                     "class": "DepictionMarkdownView",
-                    "markdown": "## YTDownloader\n\nYouTube動画をオフライン視聴用にダウンロードする単体アプリです。端末上のyt-dlp(別途APTでインストール)をネイティブUIでラップしています。URLを貼り付けるか、YouTubeアプリから直接共有するだけで、解像度/フォーマットを選んでダウンロードできます。ファイルはアプリ自身のDocuments(Filesアプリから閲覧可)と`/var/mobile/Media/YTDownloader`(Filzaから閲覧可)の両方に保存されます。",
+                    "markdown": "## YTDownloader\n\nYouTube動画をオフライン視聴用にダウンロードする単体アプリです。端末上のyt-dlp(別途APTでインストール)をネイティブUIでラップしています。URLを貼り付けるか、YouTubeアプリから直接共有するだけで、解像度/フォーマットを選んでダウンロードできます。ファイルは`/var/mobile/Media/YTDownloader`(Filzaから閲覧可)に保存されます。",
                     "useSpacing": true
                 },
                 {
