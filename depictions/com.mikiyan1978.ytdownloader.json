@@ -56,7 +56,7 @@
             "views": [
                 {
                     "class": "DepictionMarkdownView",
-                    "markdown": "## YTDownloader\n\nYouTube動画をオフライン視聴用にダウンロードする単体アプリですわ。端末上のyt-dlp(別途APTでインストール)をネイティブUIでラップしていますの。URLを貼り付けるか、YouTubeアプリから直接共有するだけで、解像度/フォーマットを選んでダウンロードできますの。ファイルはアプリ自身のDocuments(Filesアプリから閲覧可)と`/var/mobile/Media/YTDownloader`(Filzaから閲覧可)の両方に保存されますわ。",
+                    "markdown": "## YTDownloader\n\nYouTube動画をオフライン視聴用にダウンロードする単体アプリです。端末上のyt-dlp(別途APTでインストール)をネイティブUIでラップしています。URLを貼り付けるか、YouTubeアプリから直接共有するだけで、解像度/フォーマットを選んでダウンロードできます。ファイルはアプリ自身のDocuments(Filesアプリから閲覧可)と`/var/mobile/Media/YTDownloader`(Filzaから閲覧可)の両方に保存されます。",
                     "useSpacing": true
                 },
                 {
@@ -80,7 +80,7 @@
                 },
                 {
                     "class": "DepictionMarkdownView",
-                    "markdown": "yt-dlpは別途インストールが必要です(`pip3 install yt-dlp`)。未インストールの場合はアプリ内に正確なコマンドが表示されますわ。Cookie取り込みやデフォルト画質の設定はアプリ内の設定画面から行えますの。",
+                    "markdown": "yt-dlpは別途インストールが必要です(`pip3 install yt-dlp`)。未インストールの場合はアプリ内に正確なコマンドが表示されます。Cookie取り込みやデフォルト画質の設定はアプリ内の設定画面から行えます。",
                     "useSpacing": true
                 },
                 {
