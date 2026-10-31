@@ -9,7 +9,7 @@
             "views": [
                 {
                     "class": "DepictionMarkdownView",
-                    "markdown": "## YTDownloader\n\nA standalone app that downloads YouTube videos for offline viewing, wrapping the on-device yt-dlp binary (installed separately via APT) behind a native UI. Paste a URL or share straight from the YouTube app, pick an exact resolution/format, and the file lands in `/var/mobile/Media/YTDownloader` for easy Filza access.",
+                    "markdown": "## YTDownloader\n\nA standalone app that downloads YouTube videos for offline viewing, wrapping a bundled yt-dlp runtime behind a native UI. Paste a URL or share straight from the YouTube app, pick an exact resolution/format, and the file lands in `/var/mobile/Media/YTDownloader` for easy Filza access. First launch walks through downloading and installing the required runtime (~120MB) entirely in-app, with real progress shown throughout -- no SSH or terminal needed.",
                     "useSpacing": true
                 },
                 {
@@ -21,7 +21,7 @@
                 },
                 {
                     "class": "DepictionMarkdownView",
-                    "markdown": "- Share-sheet integration: send a video straight from YouTube's own Share button\n- Real per-resolution format list (actual filesizes, not fixed quality tiers), highest quality first\n- \"互換性優先\" (compatibility-first) mode and per-row badges showing which formats this device's AVFoundation can actually play natively, vs. which need a third-party app\n- Library tab: browse, play, delete, and re-upload downloaded files, with real YouTube thumbnails and a native video-details screen\n- FLAC extraction, best-quality+embedded-subtitles download, and thumbnail-save shortcuts\n- Optional YouTube cookie import for private/age-restricted videos\n- Download-complete/failed notifications via BulletinRelay\n- A self-built CPython 3.13 + bgutil PO-token server on-device, unlocking full-quality downloads without relying on an external server",
+                    "markdown": "- One-tap in-app runtime installer: downloads and installs the required Python/Node/PO-token server bundle itself, with a progress bar and a setuid-root helper handling the one privileged step -- no SSH required\n- Share-sheet integration: send a video straight from YouTube's own Share button\n- Real per-resolution format list (actual filesizes, not fixed quality tiers), highest quality first\n- \"互換性優先\" (compatibility-first) mode and per-row badges showing which formats this device's AVFoundation can actually play natively, vs. which need a third-party app\n- Library tab: browse, play, delete, and re-upload downloaded files, with real YouTube thumbnails and a native video-details screen\n- FLAC extraction, best-quality+embedded-subtitles download, and thumbnail-save shortcuts\n- Optional YouTube cookie import for private/age-restricted videos\n- Download-complete/failed notifications via BulletinRelay\n- A self-built CPython 3.13 + bgutil PO-token server on-device, unlocking full-quality downloads without relying on an external server",
                     "useSpacing": true
                 },
                 {
@@ -33,7 +33,7 @@
                 },
                 {
                     "class": "DepictionMarkdownView",
-                    "markdown": "yt-dlp must be installed separately (`pip3 install yt-dlp`) — the app will show the exact command if it's missing. See the in-app Settings screen for cookie import and default-quality options.",
+                    "markdown": "Nothing to install separately -- on first launch the app detects the missing runtime and walks you through downloading and installing it itself. See the in-app Settings screen for cookie import and default-quality options.",
                     "useSpacing": true
                 },
                 {
@@ -56,7 +56,7 @@
             "views": [
                 {
                     "class": "DepictionMarkdownView",
-                    "markdown": "## YTDownloader\n\nYouTube動画をオフライン視聴用にダウンロードする単体アプリです。端末上のyt-dlp(別途APTでインストール)をネイティブUIでラップしています。URLを貼り付けるか、YouTubeアプリから直接共有するだけで、解像度/フォーマットを選んでダウンロードできます。ファイルは`/var/mobile/Media/YTDownloader`(Filzaから閲覧可)に保存されます。",
+                    "markdown": "## YTDownloader\n\nYouTube動画をオフライン視聴用にダウンロードする単体アプリです。同梱のyt-dlpランタイムをネイティブUIでラップしています。URLを貼り付けるか、YouTubeアプリから直接共有するだけで、解像度/フォーマットを選んでダウンロードできます。ファイルは`/var/mobile/Media/YTDownloader`(Filzaから閲覧可)に保存されます。初回起動時は必要なランタイム一式(約120MB)のダウンロード・インストールをアプリ内で完結でき、進捗も表示されます。SSHやターミナル操作は不要です。",
                     "useSpacing": true
                 },
                 {
@@ -68,7 +68,7 @@
                 },
                 {
                     "class": "DepictionMarkdownView",
-                    "markdown": "- 共有シート対応:YouTubeアプリの共有ボタンから直接送信可能\n- 実際のファイルサイズ付き・解像度ごとのフォーマット一覧(固定の画質ティアではない)、高画質順\n- 「互換性優先」モードと、各行にこの端末のAVFoundationで実際にネイティブ再生できるかのバッジ表示(できない場合は他アプリでの再生を案内)\n- ライブラリタブ:ダウンロード済みファイルの閲覧・再生・削除・再アップロード、本物のYouTubeサムネイルとネイティブな動画詳細画面付き\n- FLAC抽出、最高画質+字幕埋め込みダウンロード、サムネイル保存のショートカット\n- 非公開/年齢制限動画向けのCookie取り込み(任意)\n- BulletinRelay経由のダウンロード完了/失敗通知\n- 端末上に自前ビルドしたCPython 3.13 + bgutilによるPOトークンサーバーを搭載し、外部サーバーなしで最高画質ダウンロードを実現",
+                    "markdown": "- アプリ内ランタイムインストーラー:必要なPython/Node/PO-tokenサーバー一式を進捗バー付きでダウンロード・インストール、特権操作部分はsetuid-rootヘルパーが担当しSSH不要\n- 共有シート対応:YouTubeアプリの共有ボタンから直接送信可能\n- 実際のファイルサイズ付き・解像度ごとのフォーマット一覧(固定の画質ティアではない)、高画質順\n- 「互換性優先」モードと、各行にこの端末のAVFoundationで実際にネイティブ再生できるかのバッジ表示(できない場合は他アプリでの再生を案内)\n- ライブラリタブ:ダウンロード済みファイルの閲覧・再生・削除・再アップロード、本物のYouTubeサムネイルとネイティブな動画詳細画面付き\n- FLAC抽出、最高画質+字幕埋め込みダウンロード、サムネイル保存のショートカット\n- 非公開/年齢制限動画向けのCookie取り込み(任意)\n- BulletinRelay経由のダウンロード完了/失敗通知\n- 端末上に自前ビルドしたCPython 3.13 + bgutilによるPOトークンサーバーを搭載し、外部サーバーなしで最高画質ダウンロードを実現",
                     "useSpacing": true
                 },
                 {
@@ -80,7 +80,7 @@
                 },
                 {
                     "class": "DepictionMarkdownView",
-                    "markdown": "yt-dlpは別途インストールが必要です(`pip3 install yt-dlp`)。未インストールの場合はアプリ内に正確なコマンドが表示されます。Cookie取り込みやデフォルト画質の設定はアプリ内の設定画面から行えます。",
+                    "markdown": "別途インストールは不要です。初回起動時にランタイム未導入を検知し、アプリ内でダウンロード・インストールまで案内します。Cookie取り込みやデフォルト画質の設定はアプリ内の設定画面から行えます。",
                     "useSpacing": true
                 },
                 {
@@ -103,7 +103,7 @@
             "views": [
                 {
                     "class": "DepictionMarkdownView",
-                    "markdown": "## 1.0\n- Initial release: paste-URL and Share Extension download flows, real per-resolution/per-extension format picker, Library tab with native video playback and details\n- Self-built CPython 3.13 + bgutil PO-token server for full-quality anonymous downloads\n- \"互換性優先\" compatibility mode and per-row native-playability badges, backed by a real on-device AVFoundation check instead of a guessed extension list\n- \"他のアプリで開く\" fallback in the Library tab for formats (WebM/VP9, MKV) this device's AVFoundation can't decode\n- YouTube-thumbnail-accurate Library thumbnails via yt-dlp --write-thumbnail, instead of a blind ffmpeg frame-grab\n- Fixed a cookies+tvhtml5 client conflict that silently broke every download once YouTube cookies were imported\n- Fixed a ~1.5s main-thread block on PO-token server cold start that could interfere with the system's own app-switch animations\n- Reworked the Share Extension's handoff to the containing app to use the public responder-chain UIApplication openURL: API, with transition-aware timing, after confirming the host app (e.g. YouTube) could otherwise be left with a stuck, untappable window on return\n- Delete confirmation in the Library tab, download-progress percentage to one decimal place, BulletinRelay download-complete/failed notifications",
+                    "markdown": "## 1.1\n- The required runtime bundle (self-built Python 3.13 + yt-dlp, Node 22, the bgutil PO-token server -- ~120MB) can now be downloaded and installed entirely in-app, with a real progress bar throughout. A bundled setuid-root helper (taking no arguments, trusting nothing from its caller) handles the one privileged step -- extracting the bundle under /usr/local -- since the app process itself has no write access there even with the no-sandbox entitlement\n- Fixed the install-complete Welcome screen being presented on top of the still-visible \"extracting\" screen instead of replacing it, which could leave a stale-looking stuck screen reachable by closing the Welcome/guide screens\n\n## 1.0\n- Initial release: paste-URL and Share Extension download flows, real per-resolution/per-extension format picker, Library tab with native video playback and details\n- Self-built CPython 3.13 + bgutil PO-token server for full-quality anonymous downloads\n- \"互換性優先\" compatibility mode and per-row native-playability badges, backed by a real on-device AVFoundation check instead of a guessed extension list\n- \"他のアプリで開く\" fallback in the Library tab for formats (WebM/VP9, MKV) this device's AVFoundation can't decode\n- YouTube-thumbnail-accurate Library thumbnails via yt-dlp --write-thumbnail, instead of a blind ffmpeg frame-grab\n- Fixed a cookies+tvhtml5 client conflict that silently broke every download once YouTube cookies were imported\n- Fixed a ~1.5s main-thread block on PO-token server cold start that could interfere with the system's own app-switch animations\n- Reworked the Share Extension's handoff to the containing app to use the public responder-chain UIApplication openURL: API, with transition-aware timing, after confirming the host app (e.g. YouTube) could otherwise be left with a stuck, untappable window on return\n- Delete confirmation in the Library tab, download-progress percentage to one decimal place, BulletinRelay download-complete/failed notifications",
                     "useSpacing": true
                 }
             ]

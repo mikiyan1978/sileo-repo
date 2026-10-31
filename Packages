@@ -307,17 +307,17 @@ SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1
 
 Package: com.mikiyan1978.ytdownloader
 Name: YTDownloader
-Description: Standalone app that downloads YouTube videos for offline viewing, by wrapping the on-device yt-dlp binary (installed separately via APT) from a native UI -- paste a URL or share from YouTube, pick a real per-resolution format, and the file lands in /var/mobile/Media/YTDownloader for easy Filza access.
+Description: Standalone app that downloads YouTube videos for offline viewing, wrapping a bundled yt-dlp runtime from a native UI -- paste a URL, pick a format, download, and the file lands in /var/mobile/Media/YTDownloader for easy Filza access. First launch walks through downloading and installing the required runtime bundle entirely in-app (a bundled setuid-root helper handles the one privileged step), with progress shown throughout.
 Maintainer: mikiyan1978
 Author: mikiyan1978
 Section: Utilities
 Depends: firmware (>= 14.0), com.mikiyan1978.bulletinrelay
 Architecture: iphoneos-arm
-Version: 1.0
-Installed-Size: 724
-Filename: debs/com.mikiyan1978.ytdownloader_1.0_iphoneos-arm.deb
-Size: 97894
-SHA256: b398b275bab666271709c9dd673bbff58c5741dc34a9757ce0bd0a7a05eeb287
+Version: 1.1
+Installed-Size: 1016
+Filename: debs/com.mikiyan1978.ytdownloader_1.1_iphoneos-arm.deb
+Size: 125162
+SHA256: 7139683ce8aae9eb6692f0b80ec644e8235fcb0332a9d58f656805e148ab24b1
 SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.ytdownloader.json
 
 Package: com.mikiyan1978.bulletinrelay
