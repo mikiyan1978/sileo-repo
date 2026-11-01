@@ -313,11 +313,11 @@ Author: mikiyan1978
 Section: Utilities
 Depends: firmware (>= 14.0), com.mikiyan1978.bulletinrelay
 Architecture: iphoneos-arm
-Version: 1.17
+Version: 1.18
 Installed-Size: 1828
-Filename: debs/com.mikiyan1978.ytdownloader_1.17_iphoneos-arm.deb
-Size: 422140
-SHA256: 097fb24f05c48ec7164799afaca930f222087240dc7fc6abf9ba02c35fc1ce53
+Filename: debs/com.mikiyan1978.ytdownloader_1.18_iphoneos-arm.deb
+Size: 422030
+SHA256: b75cff73d6e95eafe8b48a913c18181e296d73c437badf82c4380690a23d679b
 SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.ytdownloader.json
 
 Package: com.mikiyan1978.bulletinrelay
