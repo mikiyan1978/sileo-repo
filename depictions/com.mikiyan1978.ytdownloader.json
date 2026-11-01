@@ -1,112 +1,112 @@
 {
-    "minVersion": "0.4",
-    "class": "DepictionTabView",
-    "tintColor": "#34C759",
-    "tabs": [
+  "minVersion": "0.4",
+  "class": "DepictionTabView",
+  "tintColor": "#34C759",
+  "tabs": [
+    {
+      "class": "DepictionStackView",
+      "tabname": "Details",
+      "views": [
         {
-            "class": "DepictionStackView",
-            "tabname": "Details",
-            "views": [
-                {
-                    "class": "DepictionMarkdownView",
-                    "markdown": "## YTDownloader\n\nA standalone app that downloads YouTube videos for offline viewing, wrapping a bundled yt-dlp runtime behind a native UI. Paste a URL or share straight from the YouTube app, pick an exact resolution/format, and the file lands in `/var/mobile/Media/YTDownloader` for easy Filza access. First launch walks through downloading and installing the required runtime (~120MB) entirely in-app, with real progress shown throughout -- no SSH or terminal needed.",
-                    "useSpacing": true
-                },
-                {
-                    "class": "DepictionSeparatorView"
-                },
-                {
-                    "class": "DepictionHeaderView",
-                    "title": "Features"
-                },
-                {
-                    "class": "DepictionMarkdownView",
-                    "markdown": "- Fully custom visual identity on the Download tab: bundled typography, a ticket-stub CTA button, and other custom-drawn shapes instead of stock UIKit chrome\n- One-tap in-app runtime installer: downloads and installs the required Python/Node/PO-token server bundle itself, with a progress bar, SHA256 verification, and a setuid-root helper handling the one privileged step -- no SSH required\n- Works with any yt-dlp-supported site, not just YouTube (Dailymotion, Vimeo, and others)\n- English and Japanese localization\n- Share-sheet integration: send a video straight from YouTube's own Share button\n- Real per-resolution format list (actual filesizes, not fixed quality tiers), highest quality first\n- \"互換性優先\" (compatibility-first) mode and per-row badges showing which formats this device's AVFoundation can actually play natively, vs. which need a third-party app\n- Library tab: browse, play, delete, and re-upload downloaded files, with real YouTube thumbnails and a native video-details screen\n- FLAC extraction, best-quality+embedded-subtitles download, and thumbnail-save shortcuts\n- Optional YouTube cookie import for private/age-restricted videos\n- Download-complete/failed notifications via BulletinRelay\n- A self-built CPython 3.13 + bgutil PO-token server on-device, unlocking full-quality downloads without relying on an external server",
-                    "useSpacing": true
-                },
-                {
-                    "class": "DepictionSeparatorView"
-                },
-                {
-                    "class": "DepictionHeaderView",
-                    "title": "Requirements"
-                },
-                {
-                    "class": "DepictionMarkdownView",
-                    "markdown": "Nothing to install separately -- on first launch the app detects the missing runtime and walks you through downloading and installing it itself. See the in-app Settings screen for cookie import and default-quality options.",
-                    "useSpacing": true
-                },
-                {
-                    "class": "DepictionSeparatorView"
-                },
-                {
-                    "class": "DepictionHeaderView",
-                    "title": "Developer"
-                },
-                {
-                    "class": "DepictionMarkdownView",
-                    "markdown": "**mikiyan1978**\n\n[Repo](https://mikiyan1978.github.io/sileo-repo/)",
-                    "useSpacing": true
-                }
-            ]
+          "class": "DepictionMarkdownView",
+          "markdown": "## YTDownloader\n\nA standalone app that downloads YouTube videos for offline viewing, wrapping a bundled yt-dlp runtime behind a native UI. Paste a URL or share straight from the YouTube app, pick an exact resolution/format, and the file lands in `/var/mobile/Media/YTDownloader` for easy Filza access. First launch walks through downloading and installing the required runtime (~120MB) entirely in-app, with real progress shown throughout -- no SSH or terminal needed.",
+          "useSpacing": true
         },
         {
-            "class": "DepictionStackView",
-            "tabname": "日本語",
-            "views": [
-                {
-                    "class": "DepictionMarkdownView",
-                    "markdown": "## YTDownloader\n\nYouTube動画をオフライン視聴用にダウンロードする単体アプリです。同梱のyt-dlpランタイムをネイティブUIでラップしています。URLを貼り付けるか、YouTubeアプリから直接共有するだけで、解像度/フォーマットを選んでダウンロードできます。ファイルは`/var/mobile/Media/YTDownloader`(Filzaから閲覧可)に保存されます。初回起動時は必要なランタイム一式(約120MB)のダウンロード・インストールをアプリ内で完結でき、進捗も表示されます。SSHやターミナル操作は不要です。",
-                    "useSpacing": true
-                },
-                {
-                    "class": "DepictionSeparatorView"
-                },
-                {
-                    "class": "DepictionHeaderView",
-                    "title": "機能"
-                },
-                {
-                    "class": "DepictionMarkdownView",
-                    "markdown": "- ダウンロードタブを完全オリジナルのビジュアルに刷新:独自フォント・チケット半券型CTAボタンなど、標準UIKitの見た目から脱却したカスタム描画UI\n- アプリ内ランタイムインストーラー:必要なPython/Node/PO-tokenサーバー一式を進捗バー付き・SHA256検証付きでダウンロード・インストール、特権操作部分はsetuid-rootヘルパーが担当しSSH不要\n- YouTubeに限らずyt-dlp対応サイト全般で利用可能(Dailymotion、Vimeoなど)\n- 日本語・英語ローカライズ対応\n- 共有シート対応:YouTubeアプリの共有ボタンから直接送信可能\n- 実際のファイルサイズ付き・解像度ごとのフォーマット一覧(固定の画質ティアではない)、高画質順\n- 「互換性優先」モードと、各行にこの端末のAVFoundationで実際にネイティブ再生できるかのバッジ表示(できない場合は他アプリでの再生を案内)\n- ライブラリタブ:ダウンロード済みファイルの閲覧・再生・削除・再アップロード、本物のYouTubeサムネイルとネイティブな動画詳細画面付き\n- FLAC抽出、最高画質+字幕埋め込みダウンロード、サムネイル保存のショートカット\n- 非公開/年齢制限動画向けのCookie取り込み(任意)\n- BulletinRelay経由のダウンロード完了/失敗通知\n- 端末上に自前ビルドしたCPython 3.13 + bgutilによるPOトークンサーバーを搭載し、外部サーバーなしで最高画質ダウンロードを実現",
-                    "useSpacing": true
-                },
-                {
-                    "class": "DepictionSeparatorView"
-                },
-                {
-                    "class": "DepictionHeaderView",
-                    "title": "必要なもの"
-                },
-                {
-                    "class": "DepictionMarkdownView",
-                    "markdown": "別途インストールは不要です。初回起動時にランタイム未導入を検知し、アプリ内でダウンロード・インストールまで案内します。Cookie取り込みやデフォルト画質の設定はアプリ内の設定画面から行えます。",
-                    "useSpacing": true
-                },
-                {
-                    "class": "DepictionSeparatorView"
-                },
-                {
-                    "class": "DepictionHeaderView",
-                    "title": "開発者"
-                },
-                {
-                    "class": "DepictionMarkdownView",
-                    "markdown": "**mikiyan1978**\n\n[Repo](https://mikiyan1978.github.io/sileo-repo/)",
-                    "useSpacing": true
-                }
-            ]
+          "class": "DepictionSeparatorView"
         },
         {
-            "class": "DepictionStackView",
-            "tabname": "Changelog",
-            "views": [
-                {
-                    "class": "DepictionMarkdownView",
-                    "markdown": "## 1.7\n- Extended the custom design language (typography, ticket-stub buttons) from the Download tab to every other screen: Settings, Library, quality/format pickers, video details, the runtime installer, and Welcome/Guide\n- Found that a custom template-rendered icon crashes in EVERY UIKit context on this device, including tab bar/nav bar icons (not just UIImageView/UIButton as first thought) -- removed the two affected helper functions entirely and reverted those icons to SF Symbols, which are confirmed safe everywhere\n\n## 1.6\n- Swapped the home screen headline copy for something that matches the bolder new brand tone\n\n## 1.5\n- The Download tab now has a fully custom visual identity instead of the generic UIKit look: bundled typography (Space Grotesk headlines + JetBrains Mono technical text), a ticket-stub CTA button, a chevron-cut wordmark badge, a diagonal accent stripe, and chevron-cut thumbnails -- all custom-drawn shapes, no system chrome\n- Found and fixed a real on-device crash hit while building this: a tintColor'd UIImageView/UIButton showing a template-rendered image (confirmed with both SF Symbols and a custom image) crashes via the same broken CoreUI/CoreImage path as the known keyboard-candidate-bar bug -- not keyboard-specific after all. Fixed by drawing icons directly via CAShapeLayer instead of UIImage wherever a tintColor is involved\n\n## 1.4\n- The in-app runtime installer now verifies the downloaded bundle's SHA256 (pinned in the app) before ever handing it to the setuid-root helper -- a corrupted or altered download now fails cleanly instead of being extracted as root\n- Confirmed the app already works with any yt-dlp-supported site, not just YouTube (verified with a real Dailymotion download) -- updated the UI copy accordingly; cookie import stays YouTube/Google-only\n- Fully localized to English (121 strings) alongside Japanese, selected automatically from the device/app language setting\n\n## 1.3\n- Security hardening for the setuid-root install helper (ytdrootinstall): it now verifies the direct parent process is literally YTDownloader.app's own binary (via the parent pid's resolved executable path) before doing anything, closing a gap where any process running as the same user could have invoked it directly for root-privileged writes under /usr/local. Also added a free-space check before extraction so a full volume fails cleanly instead of leaving a half-installed runtime\n- Fixed a trap in the runtime-install flow: a failed install reached via the direct download-attempt path could leave the user stuck in a full-screen modal with only \"再試行\" and no way to back out. The error screen now always offers a way to dismiss\n\n## 1.2\n- Fixed a crash when tapping \"URLを貼り付けて開始\" (paste URL and start): the text-field alert it used to show triggers the on-screen keyboard, which crashes on this device (EXC_BAD_ACCESS inside CI::GLContext, rendering an icon for the Japanese input candidate bar -- a device-level CoreImage/CoreUI bug). The button now proceeds straight to quality selection when the clipboard already holds a URL, or shows a plain info alert (no keyboard) otherwise\n\n## 1.1\n- The required runtime bundle (self-built Python 3.13 + yt-dlp, Node 22, the bgutil PO-token server -- ~120MB) can now be downloaded and installed entirely in-app, with a real progress bar throughout. A bundled setuid-root helper (taking no arguments, trusting nothing from its caller) handles the one privileged step -- extracting the bundle under /usr/local -- since the app process itself has no write access there even with the no-sandbox entitlement\n- Fixed the install-complete Welcome screen being presented on top of the still-visible \"extracting\" screen instead of replacing it, which could leave a stale-looking stuck screen reachable by closing the Welcome/guide screens\n\n## 1.0\n- Initial release: paste-URL and Share Extension download flows, real per-resolution/per-extension format picker, Library tab with native video playback and details\n- Self-built CPython 3.13 + bgutil PO-token server for full-quality anonymous downloads\n- \"互換性優先\" compatibility mode and per-row native-playability badges, backed by a real on-device AVFoundation check instead of a guessed extension list\n- \"他のアプリで開く\" fallback in the Library tab for formats (WebM/VP9, MKV) this device's AVFoundation can't decode\n- YouTube-thumbnail-accurate Library thumbnails via yt-dlp --write-thumbnail, instead of a blind ffmpeg frame-grab\n- Fixed a cookies+tvhtml5 client conflict that silently broke every download once YouTube cookies were imported\n- Fixed a ~1.5s main-thread block on PO-token server cold start that could interfere with the system's own app-switch animations\n- Reworked the Share Extension's handoff to the containing app to use the public responder-chain UIApplication openURL: API, with transition-aware timing, after confirming the host app (e.g. YouTube) could otherwise be left with a stuck, untappable window on return\n- Delete confirmation in the Library tab, download-progress percentage to one decimal place, BulletinRelay download-complete/failed notifications",
-                    "useSpacing": true
-                }
-            ]
+          "class": "DepictionHeaderView",
+          "title": "Features"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "- Fully custom visual identity on the Download tab: bundled typography, a ticket-stub CTA button, and other custom-drawn shapes instead of stock UIKit chrome\n- One-tap in-app runtime installer: downloads and installs the required Python/Node/PO-token server bundle itself, with a progress bar, SHA256 verification, and a setuid-root helper handling the one privileged step -- no SSH required\n- Works with any yt-dlp-supported site, not just YouTube (Dailymotion, Vimeo, and others)\n- English and Japanese localization\n- Share-sheet integration: send a video straight from YouTube's own Share button\n- Real per-resolution format list (actual filesizes, not fixed quality tiers), highest quality first\n- \"互換性優先\" (compatibility-first) mode and per-row badges showing which formats this device's AVFoundation can actually play natively, vs. which need a third-party app\n- Library tab: browse, play, delete, and re-upload downloaded files, with real YouTube thumbnails and a native video-details screen\n- FLAC extraction, best-quality+embedded-subtitles download, and thumbnail-save shortcuts\n- Optional YouTube cookie import for private/age-restricted videos\n- Playlist URLs queue every video at once (shared quality, capped at 200 entries); pasting a new URL while a download is already running queues it instead of being ignored, failed queue items can be retried, and each queued download checks free space first\n- Live progress notifications via BulletinRelay (~25/50/75%, plus completion), not just complete/failed\n- A self-built CPython 3.13 + bgutil PO-token server on-device, unlocking full-quality downloads without relying on an external server",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Requirements"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "Nothing to install separately -- on first launch the app detects the missing runtime and walks you through downloading and installing it itself. See the in-app Settings screen for cookie import and default-quality options.",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Developer"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "**mikiyan1978**\n\n[Repo](https://mikiyan1978.github.io/sileo-repo/)",
+          "useSpacing": true
         }
-    ]
+      ]
+    },
+    {
+      "class": "DepictionStackView",
+      "tabname": "日本語",
+      "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "## YTDownloader\n\nYouTube動画をオフライン視聴用にダウンロードする単体アプリです。同梱のyt-dlpランタイムをネイティブUIでラップしています。URLを貼り付けるか、YouTubeアプリから直接共有するだけで、解像度/フォーマットを選んでダウンロードできます。ファイルは`/var/mobile/Media/YTDownloader`(Filzaから閲覧可)に保存されます。初回起動時は必要なランタイム一式(約120MB)のダウンロード・インストールをアプリ内で完結でき、進捗も表示されます。SSHやターミナル操作は不要です。",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "機能"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "- ダウンロードタブを完全オリジナルのビジュアルに刷新:独自フォント・チケット半券型CTAボタンなど、標準UIKitの見た目から脱却したカスタム描画UI\n- アプリ内ランタイムインストーラー:必要なPython/Node/PO-tokenサーバー一式を進捗バー付き・SHA256検証付きでダウンロード・インストール、特権操作部分はsetuid-rootヘルパーが担当しSSH不要\n- YouTubeに限らずyt-dlp対応サイト全般で利用可能(Dailymotion、Vimeoなど)\n- 日本語・英語ローカライズ対応\n- 共有シート対応:YouTubeアプリの共有ボタンから直接送信可能\n- 実際のファイルサイズ付き・解像度ごとのフォーマット一覧(固定の画質ティアではない)、高画質順\n- 「互換性優先」モードと、各行にこの端末のAVFoundationで実際にネイティブ再生できるかのバッジ表示(できない場合は他アプリでの再生を案内)\n- ライブラリタブ:ダウンロード済みファイルの閲覧・再生・削除・再アップロード、本物のYouTubeサムネイルとネイティブな動画詳細画面付き\n- FLAC抽出、最高画質+字幕埋め込みダウンロード、サムネイル保存のショートカット\n- 非公開/年齢制限動画向けのCookie取り込み(任意)\n- プレイリストURLを一括でキューに追加(共通の画質設定、最大200件まで)。ダウンロード中に新しいURLを開いてもキューに追加され、失敗したキュー項目は再試行可能、各ダウンロード開始前に空き容量もチェック\n- BulletinRelay経由の進捗通知(約25/50/75%ごと)と完了/失敗通知\n- 端末上に自前ビルドしたCPython 3.13 + bgutilによるPOトークンサーバーを搭載し、外部サーバーなしで最高画質ダウンロードを実現",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "必要なもの"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "別途インストールは不要です。初回起動時にランタイム未導入を検知し、アプリ内でダウンロード・インストールまで案内します。Cookie取り込みやデフォルト画質の設定はアプリ内の設定画面から行えます。",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "開発者"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "**mikiyan1978**\n\n[Repo](https://mikiyan1978.github.io/sileo-repo/)",
+          "useSpacing": true
+        }
+      ]
+    },
+    {
+      "class": "DepictionStackView",
+      "tabname": "Changelog",
+      "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "## 1.7\n- Extended the custom design language (typography, ticket-stub buttons) from the Download tab to every other screen: Settings, Library, quality/format pickers, video details, the runtime installer, and Welcome/Guide\n- Found that a custom template-rendered icon crashes in EVERY UIKit context on this device, including tab bar/nav bar icons (not just UIImageView/UIButton as first thought) -- removed the two affected helper functions entirely and reverted those icons to SF Symbols, which are confirmed safe everywhere\n\n## 1.6\n- Swapped the home screen headline copy for something that matches the bolder new brand tone\n\n## 1.5\n- The Download tab now has a fully custom visual identity instead of the generic UIKit look: bundled typography (Space Grotesk headlines + JetBrains Mono technical text), a ticket-stub CTA button, a chevron-cut wordmark badge, a diagonal accent stripe, and chevron-cut thumbnails -- all custom-drawn shapes, no system chrome\n- Found and fixed a real on-device crash hit while building this: a tintColor'd UIImageView/UIButton showing a template-rendered image (confirmed with both SF Symbols and a custom image) crashes via the same broken CoreUI/CoreImage path as the known keyboard-candidate-bar bug -- not keyboard-specific after all. Fixed by drawing icons directly via CAShapeLayer instead of UIImage wherever a tintColor is involved\n\n## 1.4\n- The in-app runtime installer now verifies the downloaded bundle's SHA256 (pinned in the app) before ever handing it to the setuid-root helper -- a corrupted or altered download now fails cleanly instead of being extracted as root\n- Confirmed the app already works with any yt-dlp-supported site, not just YouTube (verified with a real Dailymotion download) -- updated the UI copy accordingly; cookie import stays YouTube/Google-only\n- Fully localized to English (121 strings) alongside Japanese, selected automatically from the device/app language setting\n\n## 1.3\n- Security hardening for the setuid-root install helper (ytdrootinstall): it now verifies the direct parent process is literally YTDownloader.app's own binary (via the parent pid's resolved executable path) before doing anything, closing a gap where any process running as the same user could have invoked it directly for root-privileged writes under /usr/local. Also added a free-space check before extraction so a full volume fails cleanly instead of leaving a half-installed runtime\n- Fixed a trap in the runtime-install flow: a failed install reached via the direct download-attempt path could leave the user stuck in a full-screen modal with only \"再試行\" and no way to back out. The error screen now always offers a way to dismiss\n\n## 1.2\n- Fixed a crash when tapping \"URLを貼り付けて開始\" (paste URL and start): the text-field alert it used to show triggers the on-screen keyboard, which crashes on this device (EXC_BAD_ACCESS inside CI::GLContext, rendering an icon for the Japanese input candidate bar -- a device-level CoreImage/CoreUI bug). The button now proceeds straight to quality selection when the clipboard already holds a URL, or shows a plain info alert (no keyboard) otherwise\n\n## 1.1\n- The required runtime bundle (self-built Python 3.13 + yt-dlp, Node 22, the bgutil PO-token server -- ~120MB) can now be downloaded and installed entirely in-app, with a real progress bar throughout. A bundled setuid-root helper (taking no arguments, trusting nothing from its caller) handles the one privileged step -- extracting the bundle under /usr/local -- since the app process itself has no write access there even with the no-sandbox entitlement\n- Fixed the install-complete Welcome screen being presented on top of the still-visible \"extracting\" screen instead of replacing it, which could leave a stale-looking stuck screen reachable by closing the Welcome/guide screens\n\n## 1.0\n- Initial release: paste-URL and Share Extension download flows, real per-resolution/per-extension format picker, Library tab with native video playback and details\n- Self-built CPython 3.13 + bgutil PO-token server for full-quality anonymous downloads\n- \"互換性優先\" compatibility mode and per-row native-playability badges, backed by a real on-device AVFoundation check instead of a guessed extension list\n- \"他のアプリで開く\" fallback in the Library tab for formats (WebM/VP9, MKV) this device's AVFoundation can't decode\n- YouTube-thumbnail-accurate Library thumbnails via yt-dlp --write-thumbnail, instead of a blind ffmpeg frame-grab\n- Fixed a cookies+tvhtml5 client conflict that silently broke every download once YouTube cookies were imported\n- Fixed a ~1.5s main-thread block on PO-token server cold start that could interfere with the system's own app-switch animations\n- Reworked the Share Extension's handoff to the containing app to use the public responder-chain UIApplication openURL: API, with transition-aware timing, after confirming the host app (e.g. YouTube) could otherwise be left with a stuck, untappable window on return\n- Delete confirmation in the Library tab, download-progress percentage to one decimal place, BulletinRelay download-complete/failed notifications",
+          "useSpacing": true
+        }
+      ]
+    }
+  ]
 }
