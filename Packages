@@ -311,13 +311,13 @@ Description: Standalone app that downloads YouTube videos for offline viewing, w
 Maintainer: mikiyan1978
 Author: mikiyan1978
 Section: Utilities
-Depends: firmware (>= 14.0), com.mikiyan1978.bulletinrelay
+Depends: firmware (>= 14.0), com.mikiyan1978.bulletinrelay, aria2
 Architecture: iphoneos-arm
-Version: 1.31
+Version: 1.38
 Installed-Size: 1868
-Filename: debs/com.mikiyan1978.ytdownloader_1.31_iphoneos-arm.deb
-Size: 429860
-SHA256: 096b15eb50537b9e834c3af9e78dfd893d5fa702aa61d0970a70e81e71c1def7
+Filename: debs/com.mikiyan1978.ytdownloader_1.38_iphoneos-arm.deb
+Size: 434702
+SHA256: 7febc4b855cf8d2d299cda6721b6096a50d413a059abdb43da51489da7c8c18a
 SileoDepiction: https://mikiyan1978.github.io/sileo-repo/depictions/com.mikiyan1978.ytdownloader.json
 
 Package: com.mikiyan1978.bulletinrelay
