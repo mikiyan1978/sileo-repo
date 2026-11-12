@@ -1,0 +1,30 @@
+{
+  "name": "mikiyan1978 Apps",
+  "identifier": "io.github.mikiyan1978.sileo-repo.lc",
+  "subtitle": "YTDownloader LC",
+  "apps": [
+    {
+      "name": "YTDownloader LC",
+      "bundleIdentifier": "com.mikiyan1978.ytdownloader.lc",
+      "developerName": "mikiyan1978",
+      "subtitle": "動画ダウンローダー(LiveContainer 版)",
+      "localizedDescription": "YouTube などの動画をダウンロードするアプリ(LiveContainer 版)。最大2160pの保存に対応。音声のみは M4A。\nLiveContainer の中で動きます(JIT 不要)。TrollStore が使える端末では TrollStore 版がおすすめです。",
+      "iconURL": "https://mikiyan1978.github.io/sileo-repo/assets/ytdownloader-lc-icon.png",
+      "version": "1.0",
+      "versionDate": "2026-11-13",
+      "downloadURL": "https://github.com/mikiyan1978/sileo-repo/releases/download/ytdownloader-lc-v1.0/YTDownloaderLC-1.0.ipa",
+      "size": 14396929,
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-11-13",
+          "localizedDescription": "初版",
+          "downloadURL": "https://github.com/mikiyan1978/sileo-repo/releases/download/ytdownloader-lc-v1.0/YTDownloaderLC-1.0.ipa",
+          "size": 14396929,
+          "minOSVersion": "16.0"
+        }
+      ]
+    }
+  ],
+  "news": []
+}
