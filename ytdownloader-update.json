@@ -1,13 +1,12 @@
 {
   "lc": {
-    "version": "1.2.1",
+    "version": "1.3.0",
     "date": "2026-11-14",
     "notes": [
-      "購読画面の「+」に、「クリップボードのURLで購読」を追加しました(URLをコピーして、ボタンを1回押すだけ)",
-      "キーボードを出すと落ちる端末(OpenGL ES を使えない脱獄環境など)で、購読の「URLを入力...」とライブラリの検索を出さないようにして、落ちるのを避けました",
-      "アプリの更新案内の動作を確認し、細かい表示を整えました"
+      "yt-dlp を、アプリの中で更新できるようにしました。YouTube の仕様変更でダウンロードできなくなったときは、設定の「ダウンロードエンジン」で「更新を確認」を押すと、最新版に差し替わります(次のダウンロードから使われます)。動作がおかしいときは、「同梱の版に戻す」で元に戻せます",
+      "設定の「保存先」(Filza で開く)を、LiveContainer 版では出さないようにしました(LiveContainer の中では、Filza は使えないため)"
     ],
-    "releaseURL": "https://github.com/mikiyan1978/sileo-repo/releases/tag/ytdownloader-lc-v1.2.1"
+    "releaseURL": "https://github.com/mikiyan1978/sileo-repo/releases/tag/ytdownloader-lc-v1.3.0"
   },
   "trollstore": {
     "version": "1.2.1",

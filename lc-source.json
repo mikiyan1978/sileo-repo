@@ -10,11 +10,19 @@
       "subtitle": "動画ダウンローダー(LiveContainer 版)",
       "localizedDescription": "YouTube などの動画をダウンロードするアプリ(LiveContainer 版)。最大2160pの保存に対応。MKV / WebM で、最高画質・最高音質を保存できます。音声のみは M4A または Opus(.mka)。\nLiveContainer の中で動きます(JIT 不要)。TrollStore が使える端末では TrollStore 版がおすすめです。",
       "iconURL": "https://mikiyan1978.github.io/sileo-repo/assets/ytdownloader-lc-icon.png",
-      "version": "1.2.1",
+      "version": "1.3.0",
       "versionDate": "2026-11-14",
-      "downloadURL": "https://github.com/mikiyan1978/sileo-repo/releases/download/ytdownloader-lc-v1.2.1/YTDownloaderLC-1.2.1.ipa",
-      "size": 14412246,
+      "downloadURL": "https://github.com/mikiyan1978/sileo-repo/releases/download/ytdownloader-lc-v1.3.0/YTDownloaderLC-1.3.0.ipa",
+      "size": 14416424,
       "versions": [
+        {
+          "version": "1.3.0",
+          "date": "2026-11-14",
+          "localizedDescription": "yt-dlp を、アプリの中で更新できるようにしました。YouTube の仕様変更でダウンロードできなくなったときは、設定の「ダウンロードエンジン」で「更新を確認」を押すと、最新版に差し替わります(次のダウンロードから使われます)。動作がおかしいときは、「同梱の版に戻す」で元に戻せます 設定の「保存先」(Filza で開く)を、LiveContainer 版では出さないようにしました(LiveContainer の中では、Filza は使えないため)",
+          "downloadURL": "https://github.com/mikiyan1978/sileo-repo/releases/download/ytdownloader-lc-v1.3.0/YTDownloaderLC-1.3.0.ipa",
+          "size": 14416424,
+          "minOSVersion": "16.0"
+        },
         {
           "version": "1.2.1",
           "date": "2026-11-14",
