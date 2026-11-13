@@ -10,11 +10,19 @@
       "subtitle": "動画ダウンローダー(LiveContainer 版)",
       "localizedDescription": "YouTube などの動画をダウンロードするアプリ(LiveContainer 版)。最大2160pの保存に対応。MKV / WebM で、最高画質・最高音質を保存できます。音声のみは M4A または Opus(.mka)。\nLiveContainer の中で動きます(JIT 不要)。TrollStore が使える端末では TrollStore 版がおすすめです。",
       "iconURL": "https://mikiyan1978.github.io/sileo-repo/assets/ytdownloader-lc-icon.png",
-      "version": "1.2",
-      "versionDate": "2026-11-13",
-      "downloadURL": "https://github.com/mikiyan1978/sileo-repo/releases/download/ytdownloader-lc-v1.2/YTDownloaderLC-1.2.ipa",
-      "size": 14411044,
+      "version": "1.2.1",
+      "versionDate": "2026-11-14",
+      "downloadURL": "https://github.com/mikiyan1978/sileo-repo/releases/download/ytdownloader-lc-v1.2.1/YTDownloaderLC-1.2.1.ipa",
+      "size": 14412246,
       "versions": [
+        {
+          "version": "1.2.1",
+          "date": "2026-11-14",
+          "localizedDescription": "購読画面の「+」に、「クリップボードのURLで購読」を追加しました(URLをコピーして、ボタンを1回押すだけ) キーボードを出すと落ちる端末(OpenGL ES を使えない脱獄環境など)で、購読の「URLを入力...」とライブラリの検索を出さないようにして、落ちるのを避けました アプリの更新案内の動作を確認し、細かい表示を整えました",
+          "downloadURL": "https://github.com/mikiyan1978/sileo-repo/releases/download/ytdownloader-lc-v1.2.1/YTDownloaderLC-1.2.1.ipa",
+          "size": 14412246,
+          "minOSVersion": "16.0"
+        },
         {
           "version": "1.2",
           "date": "2026-11-13",
