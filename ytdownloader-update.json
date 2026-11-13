@@ -10,10 +10,13 @@
     "releaseURL": "https://github.com/mikiyan1978/sileo-repo/releases/tag/ytdownloader-lc-v1.2"
   },
   "trollstore": {
-    "version": "1.0",
-    "date": "2026-11-03",
-    "notes": [],
-    "releaseURL": "https://github.com/mikiyan1978/sileo-repo/releases/tag/ytdownloader-trollstore-v1.0",
-    "installURL": "apple-magnifier://install?url=https://github.com/mikiyan1978/sileo-repo/releases/download/ytdownloader-trollstore-v1.0/YTDownloaderTrollStore.tipa"
+    "version": "1.2",
+    "date": "2026-11-13",
+    "notes": [
+      "購読画面に「+」ボタンを追加",
+      "アプリの更新を案内する機能を追加"
+    ],
+    "releaseURL": "https://github.com/mikiyan1978/sileo-repo/releases/tag/ytdownloader-trollstore-v1.2",
+    "installURL": "apple-magnifier://install?url=https://github.com/mikiyan1978/sileo-repo/releases/download/ytdownloader-trollstore-v1.2/YTDownloaderTrollStore.tipa"
   }
 }
