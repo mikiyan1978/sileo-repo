@@ -18,5 +18,15 @@
     ],
     "releaseURL": "https://github.com/mikiyan1978/sileo-repo/releases/tag/ytdownloader-trollstore-v1.2",
     "installURL": "apple-magnifier://install?url=https://github.com/mikiyan1978/sileo-repo/releases/download/ytdownloader-trollstore-v1.2/YTDownloaderTrollStore.tipa"
+  },
+  "deb": {
+    "version": "1.39",
+    "date": "2026-11-14",
+    "notes": [
+      "最新のコード(TrollStore 版と共通)で作り直しました: MKV/WebM、購読、キューの設定、区間ダウンロード、字幕、SponsorBlock、音声の取り出し、ライブラリの改善、アプリ内の更新案内",
+      "aria2c と ffmpeg を同梱しました(aria2 パッケージへの依存はなくなります)。ランタイムは、これまでどおり /usr/local に入ります",
+      "ライブラリ、設定、既存のランタイムは、1.38 から引き継がれます"
+    ],
+    "installURL": "sileo://package/com.mikiyan1978.ytdownloader"
   }
 }
