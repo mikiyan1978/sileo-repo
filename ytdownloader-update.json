@@ -1,0 +1,19 @@
+{
+  "lc": {
+    "version": "1.1",
+    "date": "2026-11-13",
+    "notes": [
+      "MKV / WebM に対応(最高画質の VP9 と最高音質の Opus を、再エンコードなしで結合)",
+      "VLC などへの共有を修正",
+      "購読画面に追加ボタン"
+    ],
+    "releaseURL": "https://github.com/mikiyan1978/sileo-repo/releases/tag/ytdownloader-lc-v1.1"
+  },
+  "trollstore": {
+    "version": "1.0",
+    "date": "2026-11-03",
+    "notes": [],
+    "releaseURL": "https://github.com/mikiyan1978/sileo-repo/releases/tag/ytdownloader-trollstore-v1.0",
+    "installURL": "apple-magnifier://install?url=https://github.com/mikiyan1978/sileo-repo/releases/download/ytdownloader-trollstore-v1.0/YTDownloaderTrollStore.tipa"
+  }
+}

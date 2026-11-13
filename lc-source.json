@@ -8,13 +8,21 @@
       "bundleIdentifier": "com.mikiyan1978.ytdownloader.lc",
       "developerName": "mikiyan1978",
       "subtitle": "動画ダウンローダー(LiveContainer 版)",
-      "localizedDescription": "YouTube などの動画をダウンロードするアプリ(LiveContainer 版)。最大2160pの保存に対応。音声のみは M4A。\nLiveContainer の中で動きます(JIT 不要)。TrollStore が使える端末では TrollStore 版がおすすめです。",
+      "localizedDescription": "YouTube などの動画をダウンロードするアプリ(LiveContainer 版)。最大2160pの保存に対応。MKV / WebM で、最高画質・最高音質を保存できます。音声のみは M4A。\nLiveContainer の中で動きます(JIT 不要)。TrollStore が使える端末では TrollStore 版がおすすめです。",
       "iconURL": "https://mikiyan1978.github.io/sileo-repo/assets/ytdownloader-lc-icon.png",
-      "version": "1.0",
+      "version": "1.1",
       "versionDate": "2026-11-13",
-      "downloadURL": "https://github.com/mikiyan1978/sileo-repo/releases/download/ytdownloader-lc-v1.0/YTDownloaderLC-1.0.ipa",
-      "size": 14396929,
+      "downloadURL": "https://github.com/mikiyan1978/sileo-repo/releases/download/ytdownloader-lc-v1.1/YTDownloaderLC-1.1.ipa",
+      "size": 14409880,
       "versions": [
+        {
+          "version": "1.1",
+          "date": "2026-11-13",
+          "localizedDescription": "MKV / WebM に対応(VP9 + Opus を再エンコードなしで結合)。VLC などへの共有を修正。購読画面に追加ボタン。アプリの更新案内を追加。",
+          "downloadURL": "https://github.com/mikiyan1978/sileo-repo/releases/download/ytdownloader-lc-v1.1/YTDownloaderLC-1.1.ipa",
+          "size": 14409880,
+          "minOSVersion": "16.0"
+        },
         {
           "version": "1.0",
           "date": "2026-11-13",
