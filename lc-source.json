@@ -8,13 +8,21 @@
       "bundleIdentifier": "com.mikiyan1978.ytdownloader.lc",
       "developerName": "mikiyan1978",
       "subtitle": "動画ダウンローダー(LiveContainer 版)",
-      "localizedDescription": "YouTube などの動画をダウンロードするアプリ(LiveContainer 版)。最大2160pの保存に対応。MKV / WebM で、最高画質・最高音質を保存できます。音声のみは M4A。\nLiveContainer の中で動きます(JIT 不要)。TrollStore が使える端末では TrollStore 版がおすすめです。",
+      "localizedDescription": "YouTube などの動画をダウンロードするアプリ(LiveContainer 版)。最大2160pの保存に対応。MKV / WebM で、最高画質・最高音質を保存できます。音声のみは M4A または Opus(.mka)。\nLiveContainer の中で動きます(JIT 不要)。TrollStore が使える端末では TrollStore 版がおすすめです。",
       "iconURL": "https://mikiyan1978.github.io/sileo-repo/assets/ytdownloader-lc-icon.png",
-      "version": "1.1",
+      "version": "1.2",
       "versionDate": "2026-11-13",
-      "downloadURL": "https://github.com/mikiyan1978/sileo-repo/releases/download/ytdownloader-lc-v1.1/YTDownloaderLC-1.1.ipa",
-      "size": 14409880,
+      "downloadURL": "https://github.com/mikiyan1978/sileo-repo/releases/download/ytdownloader-lc-v1.2/YTDownloaderLC-1.2.ipa",
+      "size": 14411044,
       "versions": [
+        {
+          "version": "1.2",
+          "date": "2026-11-13",
+          "localizedDescription": "音声のみの再生時間と無音の不具合を修正。音声のみで Opus(.mka)を選べるように。LiveContainer で使えない機能を画面から非表示。",
+          "downloadURL": "https://github.com/mikiyan1978/sileo-repo/releases/download/ytdownloader-lc-v1.2/YTDownloaderLC-1.2.ipa",
+          "size": 14411044,
+          "minOSVersion": "16.0"
+        },
         {
           "version": "1.1",
           "date": "2026-11-13",
