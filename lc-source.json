@@ -1,7 +1,7 @@
 {
   "name": "mikiyan1978 Apps",
   "identifier": "io.github.mikiyan1978.sileo-repo.lc",
-  "subtitle": "YTDownloader LC",
+  "subtitle": "YTDownloader LC / YouTube Tweaks",
   "apps": [
     {
       "name": "YTDownloader LC",
@@ -77,6 +77,28 @@
           "localizedDescription": "初版",
           "downloadURL": "https://github.com/mikiyan1978/sileo-repo/releases/download/ytdownloader-lc-v1.0/YTDownloaderLC-1.0.ipa",
           "size": 14396929,
+          "minOSVersion": "16.0"
+        }
+      ]
+    },
+    {
+      "name": "YouTube Tweaks 導入",
+      "bundleIdentifier": "com.mikiyan1978.youtubetweaks",
+      "developerName": "mikiyan1978",
+      "subtitle": "LiveContainer の YouTube に Tweak を入れる",
+      "localizedDescription": "LiveContainer の中の YouTube(uYou)向けの Tweak を、Sileo のように、ソースから一覧を取得して、追加・更新・取り除きできるアプリです。再生画面の縁をなぞる線(Border Progress)や、共有シートから YTDownloader LC へ送る Tweak を入れられます。\nLiveContainer でこのアプリの「マルチタスクで起動」をオフにして、通常モードで開いてください。",
+      "iconURL": "https://mikiyan1978.github.io/sileo-repo/assets/youtubetweaks-icon.png",
+      "version": "1.0",
+      "versionDate": "2026-11-15",
+      "downloadURL": "https://github.com/mikiyan1978/sileo-repo/releases/download/youtubetweaks-v1.0/YouTubeTweaks-1.0.ipa",
+      "size": 40619,
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-11-15",
+          "localizedDescription": "最初の版。ソースから Tweak の一覧を取得して、追加・更新・取り除きができます。",
+          "downloadURL": "https://github.com/mikiyan1978/sileo-repo/releases/download/youtubetweaks-v1.0/YouTubeTweaks-1.0.ipa",
+          "size": 40619,
           "minOSVersion": "16.0"
         }
       ]
