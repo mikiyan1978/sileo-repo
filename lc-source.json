@@ -118,6 +118,28 @@
           "minOSVersion": "16.0"
         }
       ]
+    },
+    {
+      "name": "PowerPanel",
+      "bundleIdentifier": "com.mikiyan1978.powerpanel",
+      "developerName": "mikiyan1978",
+      "subtitle": "バッテリー表示・充電のお知らせ",
+      "localizedDescription": "LiveContainer 向けの、電源・バッテリー系ユーティリティアプリです。残量と充電状態の表示、直近24時間の履歴グラフ、画面を消さない機能、充電のお知らせ(アプリ内バナー+振動+音)、充電/放電の速さの計算ができます。脱獄不要で、非脱獄のサンドボックスの中でできる範囲に絞っています。",
+      "iconURL": "https://mikiyan1978.github.io/sileo-repo/assets/ytdownloader-lc-icon.png",
+      "version": "1.0",
+      "versionDate": "2026-11-15",
+      "downloadURL": "https://github.com/mikiyan1978/sileo-repo/releases/download/powerpanel-v1.0/PowerPanel-1.0.ipa",
+      "size": 18587,
+      "versions": [
+        {
+          "version": "1.0",
+          "date": "2026-11-15",
+          "localizedDescription": "最初の版。バッテリー表示・画面を消さない・充電のお知らせ・充電の記録。",
+          "downloadURL": "https://github.com/mikiyan1978/sileo-repo/releases/download/powerpanel-v1.0/PowerPanel-1.0.ipa",
+          "size": 18587,
+          "minOSVersion": "16.0"
+        }
+      ]
     }
   ],
   "news": []
