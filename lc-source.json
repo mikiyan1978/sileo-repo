@@ -1,7 +1,7 @@
 {
   "name": "mikiyan1978 Apps",
   "identifier": "io.github.mikiyan1978.sileo-repo.lc",
-  "subtitle": "YTDownloader LC / YouTube Tweaks",
+  "subtitle": "YTDownloader LC / LC Tweaks",
   "apps": [
     {
       "name": "YTDownloader LC",
@@ -90,17 +90,25 @@
       ]
     },
     {
-      "name": "YouTube Tweaks 導入",
+      "name": "LC Tweaks 導入",
       "bundleIdentifier": "com.mikiyan1978.youtubetweaks",
       "developerName": "mikiyan1978",
-      "subtitle": "LiveContainer の YouTube に Tweak を入れる",
-      "localizedDescription": "LiveContainer の中の YouTube(uYou)向けの Tweak を、Sileo のように、ソースから一覧を取得して、追加・更新・取り除きできるアプリです。再生画面の縁をなぞる線(Border Progress)や、共有シートから YTDownloader LC へ送る Tweak を入れられます。\nLiveContainer でこのアプリの「マルチタスクで起動」をオフにして、通常モードで開いてください。",
+      "subtitle": "LiveContainer のアプリに Tweak を入れる",
+      "localizedDescription": "LiveContainer の中のアプリ(YouTube、Spotify など)向けの Tweak を、Sileo のように、ソースから一覧を取得して、追加・更新・取り除きできるアプリです。再生画面の縁をなぞる線(Border Progress)、Spotify のカスタマイズ、共有シートから YTDownloader LC へ送る Tweak を入れられます。\nLiveContainer でこのアプリの「マルチタスクで起動」をオフにして、通常モードで開いてください。",
       "iconURL": "https://mikiyan1978.github.io/sileo-repo/assets/youtubetweaks-icon.png",
-      "version": "1.0",
+      "version": "1.1",
       "versionDate": "2026-11-15",
-      "downloadURL": "https://github.com/mikiyan1978/sileo-repo/releases/download/youtubetweaks-v1.0/YouTubeTweaks-1.0.ipa",
-      "size": 40619,
+      "downloadURL": "https://github.com/mikiyan1978/sileo-repo/releases/download/youtubetweaks-v1.1/YouTubeTweaks-1.1.ipa",
+      "size": 42105,
       "versions": [
+        {
+          "version": "1.1",
+          "date": "2026-11-15",
+          "localizedDescription": "YouTube 以外のアプリにも対応し、Spotify の Tweak を追加しました。名前を「LC Tweaks 導入」に変えました。Tweak の一覧は、新しい場所(lc-tweaks)から取得します。",
+          "downloadURL": "https://github.com/mikiyan1978/sileo-repo/releases/download/youtubetweaks-v1.1/YouTubeTweaks-1.1.ipa",
+          "size": 42105,
+          "minOSVersion": "16.0"
+        },
         {
           "version": "1.0",
           "date": "2026-11-15",

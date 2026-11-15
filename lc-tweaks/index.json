@@ -1,0 +1,50 @@
+{
+  "name": "mikiyan1978 の YouTube Tweak",
+  "tweaks": [
+    {
+      "id": "BorderProgress",
+      "name": "Border Progress",
+      "description": "再生画面の縁を、再生の進み具合に合わせて、線がなぞります。色・太さ・開始位置は、YouTube の設定の「Border Progress」で変えられます。",
+      "version": "1.0",
+      "changelog": "最初の版。再生画面の縁をなぞる線、設定画面(オン/オフ、太さ、開始位置、色、向き)。",
+      "dylib": "YTBorderProgress.dylib",
+      "targets": [
+        "com.google.ios.youtube"
+      ],
+      "needsSubstrate": false,
+      "url": "https://mikiyan1978.github.io/sileo-repo/lc-tweaks/BorderProgress_1.0.dylib",
+      "sha256": "d5a52270eef60c8f963bfb1d73b5031cd844b360bab57593a1623b9f367255ca",
+      "size": 117872
+    },
+    {
+      "id": "SpotifyTweak",
+      "name": "Spotify Tweak",
+      "description": "Spotify の見た目と機能のカスタマイズ(ジャケットの回転、背景画像、歌詞の表示、ジェスチャーなど)。LiveContainer の Spotify(復号済みの IPA)に入れます。入れるには、uYou などの CydiaSubstrate 互換ライブラリを含むアプリが、LiveContainer に必要です。",
+      "version": "1.0",
+      "changelog": "最初の版。LiveContainer の Spotify で動作を確認済み(ホーム背景の位置が未設定のときは中央にする修正を含む)。",
+      "dylib": "SpotifyTweak.dylib",
+      "targets": [
+        "com.spotify.client"
+      ],
+      "needsSubstrate": true,
+      "url": "https://mikiyan1978.github.io/sileo-repo/lc-tweaks/SpotifyTweak_1.0.dylib",
+      "sha256": "e6dd06aa1e8cdd28e4dce6e667181cdb99f77ae8c6f1f1cf59f02651ae7e2bd8",
+      "size": 198032
+    },
+    {
+      "id": "YTDownloaderShare",
+      "name": "共有シートから YTDownloader LC へ",
+      "description": "YouTube の共有シートに「YTDownloader LC」を足します。動画の共有から選ぶだけで、YTDownloader LC が開いてダウンロードを始められます(YTDownloader LC が必要です)。",
+      "version": "1.0",
+      "changelog": "最初の版。YouTube の共有シートに「YTDownloader LC」を追加。",
+      "dylib": "YTDLCShare.dylib",
+      "targets": [
+        "com.google.ios.youtube"
+      ],
+      "needsSubstrate": false,
+      "url": "https://mikiyan1978.github.io/sileo-repo/lc-tweaks/YTDownloaderShare_1.0.dylib",
+      "sha256": "113e111542cc4392243c5ee7350462a259024e57c5ccc7a54bde9b33960ea528",
+      "size": 89328
+    }
+  ]
+}
