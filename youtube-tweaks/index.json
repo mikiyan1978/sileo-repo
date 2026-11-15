@@ -1,0 +1,27 @@
+{
+  "name": "mikiyan1978 の YouTube Tweak",
+  "tweaks": [
+    {
+      "id": "BorderProgress",
+      "name": "Border Progress",
+      "description": "再生画面の縁を、再生の進み具合に合わせて、線がなぞります。色・太さ・開始位置は、YouTube の設定の「Border Progress」で変えられます。",
+      "version": "1.0",
+      "changelog": "最初の版。再生画面の縁をなぞる線、設定画面(オン/オフ、太さ、開始位置、色、向き)。",
+      "dylib": "YTBorderProgress.dylib",
+      "url": "https://mikiyan1978.github.io/sileo-repo/youtube-tweaks/BorderProgress_1.0.dylib",
+      "sha256": "d5a52270eef60c8f963bfb1d73b5031cd844b360bab57593a1623b9f367255ca",
+      "size": 117872
+    },
+    {
+      "id": "YTDownloaderShare",
+      "name": "共有シートから YTDownloader LC へ",
+      "description": "YouTube の共有シートに「YTDownloader LC」を足します。動画の共有から選ぶだけで、YTDownloader LC が開いてダウンロードを始められます(YTDownloader LC が必要です)。",
+      "version": "1.0",
+      "changelog": "最初の版。YouTube の共有シートに「YTDownloader LC」を追加。",
+      "dylib": "YTDLCShare.dylib",
+      "url": "https://mikiyan1978.github.io/sileo-repo/youtube-tweaks/YTDownloaderShare_1.0.dylib",
+      "sha256": "113e111542cc4392243c5ee7350462a259024e57c5ccc7a54bde9b33960ea528",
+      "size": 89328
+    }
+  ]
+}
