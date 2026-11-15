@@ -1,12 +1,12 @@
 {
   "lc": {
-    "version": "1.3.3",
+    "version": "1.3.4",
     "date": "2026-11-15",
     "notes": [
-      "uYou(YouTube)の共有シートに「YTDownloader LC」が出るようになりました。動画の共有から選ぶだけで、ショートカットなしで、このアプリが開いてダウンロードを始められます。",
-      "追加は、アプリを開いたときの案内、または設定の「uYou・YouTube から送る」から、ボタン 1 つでできます。LiveContainer でこのアプリを、マルチタスクをオフにした通常モードで開いて押してください。入れたあとは、LiveContainer を完全に終了して、開き直します。"
+      "uYou(YouTube)の共有シートに「YTDownloader LC」を足す Tweak は、別のアプリ「YouTube Tweaks 導入」で入れる形に変わりました。このアプリには、Tweak を入れる機能を持たせず、アプリが軽くなりました。設定の「追加のしかたを見る」から、案内を見られます。",
+      "すでに 1.3.3 で Tweak を入れた方は、そのまま使えます。"
     ],
-    "releaseURL": "https://github.com/mikiyan1978/sileo-repo/releases/tag/ytdownloader-lc-v1.3.3"
+    "releaseURL": "https://github.com/mikiyan1978/sileo-repo/releases/tag/ytdownloader-lc-v1.3.4"
   },
   "trollstore": {
     "version": "1.2.1",

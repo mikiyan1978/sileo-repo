@@ -10,11 +10,19 @@
       "subtitle": "動画ダウンローダー(LiveContainer 版)",
       "localizedDescription": "YouTube などの動画をダウンロードするアプリ(LiveContainer 版)。最大2160pの保存に対応。MKV / WebM で、最高画質・最高音質を保存できます。音声のみは M4A または Opus(.mka)。\nLiveContainer の中で動きます(JIT 不要)。TrollStore が使える端末では TrollStore 版がおすすめです。",
       "iconURL": "https://mikiyan1978.github.io/sileo-repo/assets/ytdownloader-lc-icon.png",
-      "version": "1.3.3",
+      "version": "1.3.4",
       "versionDate": "2026-11-15",
-      "downloadURL": "https://github.com/mikiyan1978/sileo-repo/releases/download/ytdownloader-lc-v1.3.3/YTDownloaderLC-1.3.3.ipa",
-      "size": 14423690,
+      "downloadURL": "https://github.com/mikiyan1978/sileo-repo/releases/download/ytdownloader-lc-v1.3.4/YTDownloaderLC-1.3.4.ipa",
+      "size": 14417121,
       "versions": [
+        {
+          "version": "1.3.4",
+          "date": "2026-11-15",
+          "localizedDescription": "uYou(YouTube)の共有シートに「YTDownloader LC」を足す Tweak は、別のアプリ「YouTube Tweaks 導入」で入れる形に変わりました。このアプリには、Tweak を入れる機能を持たせず、アプリが軽くなりました。設定の「追加のしかたを見る」から、案内を見られます。 すでに 1.3.3 で Tweak を入れた方は、そのまま使えます。",
+          "downloadURL": "https://github.com/mikiyan1978/sileo-repo/releases/download/ytdownloader-lc-v1.3.4/YTDownloaderLC-1.3.4.ipa",
+          "size": 14417121,
+          "minOSVersion": "16.0"
+        },
         {
           "version": "1.3.3",
           "date": "2026-11-15",
