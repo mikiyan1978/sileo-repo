@@ -10,11 +10,19 @@
       "subtitle": "動画ダウンローダー(LiveContainer 版)",
       "localizedDescription": "YouTube などの動画をダウンロードするアプリ(LiveContainer 版)。最大2160pの保存に対応。MKV / WebM で、最高画質・最高音質を保存できます。音声のみは M4A または Opus(.mka)。\nLiveContainer の中で動きます(JIT 不要)。TrollStore が使える端末では TrollStore 版がおすすめです。",
       "iconURL": "https://mikiyan1978.github.io/sileo-repo/assets/ytdownloader-lc-icon.png",
-      "version": "1.3.4",
-      "versionDate": "2026-11-15",
-      "downloadURL": "https://github.com/mikiyan1978/sileo-repo/releases/download/ytdownloader-lc-v1.3.4/YTDownloaderLC-1.3.4.ipa",
-      "size": 14417121,
+      "version": "1.3.5",
+      "versionDate": "2026-11-21",
+      "downloadURL": "https://github.com/mikiyan1978/sileo-repo/releases/download/ytdownloader-lc-v1.3.5/YTDownloaderLC-1.3.5.ipa",
+      "size": 14436187,
       "versions": [
+        {
+          "version": "1.3.5",
+          "date": "2026-11-21",
+          "localizedDescription": "ブラウズタブ(アプリ内のYouTube)で、再生画面のCC・歯車と同じ並びに、本物のダウンロードボタンを追加しました。タップすると、タブ切り替えなしで、その場に画質選択のモーダルが出ます。 設定画面を、ピル型セグメントコントロールで選べるカード型のUIに作り直しました。保存ボタンは画面上部に固定され、スクロールしなくても常に押せます。免責事項のセクションも追加しました。 ライブラリのサムネイル表示を軽くしました(大きな画像を縮小してから表示するため、スクロールがなめらかになります)。",
+          "downloadURL": "https://github.com/mikiyan1978/sileo-repo/releases/download/ytdownloader-lc-v1.3.5/YTDownloaderLC-1.3.5.ipa",
+          "size": 14436187,
+          "minOSVersion": "16.0"
+        },
         {
           "version": "1.3.4",
           "date": "2026-11-15",

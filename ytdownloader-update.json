@@ -1,12 +1,13 @@
 {
   "lc": {
-    "version": "1.3.4",
-    "date": "2026-11-15",
+    "version": "1.3.5",
+    "date": "2026-11-21",
     "notes": [
-      "uYou(YouTube)の共有シートに「YTDownloader LC」を足す Tweak は、別のアプリ「YouTube Tweaks 導入」で入れる形に変わりました。このアプリには、Tweak を入れる機能を持たせず、アプリが軽くなりました。設定の「追加のしかたを見る」から、案内を見られます。",
-      "すでに 1.3.3 で Tweak を入れた方は、そのまま使えます。"
+      "ブラウズタブ(アプリ内のYouTube)で、再生画面のCC・歯車と同じ並びに、本物のダウンロードボタンを追加しました。タップすると、タブ切り替えなしで、その場に画質選択のモーダルが出ます。",
+      "設定画面を、ピル型セグメントコントロールで選べるカード型のUIに作り直しました。保存ボタンは画面上部に固定され、スクロールしなくても常に押せます。免責事項のセクションも追加しました。",
+      "ライブラリのサムネイル表示を軽くしました(大きな画像を縮小してから表示するため、スクロールがなめらかになります)。"
     ],
-    "releaseURL": "https://github.com/mikiyan1978/sileo-repo/releases/tag/ytdownloader-lc-v1.3.4"
+    "releaseURL": "https://github.com/mikiyan1978/sileo-repo/releases/tag/ytdownloader-lc-v1.3.5"
   },
   "trollstore": {
     "version": "1.2.1",
