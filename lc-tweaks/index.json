@@ -17,19 +17,19 @@
       "size": 117872
     },
     {
-      "id": "SpotifyTweak",
-      "name": "Spotify Tweak",
-      "description": "Spotify の見た目と機能のカスタマイズ(ジャケットの回転、背景画像、歌詞の表示、ジェスチャーなど)。LiveContainer の Spotify(復号済みの IPA)に入れます。入れるには、uYou などの CydiaSubstrate 互換ライブラリを含むアプリが、LiveContainer に必要です。",
-      "version": "1.2-diag",
-      "changelog": "診断用(ビデオ対応曲でアートワークが丸くならない原因調査のための一時ログ入り)。",
-      "dylib": "SpotifyTweak.dylib",
+      "id": "SpotifyTweakLC",
+      "name": "Spotify Tweak (LC版)",
+      "description": "Spotify の見た目と機能のカスタマイズ(ジャケットの回転、背景画像、歌詞の表示、ジェスチャーなど)。LiveContainer の Spotify(復号済みの IPA)に入れます。素の objc ランタイムだけで作られており、uYou などの CydiaSubstrate 互換ライブラリは不要です。",
+      "version": "1.0",
+      "changelog": "最初の版。CydiaSubstrateに依存しない新実装(素のobjcランタイムでのメソッドスウィズリング)。旧版(SpotifyTweak)でビデオ対応曲のアートワークが丸くならなかった不具合は、この実装では再現していません。",
+      "dylib": "SpotifyTweakLC.dylib",
       "targets": [
         "com.spotify.client"
       ],
-      "needsSubstrate": true,
-      "url": "https://mikiyan1978.github.io/sileo-repo/lc-tweaks/SpotifyTweak_1.2-diag.dylib",
-      "sha256": "72f13a22f7b4bc2c887addb379c5e574a5bba795d09ecee80197923edcbd51e0",
-      "size": 214944
+      "needsSubstrate": false,
+      "url": "https://mikiyan1978.github.io/sileo-repo/lc-tweaks/SpotifyTweakLC_1.0.dylib",
+      "sha256": "028ccb5e7e66c086aa8de70a4b142be8755897df0766a62bd3559a3bca3a48a6",
+      "size": 215984
     },
     {
       "id": "YTDownloaderShare",
