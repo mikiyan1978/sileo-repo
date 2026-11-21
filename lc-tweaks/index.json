@@ -20,16 +20,16 @@
       "id": "SpotifyTweakLC",
       "name": "Spotify Tweak (LC版)",
       "description": "Spotify の見た目と機能のカスタマイズ(ジャケットの回転、背景画像、歌詞の表示、ジェスチャーなど)。LiveContainer の Spotify(復号済みの IPA)に入れます。素の objc ランタイムだけで作られており、uYou などの CydiaSubstrate 互換ライブラリは不要です。",
-      "version": "1.3",
-      "changelog": "ビデオ対応曲でアートワークが丸くならない不具合を修正。実機ダンプで確認: 同じアートワークviewが345px→293px(画面幅393の87.8%→74.6%)と2回layoutSubviewsされ、旧しきい値0.75の境界をわずかに下回った2回目で丸みを自分で解除していた。しきい値を0.60に緩和。",
+      "version": "1.4",
+      "changelog": "設定画面をLiquid Glass対応に刷新(iOS 26+では本物のガラス効果、それ以前はぼかしにフォールバック)。ネオンカラーのボーダー/グロー/切り替わりはそのまま、カード背景がガラス越しのネオンティントに。",
       "dylib": "SpotifyTweakLC.dylib",
       "targets": [
         "com.spotify.client"
       ],
       "needsSubstrate": false,
-      "url": "https://mikiyan1978.github.io/sileo-repo/lc-tweaks/SpotifyTweakLC_1.3.dylib",
-      "sha256": "3ab1ddfcf28c541e64ac840d14ea6d07e02128add1d0ecbdeb5f9095809f7e83",
-      "size": 215808
+      "url": "https://mikiyan1978.github.io/sileo-repo/lc-tweaks/SpotifyTweakLC_1.4.dylib",
+      "sha256": "8bb9530849bc62ca3d3b4a165fca7c79457a630949a09b6c6b89a59edcf77f04",
+      "size": 217024
     },
     {
       "id": "YTDownloaderShare",
