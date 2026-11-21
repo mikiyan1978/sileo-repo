@@ -20,16 +20,16 @@
       "id": "SpotifyTweak",
       "name": "Spotify Tweak",
       "description": "Spotify の見た目と機能のカスタマイズ(ジャケットの回転、背景画像、歌詞の表示、ジェスチャーなど)。LiveContainer の Spotify(復号済みの IPA)に入れます。入れるには、uYou などの CydiaSubstrate 互換ライブラリを含むアプリが、LiveContainer に必要です。",
-      "version": "1.0",
-      "changelog": "最初の版。LiveContainer の Spotify で動作を確認済み(ホーム背景の位置が未設定のときは中央にする修正を含む)。",
+      "version": "1.1",
+      "changelog": "再生中に高頻度で落ちる不具合を修正(Now Playing バナーの非同期コールバックが、解放済みの view に self.window を送っていた)。",
       "dylib": "SpotifyTweak.dylib",
       "targets": [
         "com.spotify.client"
       ],
       "needsSubstrate": true,
-      "url": "https://mikiyan1978.github.io/sileo-repo/lc-tweaks/SpotifyTweak_1.0.dylib",
-      "sha256": "e6dd06aa1e8cdd28e4dce6e667181cdb99f77ae8c6f1f1cf59f02651ae7e2bd8",
-      "size": 198032
+      "url": "https://mikiyan1978.github.io/sileo-repo/lc-tweaks/SpotifyTweak_1.1.dylib",
+      "sha256": "e928e637f60ee4641df1b3a3fa8ea4bb4bda74098e090d6a99ed1c284ff2e030",
+      "size": 198288
     },
     {
       "id": "YTDownloaderShare",
