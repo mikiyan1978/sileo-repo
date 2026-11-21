@@ -10,11 +10,19 @@
       "subtitle": "動画ダウンローダー(LiveContainer 版)",
       "localizedDescription": "YouTube などの動画をダウンロードするアプリ(LiveContainer 版)。最大2160pの保存に対応。MKV / WebM で、最高画質・最高音質を保存できます。音声のみは M4A または Opus(.mka)。\nLiveContainer の中で動きます(JIT 不要)。TrollStore が使える端末では TrollStore 版がおすすめです。",
       "iconURL": "https://mikiyan1978.github.io/sileo-repo/assets/ytdownloader-lc-icon.png",
-      "version": "1.3.5",
+      "version": "1.3.6",
       "versionDate": "2026-11-21",
-      "downloadURL": "https://github.com/mikiyan1978/sileo-repo/releases/download/ytdownloader-lc-v1.3.5/YTDownloaderLC-1.3.5.ipa",
-      "size": 14436187,
+      "downloadURL": "https://github.com/mikiyan1978/sileo-repo/releases/download/ytdownloader-lc-v1.3.6/YTDownloaderLC-1.3.6.ipa",
+      "size": 14436738,
       "versions": [
+        {
+          "version": "1.3.6",
+          "date": "2026-11-21",
+          "localizedDescription": "iOS 26以降で、ダウンロード中の進行状況パネルと設定画面の各セクションが、本物のLiquid Glass(すりガラス)で表示されるようになりました。iOS 26より前の端末では、これまで通りの表示です。",
+          "downloadURL": "https://github.com/mikiyan1978/sileo-repo/releases/download/ytdownloader-lc-v1.3.6/YTDownloaderLC-1.3.6.ipa",
+          "size": 14436738,
+          "minOSVersion": "16.0"
+        },
         {
           "version": "1.3.5",
           "date": "2026-11-21",
