@@ -20,15 +20,15 @@
       "id": "SpotifyTweakLC",
       "name": "Spotify Tweak (LC版)",
       "description": "Spotify の見た目と機能のカスタマイズ(ジャケットの回転、背景画像、歌詞の表示、ジェスチャーなど)。LiveContainer の Spotify(復号済みの IPA)に入れます。素の objc ランタイムだけで作られており、uYou などの CydiaSubstrate 互換ライブラリは不要です。",
-      "version": "1.10",
-      "changelog": "1.9の修正がcell.contentView.boundsを基準にしてしまい、今度は全行のカードがアクセサリ(スイッチ/シェブロン/スライダー等)の分だけ狭くなり、アクセサリがカードの外にはみ出す形になっていた。tableView自体の幅を毎回使うよう修正。",
+      "version": "1.10-diag",
+      "changelog": "診断用。HOME OPACITY行の詳細テキストに、tableView/cell/contentView/カードそれぞれの実測幅を表示する。",
       "dylib": "SpotifyTweakLC.dylib",
       "targets": [
         "com.spotify.client"
       ],
       "needsSubstrate": false,
-      "url": "https://mikiyan1978.github.io/sileo-repo/lc-tweaks/SpotifyTweakLC_1.10.dylib",
-      "sha256": "267582c414a4496646b25701d2324532df2558e677583e1ba2963c39f383e91b",
+      "url": "https://mikiyan1978.github.io/sileo-repo/lc-tweaks/SpotifyTweakLC_1.10-diag.dylib",
+      "sha256": "5a7ace0333db91c55b788fad035998cc98597bcc11599988fd6fdba4984e3faf",
       "size": 217088
     },
     {
