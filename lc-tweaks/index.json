@@ -20,15 +20,15 @@
       "id": "SpotifyTweakLC",
       "name": "Spotify Tweak (LC版)",
       "description": "Spotify の見た目と機能のカスタマイズ(ジャケットの回転、背景画像、歌詞の表示、ジェスチャーなど)。LiveContainer の Spotify(復号済みの IPA)に入れます。素の objc ランタイムだけで作られており、uYou などの CydiaSubstrate 互換ライブラリは不要です。",
-      "version": "1.0",
-      "changelog": "最初の版。CydiaSubstrateに依存しない新実装(素のobjcランタイムでのメソッドスウィズリング)。旧版(SpotifyTweak)でビデオ対応曲のアートワークが丸くならなかった不具合は、この実装では再現していません。",
+      "version": "1.1-test",
+      "changelog": "更新フローの動作確認用テスト版(設定画面のタイトルにバージョン表示を追加しただけ)。",
       "dylib": "SpotifyTweakLC.dylib",
       "targets": [
         "com.spotify.client"
       ],
       "needsSubstrate": false,
-      "url": "https://mikiyan1978.github.io/sileo-repo/lc-tweaks/SpotifyTweakLC_1.0.dylib",
-      "sha256": "028ccb5e7e66c086aa8de70a4b142be8755897df0766a62bd3559a3bca3a48a6",
+      "url": "https://mikiyan1978.github.io/sileo-repo/lc-tweaks/SpotifyTweakLC_1.1-test.dylib",
+      "sha256": "177727dd0ad2e45a29669fb4c7147ade44be2c3bff45f5c4a972f96a479b0b25",
       "size": 215984
     },
     {
